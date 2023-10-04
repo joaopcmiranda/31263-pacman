@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2865c6ce57c0d14f8bfb9aa0f3f6835
+guid: 8a846a338a7f77b46aa71234560a6b68
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,7 +71,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -83,7 +83,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638318814430225511
+  platformSettingsDirtyTick: 638318776878186055
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Tileset
+  - name: Heart
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.7777778}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 384
-      height: 384
-    spriteID: 95dc26f26e1d84c4fa0c4f11028a8822
+      width: 32
+      height: 27
+    spriteID: 8501040a07585e548a72e700962f354d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,43 +139,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData:
-  - name: Tileset
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 384
-      height: 384
-    spriteID: 95dc26f26e1d84c4fa0c4f11028a8822
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+  spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1060484802
-    name: Tileset
+    guid: 1260111146
+    name: Heart
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Tileset
+    - name: Heart
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 384
-      spriteId: 95dc26f26e1d84c4fa0c4f11028a8822
+        x: 16
+        y: 21
+        width: 32
+        height: 27
+      spriteId: 8501040a07585e548a72e700962f354d
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -214,4 +194,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 384, y: 384}
+  canvasSize: {x: 64, y: 64}

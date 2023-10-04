@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 696793698731d5743b12c5ef144e14bd
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: BonusVortex_Clip
+    second: {fileID: 7400000, guid: 009f96f66c2cc434aa2abffd16297866, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -95,7 +100,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638313747418729629
+  platformSettingsDirtyTick: 638318777745211663
   textureAssetName: 
   singleSpriteImportData:
   - name: 

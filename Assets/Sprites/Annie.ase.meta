@@ -2,7 +2,57 @@ fileFormatVersion: 2
 guid: 804b6ebc6bf9e5549ba30686bfa60c99
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Stand
+    second: {fileID: 7400000, guid: 165bac3d3231e9640bdf0059865061d5, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Stand Down
+    second: {fileID: 7400000, guid: 0c3022673d6afb94fb97883c4463e5da, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Stand Left
+    second: {fileID: 7400000, guid: 244e204b4a733a7478551df22d854ed1, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Stand Right
+    second: {fileID: 7400000, guid: ea2ea1f0d58689440bba48ee5993dcfc, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Stand Up
+    second: {fileID: 7400000, guid: f9a392697a9583e4c96da10bc2970484, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Walk
+    second: {fileID: 7400000, guid: 8edaa391c8360d94eb730e41685e42d4, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Walk Down
+    second: {fileID: 7400000, guid: f394c9c403873bf4d81e8e566390edc1, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Walk Left
+    second: {fileID: 7400000, guid: f693df0f7f895d744a8b46e6443def1d, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Walk Right
+    second: {fileID: 7400000, guid: f0b4ef0074529014ebf47e6fa2b3c4af, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Walk Up
+    second: {fileID: 7400000, guid: 7f85a380889ecd2499f01c72886c09d0, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -35,7 +85,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 26
+    spritePixelsToUnits: 11
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +145,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638313744849501876
+  platformSettingsDirtyTick: 638318755499931702
   textureAssetName: 
   singleSpriteImportData:
   - name: 
