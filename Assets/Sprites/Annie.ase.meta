@@ -6,8 +6,18 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
+      name: Abduction
+    second: {fileID: 7400000, guid: 811e0d88d65f40946959edce05805528, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Dead
+    second: {fileID: 7400000, guid: 41072bfda775368448de2f6f2634167f, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
       name: Stand
-    second: {fileID: 7400000, guid: 165bac3d3231e9640bdf0059865061d5, type: 2}
+    second: {fileID: 7400000, guid: 803f55720548b074a86ce7809cdb7bd8, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
@@ -32,7 +42,7 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: Walk
-    second: {fileID: 7400000, guid: 8edaa391c8360d94eb730e41685e42d4, type: 2}
+    second: {fileID: 7400000, guid: 394f3700824bed849a11ffe4436cbcfa, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
@@ -85,7 +95,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 11
+    spritePixelsToUnits: 12
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -145,7 +155,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638318755499931702
+  platformSettingsDirtyTick: 638320676904851086
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -176,8 +186,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 333
+      x: 201
+      y: 192
       width: 25
       height: 38
     spriteID: a7d8ae0020c6c8249aa34690f4c9ff33
@@ -188,7 +198,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 333}
+    uvTransform: {x: 201, y: 192}
   - name: Annie_Frame_1
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -196,8 +206,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 928
+      x: 68
+      y: 787
       width: 25
       height: 39
     spriteID: a33dcc503594e0645aa9d624f0797651
@@ -208,7 +218,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 928}
+    uvTransform: {x: 68, y: 787}
   - name: Annie_Frame_2
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -216,8 +226,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 975
+      x: 68
+      y: 834
       width: 25
       height: 39
     spriteID: 86e120b92e4b4cc4daacf86bb9873706
@@ -228,7 +238,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 975}
+    uvTransform: {x: 68, y: 834}
   - name: Annie_Frame_3
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -236,8 +246,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 4
+      x: 68
+      y: 881
       width: 25
       height: 39
     spriteID: 069d4257a975f81418311b20a5bd9d20
@@ -248,7 +258,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 4}
+    uvTransform: {x: 68, y: 881}
   - name: Annie_Frame_4
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -256,8 +266,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 51
+      x: 68
+      y: 928
       width: 25
       height: 39
     spriteID: 171d7e94ab6b4524b8d0ba319faaa4b6
@@ -268,7 +278,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 51}
+    uvTransform: {x: 68, y: 928}
   - name: Annie_Frame_5
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -276,8 +286,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 379
+      x: 201
+      y: 238
       width: 25
       height: 38
     spriteID: f47dcaa46950fba49b3a250e6c150d66
@@ -288,7 +298,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 379}
+    uvTransform: {x: 201, y: 238}
   - name: Annie_Frame_6
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -296,8 +306,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 425
+      x: 201
+      y: 284
       width: 25
       height: 38
     spriteID: 65164a3b273985d46abb1f5d215b96b6
@@ -308,7 +318,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 425}
+    uvTransform: {x: 201, y: 284}
   - name: Annie_Frame_7
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -316,8 +326,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 98
+      x: 68
+      y: 975
       width: 25
       height: 39
     spriteID: 86d0f09a64a04ad49915385210a000c7
@@ -328,7 +338,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 98}
+    uvTransform: {x: 68, y: 975}
   - name: Annie_Frame_8
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -336,8 +346,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 145
+      x: 102
+      y: 4
       width: 25
       height: 39
     spriteID: 052c8f32beb5e5c4aacdf1e478141871
@@ -348,7 +358,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 145}
+    uvTransform: {x: 102, y: 4}
   - name: Annie_Frame_9
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -356,8 +366,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 192
+      x: 102
+      y: 51
       width: 25
       height: 39
     spriteID: 0d35236f1db62ee4889e7ef7bfc698c7
@@ -368,7 +378,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 192}
+    uvTransform: {x: 102, y: 51}
   - name: Annie_Frame_10
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -376,8 +386,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 239
+      x: 102
+      y: 98
       width: 25
       height: 39
     spriteID: d7b7551cdcd51af41a696bad04cc394d
@@ -388,7 +398,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 239}
+    uvTransform: {x: 102, y: 98}
   - name: Annie_Frame_11
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -396,8 +406,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 471
+      x: 201
+      y: 330
       width: 25
       height: 38
     spriteID: 8dae08b398f94f640aee75ae4384cfa2
@@ -408,7 +418,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 471}
+    uvTransform: {x: 201, y: 330}
   - name: Annie_Frame_12
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -416,8 +426,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 517
+      x: 201
+      y: 376
       width: 25
       height: 38
     spriteID: 47fb7c325bd4c324e850944dc9a4e100
@@ -428,7 +438,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 517}
+    uvTransform: {x: 201, y: 376}
   - name: Annie_Frame_13
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -436,8 +446,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 286
+      x: 102
+      y: 145
       width: 25
       height: 39
     spriteID: 838d0cc5a93c3db4a9781ace28f02896
@@ -448,7 +458,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 286}
+    uvTransform: {x: 102, y: 145}
   - name: Annie_Frame_14
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -456,8 +466,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 333
+      x: 102
+      y: 192
       width: 25
       height: 39
     spriteID: a6cf4c616123e0948ab82964ff34e4cf
@@ -468,7 +478,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 333}
+    uvTransform: {x: 102, y: 192}
   - name: Annie_Frame_15
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -476,8 +486,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 380
+      x: 102
+      y: 239
       width: 25
       height: 39
     spriteID: 4d4e02677a4d79143a655c36a42b4dbc
@@ -488,7 +498,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 380}
+    uvTransform: {x: 102, y: 239}
   - name: Annie_Frame_16
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -496,8 +506,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 427
+      x: 102
+      y: 286
       width: 25
       height: 39
     spriteID: 1cf5efd9dc6e50646b71e47848995ab8
@@ -508,7 +518,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 427}
+    uvTransform: {x: 102, y: 286}
   - name: Annie_Frame_17
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -516,8 +526,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 563
+      x: 201
+      y: 422
       width: 25
       height: 38
     spriteID: b622fca74a9b9ce4bb6bd38c2fae7e49
@@ -528,7 +538,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 563}
+    uvTransform: {x: 201, y: 422}
   - name: Annie_Frame_18
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -536,8 +546,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 609
+      x: 201
+      y: 468
       width: 25
       height: 38
     spriteID: f385faad2d62a054583a04f1ed593b36
@@ -548,7 +558,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 609}
+    uvTransform: {x: 201, y: 468}
   - name: Annie_Frame_19
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -556,8 +566,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 474
+      x: 102
+      y: 333
       width: 25
       height: 39
     spriteID: 515c83bacba2e244a8b7af6cbcf2c0cd
@@ -568,7 +578,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 474}
+    uvTransform: {x: 102, y: 333}
   - name: Annie_Frame_20
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -576,8 +586,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 521
+      x: 102
+      y: 380
       width: 25
       height: 39
     spriteID: 28c1b79a5cda58a499c8fc6fbc671154
@@ -588,7 +598,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 521}
+    uvTransform: {x: 102, y: 380}
   - name: Annie_Frame_21
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -596,8 +606,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 568
+      x: 102
+      y: 427
       width: 25
       height: 39
     spriteID: 91aaefbf4bba47a4ea5f4c5f9e393f9e
@@ -608,7 +618,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 568}
+    uvTransform: {x: 102, y: 427}
   - name: Annie_Frame_22
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -616,8 +626,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 615
+      x: 102
+      y: 474
       width: 25
       height: 39
     spriteID: 02fab72afe56783419b2b022f9c458c8
@@ -628,7 +638,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 615}
+    uvTransform: {x: 102, y: 474}
   - name: Annie_Frame_23
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -636,8 +646,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 655
+      x: 201
+      y: 514
       width: 25
       height: 38
     spriteID: 5a8306a8db810be4eb735ea09c6566f1
@@ -648,7 +658,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 655}
+    uvTransform: {x: 201, y: 514}
   - name: Annie_Frame_24
     originalName: 
     pivot: {x: 0.56, y: 0.5675676}
@@ -656,7 +666,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 180
       width: 25
       height: 37
@@ -668,7 +678,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 180}
+    uvTransform: {x: 335, y: 180}
   - name: Annie_Frame_25
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -676,8 +686,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 701
+      x: 201
+      y: 560
       width: 25
       height: 38
     spriteID: 04a47cc95c2a2e74bb13e91052294fe7
@@ -688,7 +698,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 701}
+    uvTransform: {x: 201, y: 560}
   - name: Annie_Frame_26
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -696,8 +706,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 747
+      x: 201
+      y: 606
       width: 25
       height: 38
     spriteID: 1c902df7e5c3b8f4ba05e1cfa304df3e
@@ -708,7 +718,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 747}
+    uvTransform: {x: 201, y: 606}
   - name: Annie_Frame_27
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -716,8 +726,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 793
+      x: 201
+      y: 652
       width: 25
       height: 38
     spriteID: 4aac90eaab33c2444b6e779185c8c358
@@ -728,7 +738,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 793}
+    uvTransform: {x: 201, y: 652}
   - name: Annie_Frame_28
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -736,8 +746,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 839
+      x: 201
+      y: 698
       width: 25
       height: 38
     spriteID: c629febf2c9264942a91e92a550b1d5f
@@ -748,7 +758,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 839}
+    uvTransform: {x: 201, y: 698}
   - name: Annie_Frame_29
     originalName: 
     pivot: {x: 0.56, y: 0.5675676}
@@ -756,7 +766,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 225
       width: 25
       height: 37
@@ -768,7 +778,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 225}
+    uvTransform: {x: 335, y: 225}
   - name: Annie_Frame_30
     originalName: 
     pivot: {x: 0.56, y: 0.5675676}
@@ -776,7 +786,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 270
       width: 25
       height: 37
@@ -788,7 +798,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 270}
+    uvTransform: {x: 335, y: 270}
   - name: Annie_Frame_31
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -796,8 +806,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 885
+      x: 201
+      y: 744
       width: 25
       height: 38
     spriteID: 1dc82b84530bc63458ad43f200d42d34
@@ -808,7 +818,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 885}
+    uvTransform: {x: 201, y: 744}
   - name: Annie_Frame_32
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -816,8 +826,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 931
+      x: 201
+      y: 790
       width: 25
       height: 38
     spriteID: 5bb3803e8d9f33546bc6b1fe7ed73e16
@@ -828,7 +838,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 931}
+    uvTransform: {x: 201, y: 790}
   - name: Annie_Frame_33
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -836,8 +846,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 977
+      x: 201
+      y: 836
       width: 25
       height: 38
     spriteID: 99042d44c85a0b644afdefd600065e45
@@ -848,7 +858,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 977}
+    uvTransform: {x: 201, y: 836}
   - name: Annie_Frame_34
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -856,8 +866,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 94
+      x: 201
+      y: 882
       width: 25
       height: 38
     spriteID: 59fc4a6ccda3d1a4abda87e06f2cb9d4
@@ -868,7 +878,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 94}
+    uvTransform: {x: 201, y: 882}
   - name: Annie_Frame_35
     originalName: 
     pivot: {x: 0.56, y: 0.5675676}
@@ -876,7 +886,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 315
       width: 25
       height: 37
@@ -888,7 +898,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 315}
+    uvTransform: {x: 335, y: 315}
   - name: Annie_Frame_36
     originalName: 
     pivot: {x: 0.56, y: 0.5675676}
@@ -896,7 +906,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 360
       width: 25
       height: 37
@@ -908,7 +918,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 360}
+    uvTransform: {x: 335, y: 360}
   - name: Annie_Frame_37
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -916,8 +926,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 140
+      x: 201
+      y: 928
       width: 25
       height: 38
     spriteID: 3f142a7b42d409a4581243bd66113426
@@ -928,7 +938,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 140}
+    uvTransform: {x: 201, y: 928}
   - name: Annie_Frame_38
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -936,8 +946,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 186
+      x: 201
+      y: 974
       width: 25
       height: 38
     spriteID: 9b93cc32d559e5940b28656927de8d2c
@@ -948,7 +958,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 186}
+    uvTransform: {x: 201, y: 974}
   - name: Annie_Frame_39
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -956,8 +966,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 232
+      x: 268
+      y: 94
       width: 25
       height: 38
     spriteID: 0124de7736e713947873d8fb7ac4fbdd
@@ -968,7 +978,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 232}
+    uvTransform: {x: 268, y: 94}
   - name: Annie_Frame_40
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -976,8 +986,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 278
+      x: 268
+      y: 140
       width: 25
       height: 38
     spriteID: 3880b9027bfe0d8429a0329c9f445224
@@ -988,7 +998,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 278}
+    uvTransform: {x: 268, y: 140}
   - name: Annie_Frame_41
     originalName: 
     pivot: {x: 0.56, y: 0.5675676}
@@ -996,7 +1006,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 405
       width: 25
       height: 37
@@ -1008,7 +1018,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 405}
+    uvTransform: {x: 335, y: 405}
   - name: Annie_Frame_42
     originalName: 
     pivot: {x: 0.56, y: 0.5675676}
@@ -1016,7 +1026,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 450
       width: 25
       height: 37
@@ -1028,7 +1038,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 450}
+    uvTransform: {x: 335, y: 450}
   - name: Annie_Frame_43
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -1036,8 +1046,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 324
+      x: 268
+      y: 186
       width: 25
       height: 38
     spriteID: 16c582c422faaad4f91a2b4fcaab6a97
@@ -1048,7 +1058,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 324}
+    uvTransform: {x: 268, y: 186}
   - name: Annie_Frame_44
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -1056,8 +1066,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 370
+      x: 268
+      y: 232
       width: 25
       height: 38
     spriteID: f92f17a1b29f6df4a89fc152061bf734
@@ -1068,7 +1078,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 370}
+    uvTransform: {x: 268, y: 232}
   - name: Annie_Frame_45
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -1076,8 +1086,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 416
+      x: 268
+      y: 278
       width: 25
       height: 38
     spriteID: 87a918c753df27e4780567e9056599f7
@@ -1088,7 +1098,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 416}
+    uvTransform: {x: 268, y: 278}
   - name: Annie_Frame_46
     originalName: 
     pivot: {x: 0.56, y: 0.55263156}
@@ -1096,8 +1106,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 462
+      x: 268
+      y: 324
       width: 25
       height: 38
     spriteID: d14a4563ef204344f852813f794f409e
@@ -1108,7 +1118,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 462}
+    uvTransform: {x: 268, y: 324}
   - name: Annie_Frame_47
     originalName: 
     pivot: {x: 0.56, y: 0.5675676}
@@ -1116,7 +1126,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 495
       width: 25
       height: 37
@@ -1128,7 +1138,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 495}
+    uvTransform: {x: 335, y: 495}
   - name: Annie_Frame_48
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -1136,8 +1146,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 508
+      x: 268
+      y: 370
       width: 25
       height: 38
     spriteID: 74c5378d2c996554ab007eff4513d3dd
@@ -1148,7 +1158,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 508}
+    uvTransform: {x: 268, y: 370}
   - name: Annie_Frame_49
     originalName: 
     pivot: {x: 0.52, y: 0.5263158}
@@ -1156,8 +1166,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 554
+      x: 268
+      y: 416
       width: 25
       height: 38
     spriteID: 1db36670801fa304499108cc6d3c8723
@@ -1168,7 +1178,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 554}
+    uvTransform: {x: 268, y: 416}
   - name: Annie_Frame_50
     originalName: 
     pivot: {x: 0.52, y: 0.5135135}
@@ -1176,7 +1186,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 540
       width: 25
       height: 37
@@ -1188,7 +1198,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 540}
+    uvTransform: {x: 335, y: 540}
   - name: Annie_Frame_51
     originalName: 
     pivot: {x: 0.52, y: 0.5263158}
@@ -1196,8 +1206,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 600
+      x: 268
+      y: 462
       width: 25
       height: 38
     spriteID: 9b42e3db40d4ef747a0d7f44699d1922
@@ -1208,7 +1218,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 600}
+    uvTransform: {x: 268, y: 462}
   - name: Annie_Frame_52
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -1216,8 +1226,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 662
+      x: 102
+      y: 521
       width: 25
       height: 39
     spriteID: eb5096d53d6be16469bc03761e5c8031
@@ -1228,7 +1238,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 662}
+    uvTransform: {x: 102, y: 521}
   - name: Annie_Frame_53
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -1236,8 +1246,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 646
+      x: 268
+      y: 508
       width: 25
       height: 38
     spriteID: 4c3db4dd359d4514a9da3e36b0962067
@@ -1248,7 +1258,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 646}
+    uvTransform: {x: 268, y: 508}
   - name: Annie_Frame_72
     originalName: 
     pivot: {x: 0.53846157, y: 0.55263156}
@@ -1256,8 +1266,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 192
+      x: 68
+      y: 51
       width: 26
       height: 38
     spriteID: 918960f0402119445aee3f8308562b05
@@ -1268,7 +1278,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 192}
+    uvTransform: {x: 68, y: 51}
   - name: Annie_Frame_73
     originalName: 
     pivot: {x: 0.53846157, y: 0.5263158}
@@ -1276,8 +1286,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 238
+      x: 68
+      y: 97
       width: 26
       height: 38
     spriteID: 6135eb7238ff69349a8fa4a59920dd41
@@ -1288,7 +1298,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 238}
+    uvTransform: {x: 68, y: 97}
   - name: Annie_Frame_74
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1296,7 +1306,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 4
       width: 26
       height: 37
@@ -1308,7 +1318,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 4}
+    uvTransform: {x: 234, y: 4}
   - name: Annie_Frame_75
     originalName: 
     pivot: {x: 0.53846157, y: 0.5263158}
@@ -1316,8 +1326,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 284
+      x: 68
+      y: 143
       width: 26
       height: 38
     spriteID: 077a671efc081f94697afaffc86044f8
@@ -1328,7 +1338,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 284}
+    uvTransform: {x: 68, y: 143}
   - name: Annie_Frame_76
     originalName: 
     pivot: {x: 0.53846157, y: 0.53846157}
@@ -1337,7 +1347,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 798
       width: 26
       height: 39
     spriteID: ac46f7f68c9d21a419409eb2ad9b3844
@@ -1348,7 +1358,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 798}
   - name: Annie_Frame_77
     originalName: 
     pivot: {x: 0.53846157, y: 0.55263156}
@@ -1356,8 +1366,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 330
+      x: 68
+      y: 189
       width: 26
       height: 38
     spriteID: 7e5bf7abe8c166c489be37696262614e
@@ -1368,7 +1378,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 330}
+    uvTransform: {x: 68, y: 189}
   - name: Annie_Frame_96
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -1376,8 +1386,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 692
+      x: 268
+      y: 554
       width: 25
       height: 38
     spriteID: bca60585dd9b22447b060c002326d74e
@@ -1388,7 +1398,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 692}
+    uvTransform: {x: 268, y: 554}
   - name: Annie_Frame_120
     originalName: 
     pivot: {x: 0.48, y: 0.55263156}
@@ -1396,8 +1406,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 738
+      x: 268
+      y: 600
       width: 25
       height: 38
     spriteID: 0d1871ff486dc374d8a49db6766d2364
@@ -1408,7 +1418,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 738}
+    uvTransform: {x: 268, y: 600}
   - name: Annie_Frame_144
     originalName: 
     pivot: {x: 0.52, y: 0.55263156}
@@ -1416,8 +1426,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 784
+      x: 268
+      y: 646
       width: 25
       height: 38
     spriteID: e3650d42d0bf8c0479bc57e1e0c2d868
@@ -1428,7 +1438,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 784}
+    uvTransform: {x: 268, y: 646}
   - name: Annie_Frame_168
     originalName: 
     pivot: {x: 0.53846157, y: 0.5277778}
@@ -1436,7 +1446,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 4
       width: 26
       height: 36
@@ -1448,7 +1458,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 4}
+    uvTransform: {x: 335, y: 4}
   - name: Annie_Frame_169
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1456,7 +1466,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 49
       width: 26
       height: 37
@@ -1468,7 +1478,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 49}
+    uvTransform: {x: 234, y: 49}
   - name: Annie_Frame_170
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1476,7 +1486,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 94
       width: 26
       height: 37
@@ -1488,7 +1498,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 94}
+    uvTransform: {x: 234, y: 94}
   - name: Annie_Frame_171
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1496,7 +1506,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 139
       width: 26
       height: 37
@@ -1508,7 +1518,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 139}
+    uvTransform: {x: 234, y: 139}
   - name: Annie_Frame_172
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1516,7 +1526,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 184
       width: 26
       height: 37
@@ -1528,7 +1538,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 184}
+    uvTransform: {x: 234, y: 184}
   - name: Annie_Frame_173
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1536,7 +1546,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 229
       width: 26
       height: 37
@@ -1548,7 +1558,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 229}
+    uvTransform: {x: 234, y: 229}
   - name: Annie_Frame_174
     originalName: 
     pivot: {x: 0.53846157, y: 0.5277778}
@@ -1556,7 +1566,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 48
       width: 26
       height: 36
@@ -1568,7 +1578,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 48}
+    uvTransform: {x: 335, y: 48}
   - name: Annie_Frame_175
     originalName: 
     pivot: {x: 0.53846157, y: 0.5277778}
@@ -1576,7 +1586,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 92
       width: 26
       height: 36
@@ -1588,7 +1598,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 92}
+    uvTransform: {x: 335, y: 92}
   - name: Annie_Frame_176
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1596,7 +1606,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 274
       width: 26
       height: 37
@@ -1608,7 +1618,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 274}
+    uvTransform: {x: 234, y: 274}
   - name: Annie_Frame_177
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1616,7 +1626,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 319
       width: 26
       height: 37
@@ -1628,7 +1638,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 319}
+    uvTransform: {x: 234, y: 319}
   - name: Annie_Frame_178
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1636,7 +1646,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 364
       width: 26
       height: 37
@@ -1648,7 +1658,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 364}
+    uvTransform: {x: 234, y: 364}
   - name: Annie_Frame_179
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1656,7 +1666,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 409
       width: 26
       height: 37
@@ -1668,7 +1678,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 409}
+    uvTransform: {x: 234, y: 409}
   - name: Annie_Frame_180
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1676,7 +1686,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 454
       width: 26
       height: 37
@@ -1688,7 +1698,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 454}
+    uvTransform: {x: 234, y: 454}
   - name: Annie_Frame_181
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1696,7 +1706,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 499
       width: 26
       height: 37
@@ -1708,7 +1718,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 499}
+    uvTransform: {x: 234, y: 499}
   - name: Annie_Frame_182
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1716,7 +1726,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 544
       width: 26
       height: 37
@@ -1728,7 +1738,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 544}
+    uvTransform: {x: 234, y: 544}
   - name: Annie_Frame_183
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1736,7 +1746,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 589
       width: 26
       height: 37
@@ -1748,7 +1758,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 589}
+    uvTransform: {x: 234, y: 589}
   - name: Annie_Frame_184
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1756,7 +1766,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 634
       width: 26
       height: 37
@@ -1768,7 +1778,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 634}
+    uvTransform: {x: 234, y: 634}
   - name: Annie_Frame_185
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1776,7 +1786,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 679
       width: 26
       height: 37
@@ -1788,7 +1798,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 679}
+    uvTransform: {x: 234, y: 679}
   - name: Annie_Frame_186
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1796,7 +1806,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 724
       width: 26
       height: 37
@@ -1808,7 +1818,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 724}
+    uvTransform: {x: 234, y: 724}
   - name: Annie_Frame_187
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1816,7 +1826,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 769
       width: 26
       height: 37
@@ -1828,7 +1838,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 769}
+    uvTransform: {x: 234, y: 769}
   - name: Annie_Frame_188
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1836,7 +1846,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 814
       width: 26
       height: 37
@@ -1848,7 +1858,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 814}
+    uvTransform: {x: 234, y: 814}
   - name: Annie_Frame_189
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1856,7 +1866,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 859
       width: 26
       height: 37
@@ -1868,7 +1878,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 859}
+    uvTransform: {x: 234, y: 859}
   - name: Annie_Frame_190
     originalName: 
     pivot: {x: 0.53846157, y: 0.5135135}
@@ -1876,7 +1886,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
+      x: 234
       y: 904
       width: 26
       height: 37
@@ -1888,7 +1898,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 904}
+    uvTransform: {x: 234, y: 904}
   - name: Annie_Frame_191
     originalName: 
     pivot: {x: 0.53846157, y: 0.5277778}
@@ -1896,7 +1906,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
+      x: 335
       y: 136
       width: 26
       height: 36
@@ -1908,18 +1918,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 136}
+    uvTransform: {x: 335, y: 136}
   - name: Annie_Frame_54
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.53846157, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 830
-      width: 25
-      height: 38
+      x: 4
+      y: 845
+      width: 26
+      height: 39
     spriteID: e5eeabe75f45f80439046e36af294c5c
     spriteBone: []
     spriteOutline: []
@@ -1928,18 +1938,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 830}
+    uvTransform: {x: 4, y: 845}
   - name: Annie_Frame_55
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.52500004}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 709
-      width: 25
-      height: 39
+      x: 4
+      y: 702
+      width: 26
+      height: 40
     spriteID: 156e0a88fa4caf446a5d080b4aeaae09
     spriteBone: []
     spriteOutline: []
@@ -1948,18 +1958,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 709}
+    uvTransform: {x: 4, y: 702}
   - name: Annie_Frame_56
     originalName: 
-    pivot: {x: 0.52, y: 0.5263158}
+    pivot: {x: 0.53846157, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 876
-      width: 25
-      height: 38
+      x: 4
+      y: 750
+      width: 26
+      height: 40
     spriteID: 741870d1f7bbc05429abf664ff687702
     spriteBone: []
     spriteOutline: []
@@ -1968,18 +1978,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 876}
+    uvTransform: {x: 4, y: 750}
   - name: Annie_Frame_57
     originalName: 
-    pivot: {x: 0.52, y: 0.5135135}
+    pivot: {x: 0.53846157, y: 0.48780486}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
-      y: 585
-      width: 25
-      height: 37
+      x: 4
+      y: 310
+      width: 26
+      height: 41
     spriteID: 6f907f6d35a959b43a6a7df97d220cd5
     spriteBone: []
     spriteOutline: []
@@ -1988,18 +1998,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 585}
+    uvTransform: {x: 4, y: 310}
   - name: Annie_Frame_58
     originalName: 
-    pivot: {x: 0.52, y: 0.5263158}
+    pivot: {x: 0.53846157, y: 0.4634146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 922
-      width: 25
-      height: 38
+      x: 4
+      y: 359
+      width: 26
+      height: 41
     spriteID: 044cb8d8b2b48f3489c2a24e2abbf670
     spriteBone: []
     spriteOutline: []
@@ -2008,18 +2018,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 922}
+    uvTransform: {x: 4, y: 359}
   - name: Annie_Frame_59
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.53846157, y: 0.4634146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 968
-      width: 25
-      height: 38
+      x: 4
+      y: 408
+      width: 26
+      height: 41
     spriteID: 68a6ba92609b8184bbbafc9a6878ca20
     spriteBone: []
     spriteOutline: []
@@ -2028,18 +2038,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 968}
+    uvTransform: {x: 4, y: 408}
   - name: Annie_Frame_60
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.53846157, y: 0.4390244}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 4
-      width: 25
-      height: 38
+      x: 4
+      y: 457
+      width: 26
+      height: 41
     spriteID: 4ba3d577e626369429ffc54b0cbc8649
     spriteBone: []
     spriteOutline: []
@@ -2048,18 +2058,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 4}
+    uvTransform: {x: 4, y: 457}
   - name: Annie_Frame_61
     originalName: 
-    pivot: {x: 0.52, y: 0.5263158}
+    pivot: {x: 0.53846157, y: 0.4634146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 50
-      width: 25
-      height: 38
+      x: 4
+      y: 506
+      width: 26
+      height: 41
     spriteID: 2677f494fbc9926439f28586ec47d6f2
     spriteBone: []
     spriteOutline: []
@@ -2068,18 +2078,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 50}
+    uvTransform: {x: 4, y: 506}
   - name: Annie_Frame_62
     originalName: 
-    pivot: {x: 0.52, y: 0.5135135}
+    pivot: {x: 0.53846157, y: 0.4390244}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
-      y: 630
-      width: 25
-      height: 37
+      x: 4
+      y: 555
+      width: 26
+      height: 41
     spriteID: 4af74534a81a9bf4d9046999adb7df96
     spriteBone: []
     spriteOutline: []
@@ -2088,18 +2098,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 630}
+    uvTransform: {x: 4, y: 555}
   - name: Annie_Frame_63
     originalName: 
-    pivot: {x: 0.52, y: 0.5263158}
+    pivot: {x: 0.53846157, y: 0.4634146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 96
-      width: 25
-      height: 38
+      x: 4
+      y: 604
+      width: 26
+      height: 41
     spriteID: 2a6a445bb5db5c74088b4e93361a3cde
     spriteBone: []
     spriteOutline: []
@@ -2108,18 +2118,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 96}
+    uvTransform: {x: 4, y: 604}
   - name: Annie_Frame_64
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.4390244}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 756
-      width: 25
-      height: 39
+      x: 4
+      y: 653
+      width: 26
+      height: 41
     spriteID: 2c118946f20474a47aa4d78d5cad5a35
     spriteBone: []
     spriteOutline: []
@@ -2128,18 +2138,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 756}
+    uvTransform: {x: 4, y: 653}
   - name: Annie_Frame_65
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.5357143, y: 0.46511626}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 142
-      width: 25
-      height: 38
+      x: 4
+      y: 259
+      width: 28
+      height: 43
     spriteID: f724965075f304749a04b096ffa89175
     spriteBone: []
     spriteOutline: []
@@ -2148,18 +2158,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 142}
+    uvTransform: {x: 4, y: 259}
   - name: Annie_Frame_66
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.53125, y: 0.46808508}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 188
-      width: 25
-      height: 38
+      x: 4
+      y: 204
+      width: 32
+      height: 47
     spriteID: 7df88d064bfc4ab4ebeaf38d8130c880
     spriteBone: []
     spriteOutline: []
@@ -2168,18 +2178,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 188}
+    uvTransform: {x: 4, y: 204}
   - name: Annie_Frame_67
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.5263158, y: 0.4716981}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 803
-      width: 25
-      height: 39
+      x: 4
+      y: 143
+      width: 38
+      height: 53
     spriteID: 7abb2c68dcf4d9b4e81081310c6e0282
     spriteBone: []
     spriteOutline: []
@@ -2188,18 +2198,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 803}
+    uvTransform: {x: 4, y: 143}
   - name: Annie_Frame_68
     originalName: 
-    pivot: {x: 0.52, y: 0.5263158}
+    pivot: {x: 0.5227273, y: 0.47457626}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 234
-      width: 25
-      height: 38
+      x: 4
+      y: 76
+      width: 44
+      height: 59
     spriteID: ddd2ef6f7b7c625418e2e781d3c80662
     spriteBone: []
     spriteOutline: []
@@ -2208,18 +2218,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 234}
+    uvTransform: {x: 4, y: 76}
   - name: Annie_Frame_69
     originalName: 
-    pivot: {x: 0.52, y: 0.5135135}
+    pivot: {x: 0.5178572, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 304
-      y: 675
-      width: 25
-      height: 37
+      x: 4
+      y: 4
+      width: 56
+      height: 64
     spriteID: d01deebf6e477bd409ce7fdd8b2d7406
     spriteBone: []
     spriteOutline: []
@@ -2228,16 +2238,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 304, y: 675}
+    uvTransform: {x: 4, y: 4}
   - name: Annie_Frame_70
     originalName: 
-    pivot: {x: 0.52, y: 0.5263158}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 280
+      x: 268
+      y: 692
       width: 25
       height: 38
     spriteID: 530b74f9b7d64c840ace0f36fe70a61d
@@ -2248,18 +2258,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 280}
+    uvTransform: {x: 268, y: 692}
   - name: Annie_Frame_71
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 326
+      x: 102
+      y: 568
       width: 25
-      height: 38
+      height: 39
     spriteID: 1cd1ea5b4d0c014488b225e78cf66d83
     spriteBone: []
     spriteOutline: []
@@ -2268,17 +2278,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 326}
+    uvTransform: {x: 102, y: 568}
   - name: Annie_Frame_78
     originalName: 
-    pivot: {x: 0.53846157, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 376
-      width: 26
+      x: 268
+      y: 738
+      width: 25
       height: 38
     spriteID: 4bc6d2fcd4dc7fb4399636cc750624bb
     spriteBone: []
@@ -2288,18 +2298,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 376}
+    uvTransform: {x: 268, y: 738}
   - name: Annie_Frame_79
     originalName: 
-    pivot: {x: 0.53846157, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.5135135}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 51
-      width: 26
-      height: 39
+      x: 335
+      y: 585
+      width: 25
+      height: 37
     spriteID: 6a32e10ed91808e42b404e6b230b6b5a
     spriteBone: []
     spriteOutline: []
@@ -2308,17 +2318,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 51}
+    uvTransform: {x: 335, y: 585}
   - name: Annie_Frame_80
     originalName: 
-    pivot: {x: 0.53846157, y: 0.5263158}
+    pivot: {x: 0.52, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 422
-      width: 26
+      x: 268
+      y: 784
+      width: 25
       height: 38
     spriteID: ec28ab7f1e735b349b13f91856fa8e37
     spriteBone: []
@@ -2328,18 +2338,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 422}
+    uvTransform: {x: 268, y: 784}
   - name: Annie_Frame_81
     originalName: 
-    pivot: {x: 0.53846157, y: 0.5135135}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 170
-      y: 949
-      width: 26
-      height: 37
+      x: 268
+      y: 830
+      width: 25
+      height: 38
     spriteID: 48b757795330a9247bd60d87dc3a496f
     spriteBone: []
     spriteOutline: []
@@ -2348,17 +2358,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 170, y: 949}
+    uvTransform: {x: 268, y: 830}
   - name: Annie_Frame_82
     originalName: 
-    pivot: {x: 0.53846157, y: 0.5263158}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 468
-      width: 26
+      x: 268
+      y: 876
+      width: 25
       height: 38
     spriteID: 8966ab3bace68ff46ba106a2dcbcded0
     spriteBone: []
@@ -2368,17 +2378,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 468}
+    uvTransform: {x: 268, y: 876}
   - name: Annie_Frame_83
     originalName: 
-    pivot: {x: 0.53846157, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 514
-      width: 26
+      x: 268
+      y: 922
+      width: 25
       height: 38
     spriteID: 4e0dd445242663244a8fb68c1c2d1b14
     spriteBone: []
@@ -2388,18 +2398,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 514}
+    uvTransform: {x: 268, y: 922}
   - name: Annie_Frame_84
     originalName: 
-    pivot: {x: 0.53846157, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.5135135}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 560
-      width: 26
-      height: 38
+      x: 335
+      y: 630
+      width: 25
+      height: 37
     spriteID: 1beee934e3649a94cb660a5587f1b5cb
     spriteBone: []
     spriteOutline: []
@@ -2408,17 +2418,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 560}
+    uvTransform: {x: 335, y: 630}
   - name: Annie_Frame_85
     originalName: 
-    pivot: {x: 0.53846157, y: 0.5263158}
+    pivot: {x: 0.52, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 606
-      width: 26
+      x: 268
+      y: 968
+      width: 25
       height: 38
     spriteID: 6091ba08cbbdc864ca8cb54f348deb80
     spriteBone: []
@@ -2428,18 +2438,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 606}
+    uvTransform: {x: 268, y: 968}
   - name: Annie_Frame_86
     originalName: 
-    pivot: {x: 0.53846157, y: 0.5135135}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 4
-      width: 26
-      height: 37
+      x: 102
+      y: 615
+      width: 25
+      height: 39
     spriteID: a01a0068cc9b22b42b23e681a667adbd
     spriteBone: []
     spriteOutline: []
@@ -2448,17 +2458,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 4}
+    uvTransform: {x: 102, y: 615}
   - name: Annie_Frame_87
     originalName: 
-    pivot: {x: 0.53846157, y: 0.5263158}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 652
-      width: 26
+      x: 302
+      y: 4
+      width: 25
       height: 38
     spriteID: b6b6d7713ef5bc047a0f3c88984b78ef
     spriteBone: []
@@ -2468,18 +2478,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 652}
+    uvTransform: {x: 302, y: 4}
   - name: Annie_Frame_88
     originalName: 
-    pivot: {x: 0.53846157, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 98
-      width: 26
-      height: 39
+      x: 302
+      y: 50
+      width: 25
+      height: 38
     spriteID: 1d6c1d90a73a67a4eb08ff7d12a084ca
     spriteBone: []
     spriteOutline: []
@@ -2488,18 +2498,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 98}
+    uvTransform: {x: 302, y: 50}
   - name: Annie_Frame_89
     originalName: 
-    pivot: {x: 0.53846157, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 698
-      width: 26
-      height: 38
+      x: 102
+      y: 662
+      width: 25
+      height: 39
     spriteID: 7ea83fee329681c4898587985ca3c8d0
     spriteBone: []
     spriteOutline: []
@@ -2508,17 +2518,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 698}
+    uvTransform: {x: 102, y: 662}
   - name: Annie_Frame_90
     originalName: 
-    pivot: {x: 0.53846157, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 744
-      width: 26
+      x: 302
+      y: 96
+      width: 25
       height: 38
     spriteID: c0d1e66f629fc8241beb6fb4fd1ba702
     spriteBone: []
@@ -2528,18 +2538,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 744}
+    uvTransform: {x: 302, y: 96}
   - name: Annie_Frame_91
     originalName: 
-    pivot: {x: 0.53846157, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.5135135}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 145
-      width: 26
-      height: 39
+      x: 335
+      y: 675
+      width: 25
+      height: 37
     spriteID: 9b162c68b0091f646bfae40e9ee71b57
     spriteBone: []
     spriteOutline: []
@@ -2548,17 +2558,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 145}
+    uvTransform: {x: 335, y: 675}
   - name: Annie_Frame_92
     originalName: 
-    pivot: {x: 0.53846157, y: 0.5263158}
+    pivot: {x: 0.52, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 790
-      width: 26
+      x: 302
+      y: 142
+      width: 25
       height: 38
     spriteID: 899fb08262a0e9a43bb26340223c710c
     spriteBone: []
@@ -2568,18 +2578,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 790}
+    uvTransform: {x: 302, y: 142}
   - name: Annie_Frame_93
     originalName: 
-    pivot: {x: 0.53846157, y: 0.5135135}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 204
-      y: 49
-      width: 26
-      height: 37
+      x: 302
+      y: 188
+      width: 25
+      height: 38
     spriteID: c31a50009abcf79429a1f163427e5222
     spriteBone: []
     spriteOutline: []
@@ -2588,16 +2598,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 204, y: 49}
+    uvTransform: {x: 302, y: 188}
   - name: Annie_Frame_94
     originalName: 
-    pivot: {x: 0.53846157, y: 0.5263158}
+    pivot: {x: 0.53846157, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 836
+      x: 68
+      y: 235
       width: 26
       height: 38
     spriteID: 8727fb9e4d456ec4ca3e36176f76ad64
@@ -2608,18 +2618,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 836}
+    uvTransform: {x: 68, y: 235}
   - name: Annie_Frame_95
     originalName: 
-    pivot: {x: 0.53846157, y: 0.55263156}
+    pivot: {x: 0.53846157, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 882
+      y: 892
       width: 26
-      height: 38
+      height: 39
     spriteID: d2188b0568c50714e841c5a6c1a4e40a
     spriteBone: []
     spriteOutline: []
@@ -2628,18 +2638,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 882}
+    uvTransform: {x: 4, y: 892}
   - name: Annie_Frame_97
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 850
-      width: 25
-      height: 39
+      x: 68
+      y: 281
+      width: 26
+      height: 38
     spriteID: 6c45d1b9bccd81b4cbbf976717377575
     spriteBone: []
     spriteOutline: []
@@ -2648,18 +2658,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 850}
+    uvTransform: {x: 68, y: 281}
   - name: Annie_Frame_98
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.5135135}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 897
-      width: 25
-      height: 39
+      x: 234
+      y: 949
+      width: 26
+      height: 37
     spriteID: 855a2300354d11740a789c3302f76709
     spriteBone: []
     spriteOutline: []
@@ -2668,18 +2678,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 897}
+    uvTransform: {x: 234, y: 949}
   - name: Annie_Frame_99
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 38
-      y: 944
-      width: 25
-      height: 39
+      x: 68
+      y: 327
+      width: 26
+      height: 38
     spriteID: ee681fcf48299794d92613f03c26ca4a
     spriteBone: []
     spriteOutline: []
@@ -2688,18 +2698,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 38, y: 944}
+    uvTransform: {x: 68, y: 327}
   - name: Annie_Frame_100
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 4
-      width: 25
-      height: 39
+      x: 68
+      y: 373
+      width: 26
+      height: 38
     spriteID: 2565bbda7f5847344afdf26cdde11028
     spriteBone: []
     spriteOutline: []
@@ -2708,17 +2718,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 4}
+    uvTransform: {x: 68, y: 373}
   - name: Annie_Frame_101
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.53846157, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 372
-      width: 25
+      x: 68
+      y: 419
+      width: 26
       height: 38
     spriteID: 9cb2f3be1c53f1c4b8bd741d332fda89
     spriteBone: []
@@ -2728,17 +2738,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 372}
+    uvTransform: {x: 68, y: 419}
   - name: Annie_Frame_102
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.53846157, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 418
-      width: 25
+      x: 68
+      y: 465
+      width: 26
       height: 38
     spriteID: d9759869420d23f4ba4a11adb803d6be
     spriteBone: []
@@ -2748,18 +2758,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 418}
+    uvTransform: {x: 68, y: 465}
   - name: Annie_Frame_103
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.5135135}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 51
-      width: 25
-      height: 39
+      x: 268
+      y: 4
+      width: 26
+      height: 37
     spriteID: 41a86f9343334c3409c8f80f61837976
     spriteBone: []
     spriteOutline: []
@@ -2768,18 +2778,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 51}
+    uvTransform: {x: 268, y: 4}
   - name: Annie_Frame_104
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 98
-      width: 25
-      height: 39
+      x: 68
+      y: 511
+      width: 26
+      height: 38
     spriteID: d8284922cefed374a98b86b27c2c9f40
     spriteBone: []
     spriteOutline: []
@@ -2788,17 +2798,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 98}
+    uvTransform: {x: 68, y: 511}
   - name: Annie_Frame_105
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 145
-      width: 25
+      x: 4
+      y: 939
+      width: 26
       height: 39
     spriteID: 8be6bd8e23d4f624098bf9e8ffd6baa1
     spriteBone: []
@@ -2808,18 +2818,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 145}
+    uvTransform: {x: 4, y: 939}
   - name: Annie_Frame_106
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 192
-      width: 25
-      height: 39
+      x: 68
+      y: 557
+      width: 26
+      height: 38
     spriteID: a353ebe955b2e724b84315f7b9855065
     spriteBone: []
     spriteOutline: []
@@ -2828,18 +2838,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 192}
+    uvTransform: {x: 68, y: 557}
   - name: Annie_Frame_107
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 239
-      width: 25
-      height: 39
+      x: 68
+      y: 603
+      width: 26
+      height: 38
     spriteID: 25142dc199c1e19488978989f8b1d787
     spriteBone: []
     spriteOutline: []
@@ -2848,17 +2858,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 239}
+    uvTransform: {x: 68, y: 603}
   - name: Annie_Frame_108
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 286
-      width: 25
+      x: 68
+      y: 4
+      width: 26
       height: 39
     spriteID: 0faf015839ee7cd4e82cde7cb46e29d4
     spriteBone: []
@@ -2868,18 +2878,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 286}
+    uvTransform: {x: 68, y: 4}
   - name: Annie_Frame_109
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 333
-      width: 25
-      height: 39
+      x: 68
+      y: 649
+      width: 26
+      height: 38
     spriteID: 6fcec8c566f2c334ca1460a2ef0a8a8c
     spriteBone: []
     spriteOutline: []
@@ -2888,18 +2898,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 333}
+    uvTransform: {x: 68, y: 649}
   - name: Annie_Frame_110
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.5135135}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 380
-      width: 25
-      height: 39
+      x: 268
+      y: 49
+      width: 26
+      height: 37
     spriteID: f4dfc428799193a4c8ca0348845c3fda
     spriteBone: []
     spriteOutline: []
@@ -2908,18 +2918,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 380}
+    uvTransform: {x: 268, y: 49}
   - name: Annie_Frame_111
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.5263158}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 427
-      width: 25
-      height: 39
+      x: 68
+      y: 695
+      width: 26
+      height: 38
     spriteID: 7a58288d3adf76c4ab5a066122c31eee
     spriteBone: []
     spriteOutline: []
@@ -2928,18 +2938,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 427}
+    uvTransform: {x: 68, y: 695}
   - name: Annie_Frame_112
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.53846157, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 474
-      width: 25
-      height: 39
+      x: 68
+      y: 741
+      width: 26
+      height: 38
     spriteID: 0d8d5df39e02ca44d89983440ad0d844
     spriteBone: []
     spriteOutline: []
@@ -2948,7 +2958,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 474}
+    uvTransform: {x: 68, y: 741}
   - name: Annie_Frame_113
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -2956,8 +2966,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 521
+      x: 102
+      y: 709
       width: 25
       height: 39
     spriteID: a4a0b7f99398712459c2c8a03da16e57
@@ -2968,7 +2978,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 521}
+    uvTransform: {x: 102, y: 709}
   - name: Annie_Frame_114
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -2976,8 +2986,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 568
+      x: 102
+      y: 756
       width: 25
       height: 39
     spriteID: 2e3920bf8bcc0d24198e7cf602d5089c
@@ -2988,18 +2998,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 568}
+    uvTransform: {x: 102, y: 756}
   - name: Annie_Frame_115
     originalName: 
-    pivot: {x: 0.56, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 464
+      x: 102
+      y: 803
       width: 25
-      height: 38
+      height: 39
     spriteID: 1c957f3189b26414db6bae6ca4312e7b
     spriteBone: []
     spriteOutline: []
@@ -3008,18 +3018,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 464}
+    uvTransform: {x: 102, y: 803}
   - name: Annie_Frame_116
     originalName: 
-    pivot: {x: 0.56, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 510
+      x: 102
+      y: 850
       width: 25
-      height: 38
+      height: 39
     spriteID: d4fca57338f67fd429273a205f09490c
     spriteBone: []
     spriteOutline: []
@@ -3028,16 +3038,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 510}
+    uvTransform: {x: 102, y: 850}
   - name: Annie_Frame_117
     originalName: 
-    pivot: {x: 0.56, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 556
+      x: 302
+      y: 234
       width: 25
       height: 38
     spriteID: 19a96a1fc581ed14bb96098b37427ec7
@@ -3048,16 +3058,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 556}
+    uvTransform: {x: 302, y: 234}
   - name: Annie_Frame_118
     originalName: 
-    pivot: {x: 0.56, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 602
+      x: 302
+      y: 280
       width: 25
       height: 38
     spriteID: 0ffe03eace9419844b323fc5de52dd08
@@ -3068,18 +3078,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 602}
+    uvTransform: {x: 302, y: 280}
   - name: Annie_Frame_119
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 648
+      x: 102
+      y: 897
       width: 25
-      height: 38
+      height: 39
     spriteID: 3f28bd782c1b69243b910f23ca3a11c7
     spriteBone: []
     spriteOutline: []
@@ -3088,16 +3098,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 648}
+    uvTransform: {x: 102, y: 897}
   - name: Annie_Frame_121
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 615
+      x: 102
+      y: 944
       width: 25
       height: 39
     spriteID: cf00242f9839f3142bf926732edb7248
@@ -3108,16 +3118,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 615}
+    uvTransform: {x: 102, y: 944}
   - name: Annie_Frame_122
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 662
+      x: 135
+      y: 4
       width: 25
       height: 39
     spriteID: 16ef5aa5a9ba7ca448fc63e37e7d3d28
@@ -3128,16 +3138,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 662}
+    uvTransform: {x: 135, y: 4}
   - name: Annie_Frame_123
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 709
+      x: 135
+      y: 51
       width: 25
       height: 39
     spriteID: 4895e9740f50ce342aa2bf33da848a7a
@@ -3148,16 +3158,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 709}
+    uvTransform: {x: 135, y: 51}
   - name: Annie_Frame_124
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 756
+      x: 135
+      y: 98
       width: 25
       height: 39
     spriteID: c3634111c68b7ed44a02ce300bec949d
@@ -3168,18 +3178,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 756}
+    uvTransform: {x: 135, y: 98}
   - name: Annie_Frame_125
     originalName: 
-    pivot: {x: 0.48, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 694
+      x: 135
+      y: 145
       width: 25
-      height: 38
+      height: 39
     spriteID: ad78bfbf63543b14f833978a92ed6024
     spriteBone: []
     spriteOutline: []
@@ -3188,18 +3198,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 694}
+    uvTransform: {x: 135, y: 145}
   - name: Annie_Frame_126
     originalName: 
-    pivot: {x: 0.48, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 740
+      x: 135
+      y: 192
       width: 25
-      height: 38
+      height: 39
     spriteID: be7758593520c654a846f5aed6dfe6c1
     spriteBone: []
     spriteOutline: []
@@ -3208,16 +3218,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 740}
+    uvTransform: {x: 135, y: 192}
   - name: Annie_Frame_127
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 803
+      x: 135
+      y: 239
       width: 25
       height: 39
     spriteID: b45ba6d5928a36e4c87465a1c7857e4a
@@ -3228,16 +3238,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 803}
+    uvTransform: {x: 135, y: 239}
   - name: Annie_Frame_128
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 850
+      x: 135
+      y: 286
       width: 25
       height: 39
     spriteID: c9560c5e2117b3943bc5efe651397b9f
@@ -3248,16 +3258,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 850}
+    uvTransform: {x: 135, y: 286}
   - name: Annie_Frame_129
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 897
+      x: 135
+      y: 333
       width: 25
       height: 39
     spriteID: 3e564df653339a8458e46999c2a1215d
@@ -3268,16 +3278,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 897}
+    uvTransform: {x: 135, y: 333}
   - name: Annie_Frame_130
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 71
-      y: 944
+      x: 135
+      y: 380
       width: 25
       height: 39
     spriteID: 1497c2fc12bcf414da7df79c070b0394
@@ -3288,16 +3298,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 71, y: 944}
+    uvTransform: {x: 135, y: 380}
   - name: Annie_Frame_131
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 4
+      x: 135
+      y: 427
       width: 25
       height: 39
     spriteID: 62e8aadc63f536d4387084f6cad07fb3
@@ -3308,18 +3318,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 4}
+    uvTransform: {x: 135, y: 427}
   - name: Annie_Frame_132
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.56, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 51
+      x: 302
+      y: 326
       width: 25
-      height: 39
+      height: 38
     spriteID: b4e81cd1815b8ce45a99b44347b43425
     spriteBone: []
     spriteOutline: []
@@ -3328,18 +3338,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 51}
+    uvTransform: {x: 302, y: 326}
   - name: Annie_Frame_133
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.56, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 98
+      x: 302
+      y: 372
       width: 25
-      height: 39
+      height: 38
     spriteID: 8ba561903ff93b54e9062e8670b707be
     spriteBone: []
     spriteOutline: []
@@ -3348,18 +3358,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 98}
+    uvTransform: {x: 302, y: 372}
   - name: Annie_Frame_134
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.56, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 145
+      x: 302
+      y: 418
       width: 25
-      height: 39
+      height: 38
     spriteID: 97b27cf7dbab5504688fc7d8bd256416
     spriteBone: []
     spriteOutline: []
@@ -3368,18 +3378,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 145}
+    uvTransform: {x: 302, y: 418}
   - name: Annie_Frame_135
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.56, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 192
+      x: 302
+      y: 464
       width: 25
-      height: 39
+      height: 38
     spriteID: b7e4c0baff44e9a4eb4ff0152d619983
     spriteBone: []
     spriteOutline: []
@@ -3388,18 +3398,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 192}
+    uvTransform: {x: 302, y: 464}
   - name: Annie_Frame_136
     originalName: 
-    pivot: {x: 0.48, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 239
+      x: 302
+      y: 510
       width: 25
-      height: 39
+      height: 38
     spriteID: fe195935deb79734882bcb55625da247
     spriteBone: []
     spriteOutline: []
@@ -3408,7 +3418,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 239}
+    uvTransform: {x: 302, y: 510}
   - name: Annie_Frame_137
     originalName: 
     pivot: {x: 0.48, y: 0.53846157}
@@ -3416,8 +3426,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 286
+      x: 135
+      y: 474
       width: 25
       height: 39
     spriteID: ad29513bc0b9b034ea8f1b462fc41671
@@ -3428,7 +3438,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 286}
+    uvTransform: {x: 135, y: 474}
   - name: Annie_Frame_138
     originalName: 
     pivot: {x: 0.48, y: 0.53846157}
@@ -3436,8 +3446,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 333
+      x: 135
+      y: 521
       width: 25
       height: 39
     spriteID: 4d12eaef9e408324b807f1ca7f15deac
@@ -3448,18 +3458,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 333}
+    uvTransform: {x: 135, y: 521}
   - name: Annie_Frame_139
     originalName: 
-    pivot: {x: 0.44, y: 0.55263156}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 786
+      x: 135
+      y: 568
       width: 25
-      height: 38
+      height: 39
     spriteID: a248d1299a56524448ad7df9c06475a2
     spriteBone: []
     spriteOutline: []
@@ -3468,18 +3478,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 786}
+    uvTransform: {x: 135, y: 568}
   - name: Annie_Frame_140
     originalName: 
-    pivot: {x: 0.44, y: 0.55263156}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 832
+      x: 135
+      y: 615
       width: 25
-      height: 38
+      height: 39
     spriteID: 748c286797621974fb34a48673e5cf06
     spriteBone: []
     spriteOutline: []
@@ -3488,16 +3498,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 832}
+    uvTransform: {x: 135, y: 615}
   - name: Annie_Frame_141
     originalName: 
-    pivot: {x: 0.44, y: 0.55263156}
+    pivot: {x: 0.48, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 878
+      x: 302
+      y: 556
       width: 25
       height: 38
     spriteID: c6e808fb3b9c2d044839678f8976497e
@@ -3508,16 +3518,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 878}
+    uvTransform: {x: 302, y: 556}
   - name: Annie_Frame_142
     originalName: 
-    pivot: {x: 0.44, y: 0.55263156}
+    pivot: {x: 0.48, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 924
+      x: 302
+      y: 602
       width: 25
       height: 38
     spriteID: 351b9946470584a498469610a851b113
@@ -3528,18 +3538,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 924}
+    uvTransform: {x: 302, y: 602}
   - name: Annie_Frame_143
     originalName: 
-    pivot: {x: 0.48, y: 0.55263156}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 238
-      y: 970
+      x: 135
+      y: 662
       width: 25
-      height: 38
+      height: 39
     spriteID: 0b7b0dde56e6be54eada10cad1109392
     spriteBone: []
     spriteOutline: []
@@ -3548,16 +3558,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 238, y: 970}
+    uvTransform: {x: 135, y: 662}
   - name: Annie_Frame_145
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 380
+      x: 135
+      y: 709
       width: 25
       height: 39
     spriteID: e92a4c1c63517fe42a7221e8d514cc22
@@ -3568,16 +3578,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 380}
+    uvTransform: {x: 135, y: 709}
   - name: Annie_Frame_146
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 427
+      x: 135
+      y: 756
       width: 25
       height: 39
     spriteID: 96bfc4ed76ad4e140bd2b7678464f386
@@ -3588,16 +3598,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 427}
+    uvTransform: {x: 135, y: 756}
   - name: Annie_Frame_147
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 474
+      x: 135
+      y: 803
       width: 25
       height: 39
     spriteID: f27ac1dfd014b0e48ba5094d4d1ad73f
@@ -3608,16 +3618,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 474}
+    uvTransform: {x: 135, y: 803}
   - name: Annie_Frame_148
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 521
+      x: 135
+      y: 850
       width: 25
       height: 39
     spriteID: d3473f7e6361adc47808650ff3110087
@@ -3628,18 +3638,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 521}
+    uvTransform: {x: 135, y: 850}
   - name: Annie_Frame_149
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 271
-      y: 4
+      x: 135
+      y: 897
       width: 25
-      height: 38
+      height: 39
     spriteID: dcc2a9d2b6064fa4a86d79000d3a1308
     spriteBone: []
     spriteOutline: []
@@ -3648,18 +3658,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 271, y: 4}
+    uvTransform: {x: 135, y: 897}
   - name: Annie_Frame_150
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 271
-      y: 50
+      x: 135
+      y: 944
       width: 25
-      height: 38
+      height: 39
     spriteID: 98de86fed2b3a7540a1111de92b3c756
     spriteBone: []
     spriteOutline: []
@@ -3668,16 +3678,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 271, y: 50}
+    uvTransform: {x: 135, y: 944}
   - name: Annie_Frame_151
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 568
+      x: 168
+      y: 4
       width: 25
       height: 39
     spriteID: a2eb1908376455046a696df6e1dc941d
@@ -3688,16 +3698,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 568}
+    uvTransform: {x: 168, y: 4}
   - name: Annie_Frame_152
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 615
+      x: 168
+      y: 51
       width: 25
       height: 39
     spriteID: b803b00160672c6429db6d2028e467f0
@@ -3708,16 +3718,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 615}
+    uvTransform: {x: 168, y: 51}
   - name: Annie_Frame_153
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 662
+      x: 168
+      y: 98
       width: 25
       height: 39
     spriteID: a815cbcb21b7ab441adaee8922f34b99
@@ -3728,16 +3738,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 662}
+    uvTransform: {x: 168, y: 98}
   - name: Annie_Frame_154
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 709
+      x: 168
+      y: 145
       width: 25
       height: 39
     spriteID: f913eaec4318d074fa0218d8b330b18f
@@ -3748,16 +3758,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 709}
+    uvTransform: {x: 168, y: 145}
   - name: Annie_Frame_155
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 756
+      x: 168
+      y: 192
       width: 25
       height: 39
     spriteID: 92084abeb06076a4ab5a659f90bd8f9d
@@ -3768,18 +3778,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 756}
+    uvTransform: {x: 168, y: 192}
   - name: Annie_Frame_156
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.44, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 803
+      x: 302
+      y: 648
       width: 25
-      height: 39
+      height: 38
     spriteID: 3c0ffb02d6e83ab4f935475253c7ded0
     spriteBone: []
     spriteOutline: []
@@ -3788,18 +3798,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 803}
+    uvTransform: {x: 302, y: 648}
   - name: Annie_Frame_157
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.44, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 850
+      x: 302
+      y: 694
       width: 25
-      height: 39
+      height: 38
     spriteID: 401c906b25712c9419e236188618cc72
     spriteBone: []
     spriteOutline: []
@@ -3808,18 +3818,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 850}
+    uvTransform: {x: 302, y: 694}
   - name: Annie_Frame_158
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.44, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 897
+      x: 302
+      y: 740
       width: 25
-      height: 39
+      height: 38
     spriteID: 0a2f87b0379c08242ac2eb5c9feca74f
     spriteBone: []
     spriteOutline: []
@@ -3828,18 +3838,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 897}
+    uvTransform: {x: 302, y: 740}
   - name: Annie_Frame_159
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.44, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 944
+      x: 302
+      y: 786
       width: 25
-      height: 39
+      height: 38
     spriteID: dbdebf60b6f98484090b9d7907909606
     spriteBone: []
     spriteOutline: []
@@ -3848,18 +3858,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 104, y: 944}
+    uvTransform: {x: 302, y: 786}
   - name: Annie_Frame_160
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.48, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 4
+      x: 302
+      y: 832
       width: 25
-      height: 39
+      height: 38
     spriteID: d95778274d6478143bddf96ffc997104
     spriteBone: []
     spriteOutline: []
@@ -3868,7 +3878,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 4}
+    uvTransform: {x: 302, y: 832}
   - name: Annie_Frame_161
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -3876,8 +3886,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 51
+      x: 168
+      y: 239
       width: 25
       height: 39
     spriteID: ccca00444ee203540af8d08be794588c
@@ -3888,7 +3898,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 51}
+    uvTransform: {x: 168, y: 239}
   - name: Annie_Frame_162
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -3896,8 +3906,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 98
+      x: 168
+      y: 286
       width: 25
       height: 39
     spriteID: 40c45a22a65ce3b4e97a872f0673d105
@@ -3908,7 +3918,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 98}
+    uvTransform: {x: 168, y: 286}
   - name: Annie_Frame_163
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -3916,8 +3926,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 145
+      x: 168
+      y: 333
       width: 25
       height: 39
     spriteID: 48e0d92820e43ee4b93bc5dfe2016cc6
@@ -3928,7 +3938,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 145}
+    uvTransform: {x: 168, y: 333}
   - name: Annie_Frame_164
     originalName: 
     pivot: {x: 0.52, y: 0.53846157}
@@ -3936,8 +3946,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 192
+      x: 168
+      y: 380
       width: 25
       height: 39
     spriteID: 479a4bca83200ff4783ded84aa7990a0
@@ -3948,18 +3958,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 192}
+    uvTransform: {x: 168, y: 380}
   - name: Annie_Frame_165
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 239
+      x: 302
+      y: 878
       width: 25
-      height: 39
+      height: 38
     spriteID: c47a2943b2aed974d979c9d48ec5a049
     spriteBone: []
     spriteOutline: []
@@ -3968,18 +3978,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 239}
+    uvTransform: {x: 302, y: 878}
   - name: Annie_Frame_166
     originalName: 
-    pivot: {x: 0.52, y: 0.53846157}
+    pivot: {x: 0.52, y: 0.55263156}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 137
-      y: 286
+      x: 302
+      y: 924
       width: 25
-      height: 39
+      height: 38
     spriteID: 5b72699124ebea24ba0ade582a8c130e
     spriteBone: []
     spriteOutline: []
@@ -3988,18 +3998,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 137, y: 286}
+    uvTransform: {x: 302, y: 924}
   - name: Annie_Frame_167
     originalName: 
-    pivot: {x: 0.52, y: 0.55263156}
+    pivot: {x: 0.52, y: 0.53846157}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 271
-      y: 96
+      x: 168
+      y: 427
       width: 25
-      height: 38
+      height: 39
     spriteID: 29a38bbd2105c61409a340e7c1a541f0
     spriteBone: []
     spriteOutline: []
@@ -4008,7 +4018,327 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 271, y: 96}
+    uvTransform: {x: 168, y: 427}
+  - name: Annie_Frame_152
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 474
+      width: 25
+      height: 39
+    spriteID: 27059021414fdcb498e44d1a4f05a416
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 474}
+  - name: Annie_Frame_153
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 521
+      width: 25
+      height: 39
+    spriteID: 5f2791f5de9022145b5b1db16efc4dbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 521}
+  - name: Annie_Frame_154
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 568
+      width: 25
+      height: 39
+    spriteID: 69b3ac9805ec6a44db29afa19367393c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 568}
+  - name: Annie_Frame_155
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 615
+      width: 25
+      height: 39
+    spriteID: d9adbde85db5f3a44aefeb1083fd6a09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 615}
+  - name: Annie_Frame_156
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 662
+      width: 25
+      height: 39
+    spriteID: eec45b2387540654eb72cbcaffb991c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 662}
+  - name: Annie_Frame_157
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 709
+      width: 25
+      height: 39
+    spriteID: 00b6b847d6a920a499cab172120ba743
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 709}
+  - name: Annie_Frame_158
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 756
+      width: 25
+      height: 39
+    spriteID: 92ecc48637decd243ab90a49a6db8e08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 756}
+  - name: Annie_Frame_159
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 803
+      width: 25
+      height: 39
+    spriteID: 1c54b7b63a4c11a43b2e59dcb0312a71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 803}
+  - name: Annie_Frame_160
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 850
+      width: 25
+      height: 39
+    spriteID: 1d04abbbb642e6047b177b57e8640ab2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 850}
+  - name: Annie_Frame_161
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 897
+      width: 25
+      height: 39
+    spriteID: 1c5408d73e903bf438c6f910abfbe72f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 897}
+  - name: Annie_Frame_162
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 944
+      width: 25
+      height: 39
+    spriteID: 54c05f1b28864444fae9edf83891ad8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 944}
+  - name: Annie_Frame_163
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 201
+      y: 4
+      width: 25
+      height: 39
+    spriteID: 118e6931d18a9874da961a6739e1d684
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 201, y: 4}
+  - name: Annie_Frame_164
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 201
+      y: 51
+      width: 25
+      height: 39
+    spriteID: 60cf41b2089985b46ab19706329f9d00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 201, y: 51}
+  - name: Annie_Frame_165
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 201
+      y: 98
+      width: 25
+      height: 39
+    spriteID: 93b7abbc92c406f439b7a7867a8db545
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 201, y: 98}
+  - name: Annie_Frame_166
+    originalName: 
+    pivot: {x: 0.52, y: 0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 201
+      y: 145
+      width: 25
+      height: 39
+    spriteID: 9ed509bbdbe02d84e9e8768add937c68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 201, y: 145}
+  - name: Annie_Frame_167
+    originalName: 
+    pivot: {x: 0.52, y: 0.55263156}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 302
+      y: 970
+      width: 25
+      height: 38
+    spriteID: 39e6dc41ad26cba47b2fa06b055e3b9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 970}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -4714,6 +5044,134 @@ ScriptedImporter:
         width: 26
         height: 36
       spriteId: 1bf867549711fe840ab0b5e3bfda4721
+    - name: Annie_Frame_192
+      frameIndex: 192
+      cellRect:
+        x: 18
+        y: 11
+        width: 26
+        height: 39
+      spriteId: e5eeabe75f45f80439046e36af294c5c
+    - name: Annie_Frame_193
+      frameIndex: 193
+      cellRect:
+        x: 18
+        y: 11
+        width: 26
+        height: 40
+      spriteId: 156e0a88fa4caf446a5d080b4aeaae09
+    - name: Annie_Frame_194
+      frameIndex: 194
+      cellRect:
+        x: 18
+        y: 12
+        width: 26
+        height: 40
+      spriteId: 741870d1f7bbc05429abf664ff687702
+    - name: Annie_Frame_195
+      frameIndex: 195
+      cellRect:
+        x: 18
+        y: 12
+        width: 26
+        height: 41
+      spriteId: 6f907f6d35a959b43a6a7df97d220cd5
+    - name: Annie_Frame_196
+      frameIndex: 196
+      cellRect:
+        x: 18
+        y: 13
+        width: 26
+        height: 41
+      spriteId: 044cb8d8b2b48f3489c2a24e2abbf670
+    - name: Annie_Frame_197
+      frameIndex: 197
+      cellRect:
+        x: 18
+        y: 13
+        width: 26
+        height: 41
+      spriteId: 68a6ba92609b8184bbbafc9a6878ca20
+    - name: Annie_Frame_198
+      frameIndex: 198
+      cellRect:
+        x: 18
+        y: 14
+        width: 26
+        height: 41
+      spriteId: 4ba3d577e626369429ffc54b0cbc8649
+    - name: Annie_Frame_199
+      frameIndex: 199
+      cellRect:
+        x: 18
+        y: 13
+        width: 26
+        height: 41
+      spriteId: 2677f494fbc9926439f28586ec47d6f2
+    - name: Annie_Frame_200
+      frameIndex: 200
+      cellRect:
+        x: 18
+        y: 14
+        width: 26
+        height: 41
+      spriteId: 4af74534a81a9bf4d9046999adb7df96
+    - name: Annie_Frame_201
+      frameIndex: 201
+      cellRect:
+        x: 18
+        y: 13
+        width: 26
+        height: 41
+      spriteId: 2a6a445bb5db5c74088b4e93361a3cde
+    - name: Annie_Frame_202
+      frameIndex: 202
+      cellRect:
+        x: 18
+        y: 14
+        width: 26
+        height: 41
+      spriteId: 2c118946f20474a47aa4d78d5cad5a35
+    - name: Annie_Frame_203
+      frameIndex: 203
+      cellRect:
+        x: 17
+        y: 12
+        width: 28
+        height: 43
+      spriteId: f724965075f304749a04b096ffa89175
+    - name: Annie_Frame_204
+      frameIndex: 204
+      cellRect:
+        x: 15
+        y: 10
+        width: 32
+        height: 47
+      spriteId: 7df88d064bfc4ab4ebeaf38d8130c880
+    - name: Annie_Frame_205
+      frameIndex: 205
+      cellRect:
+        x: 12
+        y: 7
+        width: 38
+        height: 53
+      spriteId: 7abb2c68dcf4d9b4e81081310c6e0282
+    - name: Annie_Frame_206
+      frameIndex: 206
+      cellRect:
+        x: 9
+        y: 4
+        width: 44
+        height: 59
+      spriteId: ddd2ef6f7b7c625418e2e781d3c80662
+    - name: Annie_Frame_207
+      frameIndex: 207
+      cellRect:
+        x: 3
+        y: 0
+        width: 56
+        height: 64
+      spriteId: d01deebf6e477bd409ce7fdd8b2d7406
     - name: Annie_Frame_54
       frameIndex: 54
       cellRect:
@@ -4721,7 +5179,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: e5eeabe75f45f80439046e36af294c5c
+      spriteId: 530b74f9b7d64c840ace0f36fe70a61d
     - name: Annie_Frame_55
       frameIndex: 55
       cellRect:
@@ -4729,7 +5187,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 156e0a88fa4caf446a5d080b4aeaae09
+      spriteId: 1cd1ea5b4d0c014488b225e78cf66d83
     - name: Annie_Frame_56
       frameIndex: 56
       cellRect:
@@ -4737,7 +5195,7 @@ ScriptedImporter:
         y: 12
         width: 25
         height: 38
-      spriteId: 741870d1f7bbc05429abf664ff687702
+      spriteId: 4bc6d2fcd4dc7fb4399636cc750624bb
     - name: Annie_Frame_57
       frameIndex: 57
       cellRect:
@@ -4745,7 +5203,7 @@ ScriptedImporter:
         y: 13
         width: 25
         height: 37
-      spriteId: 6f907f6d35a959b43a6a7df97d220cd5
+      spriteId: 6a32e10ed91808e42b404e6b230b6b5a
     - name: Annie_Frame_58
       frameIndex: 58
       cellRect:
@@ -4753,7 +5211,7 @@ ScriptedImporter:
         y: 12
         width: 25
         height: 38
-      spriteId: 044cb8d8b2b48f3489c2a24e2abbf670
+      spriteId: ec28ab7f1e735b349b13f91856fa8e37
     - name: Annie_Frame_59
       frameIndex: 59
       cellRect:
@@ -4761,7 +5219,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 68a6ba92609b8184bbbafc9a6878ca20
+      spriteId: 48b757795330a9247bd60d87dc3a496f
     - name: Annie_Frame_60
       frameIndex: 60
       cellRect:
@@ -4769,7 +5227,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 4ba3d577e626369429ffc54b0cbc8649
+      spriteId: 8966ab3bace68ff46ba106a2dcbcded0
     - name: Annie_Frame_61
       frameIndex: 61
       cellRect:
@@ -4777,7 +5235,7 @@ ScriptedImporter:
         y: 12
         width: 25
         height: 38
-      spriteId: 2677f494fbc9926439f28586ec47d6f2
+      spriteId: 4e0dd445242663244a8fb68c1c2d1b14
     - name: Annie_Frame_62
       frameIndex: 62
       cellRect:
@@ -4785,7 +5243,7 @@ ScriptedImporter:
         y: 13
         width: 25
         height: 37
-      spriteId: 4af74534a81a9bf4d9046999adb7df96
+      spriteId: 1beee934e3649a94cb660a5587f1b5cb
     - name: Annie_Frame_63
       frameIndex: 63
       cellRect:
@@ -4793,7 +5251,7 @@ ScriptedImporter:
         y: 12
         width: 25
         height: 38
-      spriteId: 2a6a445bb5db5c74088b4e93361a3cde
+      spriteId: 6091ba08cbbdc864ca8cb54f348deb80
     - name: Annie_Frame_64
       frameIndex: 64
       cellRect:
@@ -4801,7 +5259,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 2c118946f20474a47aa4d78d5cad5a35
+      spriteId: a01a0068cc9b22b42b23e681a667adbd
     - name: Annie_Frame_65
       frameIndex: 65
       cellRect:
@@ -4809,7 +5267,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: f724965075f304749a04b096ffa89175
+      spriteId: b6b6d7713ef5bc047a0f3c88984b78ef
     - name: Annie_Frame_66
       frameIndex: 66
       cellRect:
@@ -4817,7 +5275,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 7df88d064bfc4ab4ebeaf38d8130c880
+      spriteId: 1d6c1d90a73a67a4eb08ff7d12a084ca
     - name: Annie_Frame_67
       frameIndex: 67
       cellRect:
@@ -4825,7 +5283,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 7abb2c68dcf4d9b4e81081310c6e0282
+      spriteId: 7ea83fee329681c4898587985ca3c8d0
     - name: Annie_Frame_68
       frameIndex: 68
       cellRect:
@@ -4833,7 +5291,7 @@ ScriptedImporter:
         y: 12
         width: 25
         height: 38
-      spriteId: ddd2ef6f7b7c625418e2e781d3c80662
+      spriteId: c0d1e66f629fc8241beb6fb4fd1ba702
     - name: Annie_Frame_69
       frameIndex: 69
       cellRect:
@@ -4841,7 +5299,7 @@ ScriptedImporter:
         y: 13
         width: 25
         height: 37
-      spriteId: d01deebf6e477bd409ce7fdd8b2d7406
+      spriteId: 9b162c68b0091f646bfae40e9ee71b57
     - name: Annie_Frame_70
       frameIndex: 70
       cellRect:
@@ -4849,7 +5307,7 @@ ScriptedImporter:
         y: 12
         width: 25
         height: 38
-      spriteId: 530b74f9b7d64c840ace0f36fe70a61d
+      spriteId: 899fb08262a0e9a43bb26340223c710c
     - name: Annie_Frame_71
       frameIndex: 71
       cellRect:
@@ -4857,7 +5315,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 1cd1ea5b4d0c014488b225e78cf66d83
+      spriteId: c31a50009abcf79429a1f163427e5222
     - name: Annie_Frame_78
       frameIndex: 78
       cellRect:
@@ -4865,7 +5323,7 @@ ScriptedImporter:
         y: 11
         width: 26
         height: 38
-      spriteId: 4bc6d2fcd4dc7fb4399636cc750624bb
+      spriteId: 8727fb9e4d456ec4ca3e36176f76ad64
     - name: Annie_Frame_79
       frameIndex: 79
       cellRect:
@@ -4873,7 +5331,7 @@ ScriptedImporter:
         y: 11
         width: 26
         height: 39
-      spriteId: 6a32e10ed91808e42b404e6b230b6b5a
+      spriteId: d2188b0568c50714e841c5a6c1a4e40a
     - name: Annie_Frame_80
       frameIndex: 80
       cellRect:
@@ -4881,7 +5339,7 @@ ScriptedImporter:
         y: 12
         width: 26
         height: 38
-      spriteId: ec28ab7f1e735b349b13f91856fa8e37
+      spriteId: 6c45d1b9bccd81b4cbbf976717377575
     - name: Annie_Frame_81
       frameIndex: 81
       cellRect:
@@ -4889,7 +5347,7 @@ ScriptedImporter:
         y: 13
         width: 26
         height: 37
-      spriteId: 48b757795330a9247bd60d87dc3a496f
+      spriteId: 855a2300354d11740a789c3302f76709
     - name: Annie_Frame_82
       frameIndex: 82
       cellRect:
@@ -4897,7 +5355,7 @@ ScriptedImporter:
         y: 12
         width: 26
         height: 38
-      spriteId: 8966ab3bace68ff46ba106a2dcbcded0
+      spriteId: ee681fcf48299794d92613f03c26ca4a
     - name: Annie_Frame_83
       frameIndex: 83
       cellRect:
@@ -4905,7 +5363,7 @@ ScriptedImporter:
         y: 11
         width: 26
         height: 38
-      spriteId: 4e0dd445242663244a8fb68c1c2d1b14
+      spriteId: 2565bbda7f5847344afdf26cdde11028
     - name: Annie_Frame_84
       frameIndex: 84
       cellRect:
@@ -4913,7 +5371,7 @@ ScriptedImporter:
         y: 11
         width: 26
         height: 38
-      spriteId: 1beee934e3649a94cb660a5587f1b5cb
+      spriteId: 9cb2f3be1c53f1c4b8bd741d332fda89
     - name: Annie_Frame_85
       frameIndex: 85
       cellRect:
@@ -4921,7 +5379,7 @@ ScriptedImporter:
         y: 12
         width: 26
         height: 38
-      spriteId: 6091ba08cbbdc864ca8cb54f348deb80
+      spriteId: d9759869420d23f4ba4a11adb803d6be
     - name: Annie_Frame_86
       frameIndex: 86
       cellRect:
@@ -4929,7 +5387,7 @@ ScriptedImporter:
         y: 13
         width: 26
         height: 37
-      spriteId: a01a0068cc9b22b42b23e681a667adbd
+      spriteId: 41a86f9343334c3409c8f80f61837976
     - name: Annie_Frame_87
       frameIndex: 87
       cellRect:
@@ -4937,7 +5395,7 @@ ScriptedImporter:
         y: 12
         width: 26
         height: 38
-      spriteId: b6b6d7713ef5bc047a0f3c88984b78ef
+      spriteId: d8284922cefed374a98b86b27c2c9f40
     - name: Annie_Frame_88
       frameIndex: 88
       cellRect:
@@ -4945,7 +5403,7 @@ ScriptedImporter:
         y: 11
         width: 26
         height: 39
-      spriteId: 1d6c1d90a73a67a4eb08ff7d12a084ca
+      spriteId: 8be6bd8e23d4f624098bf9e8ffd6baa1
     - name: Annie_Frame_89
       frameIndex: 89
       cellRect:
@@ -4953,7 +5411,7 @@ ScriptedImporter:
         y: 11
         width: 26
         height: 38
-      spriteId: 7ea83fee329681c4898587985ca3c8d0
+      spriteId: a353ebe955b2e724b84315f7b9855065
     - name: Annie_Frame_90
       frameIndex: 90
       cellRect:
@@ -4961,7 +5419,7 @@ ScriptedImporter:
         y: 11
         width: 26
         height: 38
-      spriteId: c0d1e66f629fc8241beb6fb4fd1ba702
+      spriteId: 25142dc199c1e19488978989f8b1d787
     - name: Annie_Frame_91
       frameIndex: 91
       cellRect:
@@ -4969,7 +5427,7 @@ ScriptedImporter:
         y: 11
         width: 26
         height: 39
-      spriteId: 9b162c68b0091f646bfae40e9ee71b57
+      spriteId: 0faf015839ee7cd4e82cde7cb46e29d4
     - name: Annie_Frame_92
       frameIndex: 92
       cellRect:
@@ -4977,7 +5435,7 @@ ScriptedImporter:
         y: 12
         width: 26
         height: 38
-      spriteId: 899fb08262a0e9a43bb26340223c710c
+      spriteId: 6fcec8c566f2c334ca1460a2ef0a8a8c
     - name: Annie_Frame_93
       frameIndex: 93
       cellRect:
@@ -4985,7 +5443,7 @@ ScriptedImporter:
         y: 13
         width: 26
         height: 37
-      spriteId: c31a50009abcf79429a1f163427e5222
+      spriteId: f4dfc428799193a4c8ca0348845c3fda
     - name: Annie_Frame_94
       frameIndex: 94
       cellRect:
@@ -4993,7 +5451,7 @@ ScriptedImporter:
         y: 12
         width: 26
         height: 38
-      spriteId: 8727fb9e4d456ec4ca3e36176f76ad64
+      spriteId: 7a58288d3adf76c4ab5a066122c31eee
     - name: Annie_Frame_95
       frameIndex: 95
       cellRect:
@@ -5001,7 +5459,7 @@ ScriptedImporter:
         y: 11
         width: 26
         height: 38
-      spriteId: d2188b0568c50714e841c5a6c1a4e40a
+      spriteId: 0d8d5df39e02ca44d89983440ad0d844
     - name: Annie_Frame_97
       frameIndex: 97
       cellRect:
@@ -5009,7 +5467,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 6c45d1b9bccd81b4cbbf976717377575
+      spriteId: a4a0b7f99398712459c2c8a03da16e57
     - name: Annie_Frame_98
       frameIndex: 98
       cellRect:
@@ -5017,7 +5475,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 855a2300354d11740a789c3302f76709
+      spriteId: 2e3920bf8bcc0d24198e7cf602d5089c
     - name: Annie_Frame_99
       frameIndex: 99
       cellRect:
@@ -5025,7 +5483,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: ee681fcf48299794d92613f03c26ca4a
+      spriteId: 1c957f3189b26414db6bae6ca4312e7b
     - name: Annie_Frame_100
       frameIndex: 100
       cellRect:
@@ -5033,7 +5491,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 2565bbda7f5847344afdf26cdde11028
+      spriteId: d4fca57338f67fd429273a205f09490c
     - name: Annie_Frame_101
       frameIndex: 101
       cellRect:
@@ -5041,7 +5499,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 9cb2f3be1c53f1c4b8bd741d332fda89
+      spriteId: 19a96a1fc581ed14bb96098b37427ec7
     - name: Annie_Frame_102
       frameIndex: 102
       cellRect:
@@ -5049,7 +5507,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: d9759869420d23f4ba4a11adb803d6be
+      spriteId: 0ffe03eace9419844b323fc5de52dd08
     - name: Annie_Frame_103
       frameIndex: 103
       cellRect:
@@ -5057,7 +5515,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 41a86f9343334c3409c8f80f61837976
+      spriteId: 3f28bd782c1b69243b910f23ca3a11c7
     - name: Annie_Frame_104
       frameIndex: 104
       cellRect:
@@ -5065,7 +5523,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: d8284922cefed374a98b86b27c2c9f40
+      spriteId: cf00242f9839f3142bf926732edb7248
     - name: Annie_Frame_105
       frameIndex: 105
       cellRect:
@@ -5073,7 +5531,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 8be6bd8e23d4f624098bf9e8ffd6baa1
+      spriteId: 16ef5aa5a9ba7ca448fc63e37e7d3d28
     - name: Annie_Frame_106
       frameIndex: 106
       cellRect:
@@ -5081,7 +5539,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: a353ebe955b2e724b84315f7b9855065
+      spriteId: 4895e9740f50ce342aa2bf33da848a7a
     - name: Annie_Frame_107
       frameIndex: 107
       cellRect:
@@ -5089,7 +5547,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 25142dc199c1e19488978989f8b1d787
+      spriteId: c3634111c68b7ed44a02ce300bec949d
     - name: Annie_Frame_108
       frameIndex: 108
       cellRect:
@@ -5097,7 +5555,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 0faf015839ee7cd4e82cde7cb46e29d4
+      spriteId: ad78bfbf63543b14f833978a92ed6024
     - name: Annie_Frame_109
       frameIndex: 109
       cellRect:
@@ -5105,7 +5563,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 6fcec8c566f2c334ca1460a2ef0a8a8c
+      spriteId: be7758593520c654a846f5aed6dfe6c1
     - name: Annie_Frame_110
       frameIndex: 110
       cellRect:
@@ -5113,7 +5571,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: f4dfc428799193a4c8ca0348845c3fda
+      spriteId: b45ba6d5928a36e4c87465a1c7857e4a
     - name: Annie_Frame_111
       frameIndex: 111
       cellRect:
@@ -5121,7 +5579,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 7a58288d3adf76c4ab5a066122c31eee
+      spriteId: c9560c5e2117b3943bc5efe651397b9f
     - name: Annie_Frame_112
       frameIndex: 112
       cellRect:
@@ -5129,7 +5587,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 0d8d5df39e02ca44d89983440ad0d844
+      spriteId: 3e564df653339a8458e46999c2a1215d
     - name: Annie_Frame_113
       frameIndex: 113
       cellRect:
@@ -5137,7 +5595,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: a4a0b7f99398712459c2c8a03da16e57
+      spriteId: 1497c2fc12bcf414da7df79c070b0394
     - name: Annie_Frame_114
       frameIndex: 114
       cellRect:
@@ -5145,7 +5603,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 2e3920bf8bcc0d24198e7cf602d5089c
+      spriteId: 62e8aadc63f536d4387084f6cad07fb3
     - name: Annie_Frame_115
       frameIndex: 115
       cellRect:
@@ -5153,7 +5611,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 1c957f3189b26414db6bae6ca4312e7b
+      spriteId: b4e81cd1815b8ce45a99b44347b43425
     - name: Annie_Frame_116
       frameIndex: 116
       cellRect:
@@ -5161,7 +5619,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: d4fca57338f67fd429273a205f09490c
+      spriteId: 8ba561903ff93b54e9062e8670b707be
     - name: Annie_Frame_117
       frameIndex: 117
       cellRect:
@@ -5169,7 +5627,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 19a96a1fc581ed14bb96098b37427ec7
+      spriteId: 97b27cf7dbab5504688fc7d8bd256416
     - name: Annie_Frame_118
       frameIndex: 118
       cellRect:
@@ -5177,7 +5635,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 0ffe03eace9419844b323fc5de52dd08
+      spriteId: b7e4c0baff44e9a4eb4ff0152d619983
     - name: Annie_Frame_119
       frameIndex: 119
       cellRect:
@@ -5185,7 +5643,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 3f28bd782c1b69243b910f23ca3a11c7
+      spriteId: fe195935deb79734882bcb55625da247
     - name: Annie_Frame_121
       frameIndex: 121
       cellRect:
@@ -5193,7 +5651,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: cf00242f9839f3142bf926732edb7248
+      spriteId: ad29513bc0b9b034ea8f1b462fc41671
     - name: Annie_Frame_122
       frameIndex: 122
       cellRect:
@@ -5201,7 +5659,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 16ef5aa5a9ba7ca448fc63e37e7d3d28
+      spriteId: 4d12eaef9e408324b807f1ca7f15deac
     - name: Annie_Frame_123
       frameIndex: 123
       cellRect:
@@ -5209,7 +5667,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 4895e9740f50ce342aa2bf33da848a7a
+      spriteId: a248d1299a56524448ad7df9c06475a2
     - name: Annie_Frame_124
       frameIndex: 124
       cellRect:
@@ -5217,7 +5675,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: c3634111c68b7ed44a02ce300bec949d
+      spriteId: 748c286797621974fb34a48673e5cf06
     - name: Annie_Frame_125
       frameIndex: 125
       cellRect:
@@ -5225,7 +5683,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: ad78bfbf63543b14f833978a92ed6024
+      spriteId: c6e808fb3b9c2d044839678f8976497e
     - name: Annie_Frame_126
       frameIndex: 126
       cellRect:
@@ -5233,7 +5691,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: be7758593520c654a846f5aed6dfe6c1
+      spriteId: 351b9946470584a498469610a851b113
     - name: Annie_Frame_127
       frameIndex: 127
       cellRect:
@@ -5241,7 +5699,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: b45ba6d5928a36e4c87465a1c7857e4a
+      spriteId: 0b7b0dde56e6be54eada10cad1109392
     - name: Annie_Frame_128
       frameIndex: 128
       cellRect:
@@ -5249,7 +5707,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: c9560c5e2117b3943bc5efe651397b9f
+      spriteId: e92a4c1c63517fe42a7221e8d514cc22
     - name: Annie_Frame_129
       frameIndex: 129
       cellRect:
@@ -5257,7 +5715,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 3e564df653339a8458e46999c2a1215d
+      spriteId: 96bfc4ed76ad4e140bd2b7678464f386
     - name: Annie_Frame_130
       frameIndex: 130
       cellRect:
@@ -5265,7 +5723,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 1497c2fc12bcf414da7df79c070b0394
+      spriteId: f27ac1dfd014b0e48ba5094d4d1ad73f
     - name: Annie_Frame_131
       frameIndex: 131
       cellRect:
@@ -5273,7 +5731,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 62e8aadc63f536d4387084f6cad07fb3
+      spriteId: d3473f7e6361adc47808650ff3110087
     - name: Annie_Frame_132
       frameIndex: 132
       cellRect:
@@ -5281,7 +5739,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: b4e81cd1815b8ce45a99b44347b43425
+      spriteId: dcc2a9d2b6064fa4a86d79000d3a1308
     - name: Annie_Frame_133
       frameIndex: 133
       cellRect:
@@ -5289,7 +5747,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 8ba561903ff93b54e9062e8670b707be
+      spriteId: 98de86fed2b3a7540a1111de92b3c756
     - name: Annie_Frame_134
       frameIndex: 134
       cellRect:
@@ -5297,7 +5755,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 97b27cf7dbab5504688fc7d8bd256416
+      spriteId: a2eb1908376455046a696df6e1dc941d
     - name: Annie_Frame_135
       frameIndex: 135
       cellRect:
@@ -5305,7 +5763,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: b7e4c0baff44e9a4eb4ff0152d619983
+      spriteId: b803b00160672c6429db6d2028e467f0
     - name: Annie_Frame_136
       frameIndex: 136
       cellRect:
@@ -5313,7 +5771,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: fe195935deb79734882bcb55625da247
+      spriteId: a815cbcb21b7ab441adaee8922f34b99
     - name: Annie_Frame_137
       frameIndex: 137
       cellRect:
@@ -5321,7 +5779,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: ad29513bc0b9b034ea8f1b462fc41671
+      spriteId: f913eaec4318d074fa0218d8b330b18f
     - name: Annie_Frame_138
       frameIndex: 138
       cellRect:
@@ -5329,7 +5787,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 4d12eaef9e408324b807f1ca7f15deac
+      spriteId: 92084abeb06076a4ab5a659f90bd8f9d
     - name: Annie_Frame_139
       frameIndex: 139
       cellRect:
@@ -5337,7 +5795,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: a248d1299a56524448ad7df9c06475a2
+      spriteId: 3c0ffb02d6e83ab4f935475253c7ded0
     - name: Annie_Frame_140
       frameIndex: 140
       cellRect:
@@ -5345,7 +5803,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 748c286797621974fb34a48673e5cf06
+      spriteId: 401c906b25712c9419e236188618cc72
     - name: Annie_Frame_141
       frameIndex: 141
       cellRect:
@@ -5353,7 +5811,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: c6e808fb3b9c2d044839678f8976497e
+      spriteId: 0a2f87b0379c08242ac2eb5c9feca74f
     - name: Annie_Frame_142
       frameIndex: 142
       cellRect:
@@ -5361,7 +5819,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 351b9946470584a498469610a851b113
+      spriteId: dbdebf60b6f98484090b9d7907909606
     - name: Annie_Frame_143
       frameIndex: 143
       cellRect:
@@ -5369,7 +5827,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 0b7b0dde56e6be54eada10cad1109392
+      spriteId: d95778274d6478143bddf96ffc997104
     - name: Annie_Frame_145
       frameIndex: 145
       cellRect:
@@ -5377,7 +5835,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: e92a4c1c63517fe42a7221e8d514cc22
+      spriteId: ccca00444ee203540af8d08be794588c
     - name: Annie_Frame_146
       frameIndex: 146
       cellRect:
@@ -5385,7 +5843,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 96bfc4ed76ad4e140bd2b7678464f386
+      spriteId: 40c45a22a65ce3b4e97a872f0673d105
     - name: Annie_Frame_147
       frameIndex: 147
       cellRect:
@@ -5393,7 +5851,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: f27ac1dfd014b0e48ba5094d4d1ad73f
+      spriteId: 48e0d92820e43ee4b93bc5dfe2016cc6
     - name: Annie_Frame_148
       frameIndex: 148
       cellRect:
@@ -5401,7 +5859,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: d3473f7e6361adc47808650ff3110087
+      spriteId: 479a4bca83200ff4783ded84aa7990a0
     - name: Annie_Frame_149
       frameIndex: 149
       cellRect:
@@ -5409,7 +5867,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: dcc2a9d2b6064fa4a86d79000d3a1308
+      spriteId: c47a2943b2aed974d979c9d48ec5a049
     - name: Annie_Frame_150
       frameIndex: 150
       cellRect:
@@ -5417,7 +5875,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 98de86fed2b3a7540a1111de92b3c756
+      spriteId: 5b72699124ebea24ba0ade582a8c130e
     - name: Annie_Frame_151
       frameIndex: 151
       cellRect:
@@ -5425,7 +5883,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: a2eb1908376455046a696df6e1dc941d
+      spriteId: 29a38bbd2105c61409a340e7c1a541f0
     - name: Annie_Frame_152
       frameIndex: 152
       cellRect:
@@ -5433,7 +5891,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: b803b00160672c6429db6d2028e467f0
+      spriteId: 27059021414fdcb498e44d1a4f05a416
     - name: Annie_Frame_153
       frameIndex: 153
       cellRect:
@@ -5441,7 +5899,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: a815cbcb21b7ab441adaee8922f34b99
+      spriteId: 5f2791f5de9022145b5b1db16efc4dbd
     - name: Annie_Frame_154
       frameIndex: 154
       cellRect:
@@ -5449,7 +5907,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: f913eaec4318d074fa0218d8b330b18f
+      spriteId: 69b3ac9805ec6a44db29afa19367393c
     - name: Annie_Frame_155
       frameIndex: 155
       cellRect:
@@ -5457,7 +5915,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 92084abeb06076a4ab5a659f90bd8f9d
+      spriteId: d9adbde85db5f3a44aefeb1083fd6a09
     - name: Annie_Frame_156
       frameIndex: 156
       cellRect:
@@ -5465,7 +5923,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 3c0ffb02d6e83ab4f935475253c7ded0
+      spriteId: eec45b2387540654eb72cbcaffb991c4
     - name: Annie_Frame_157
       frameIndex: 157
       cellRect:
@@ -5473,7 +5931,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 401c906b25712c9419e236188618cc72
+      spriteId: 00b6b847d6a920a499cab172120ba743
     - name: Annie_Frame_158
       frameIndex: 158
       cellRect:
@@ -5481,7 +5939,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 0a2f87b0379c08242ac2eb5c9feca74f
+      spriteId: 92ecc48637decd243ab90a49a6db8e08
     - name: Annie_Frame_159
       frameIndex: 159
       cellRect:
@@ -5489,7 +5947,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: dbdebf60b6f98484090b9d7907909606
+      spriteId: 1c54b7b63a4c11a43b2e59dcb0312a71
     - name: Annie_Frame_160
       frameIndex: 160
       cellRect:
@@ -5497,7 +5955,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: d95778274d6478143bddf96ffc997104
+      spriteId: 1d04abbbb642e6047b177b57e8640ab2
     - name: Annie_Frame_161
       frameIndex: 161
       cellRect:
@@ -5505,7 +5963,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: ccca00444ee203540af8d08be794588c
+      spriteId: 1c5408d73e903bf438c6f910abfbe72f
     - name: Annie_Frame_162
       frameIndex: 162
       cellRect:
@@ -5513,7 +5971,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 40c45a22a65ce3b4e97a872f0673d105
+      spriteId: 54c05f1b28864444fae9edf83891ad8d
     - name: Annie_Frame_163
       frameIndex: 163
       cellRect:
@@ -5521,7 +5979,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 48e0d92820e43ee4b93bc5dfe2016cc6
+      spriteId: 118e6931d18a9874da961a6739e1d684
     - name: Annie_Frame_164
       frameIndex: 164
       cellRect:
@@ -5529,7 +5987,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 479a4bca83200ff4783ded84aa7990a0
+      spriteId: 60cf41b2089985b46ab19706329f9d00
     - name: Annie_Frame_165
       frameIndex: 165
       cellRect:
@@ -5537,7 +5995,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: c47a2943b2aed974d979c9d48ec5a049
+      spriteId: 93b7abbc92c406f439b7a7867a8db545
     - name: Annie_Frame_166
       frameIndex: 166
       cellRect:
@@ -5545,7 +6003,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 39
-      spriteId: 5b72699124ebea24ba0ade582a8c130e
+      spriteId: 9ed509bbdbe02d84e9e8768add937c68
     - name: Annie_Frame_167
       frameIndex: 167
       cellRect:
@@ -5553,7 +6011,7 @@ ScriptedImporter:
         y: 11
         width: 25
         height: 38
-      spriteId: 29a38bbd2105c61409a340e7c1a541f0
+      spriteId: 39e6dc41ad26cba47b2fa06b055e3b9a
     linkedCells: []
     parentIndex: -1
   platformSettings:
