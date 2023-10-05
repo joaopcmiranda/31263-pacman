@@ -56,6 +56,11 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
+      name: Recovering State
+    second: {fileID: 7400000, guid: 65df7e18e0f7e334ba57f6c51621b908, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
       name: Red Down
     second: {fileID: 7400000, guid: bf418bc902330b640873674792fa8f34, type: 2}
   - first:
@@ -165,7 +170,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638321597070334763
+  platformSettingsDirtyTick: 638321840820215324
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -371,147 +376,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 40}
   - name: UFO_Frame_80
     originalName: 
-    pivot: {x: 0.53333336, y: -1.1}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 364
-      width: 30
-      height: 20
-    spriteID: 5abd6234287693d48933d513954c5e3a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 364}
-  - name: UFO_Frame_81
-    originalName: 
-    pivot: {x: 0.53333336, y: -1.15}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 42
-      y: 364
-      width: 30
-      height: 20
-    spriteID: e9c65e85d54e079468854ec0f1939c3b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 42, y: 364}
-  - name: UFO_Frame_82
-    originalName: 
-    pivot: {x: 0.5, y: -1.2}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 80
-      y: 364
-      width: 30
-      height: 20
-    spriteID: 7824739090f1d84478cef62f81a70d7e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 80, y: 364}
-  - name: UFO_Frame_83
-    originalName: 
-    pivot: {x: 0.4666667, y: -1.15}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 118
-      y: 364
-      width: 30
-      height: 20
-    spriteID: d448eeb9a50efea44b341ac9e3e2da82
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 118, y: 364}
-  - name: UFO_Frame_84
-    originalName: 
-    pivot: {x: 0.4666667, y: -1.1}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 156
-      y: 364
-      width: 30
-      height: 20
-    spriteID: f1a8be25cb9ac8743bae9c27b40b9cae
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 156, y: 364}
-  - name: UFO_Frame_85
-    originalName: 
-    pivot: {x: 0.4666667, y: -1.0500001}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 194
-      y: 364
-      width: 30
-      height: 20
-    spriteID: 4805955066551b74b871d30422f3d06f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 194, y: 364}
-  - name: UFO_Frame_86
-    originalName: 
-    pivot: {x: 0.5, y: -1}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 232
-      y: 364
-      width: 30
-      height: 20
-    spriteID: 76f2e90836ffbd348be311f665c01ba4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 232, y: 364}
-  - name: UFO_Frame_7
-    originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -520,7 +385,7 @@ ScriptedImporter:
       y: 40
       width: 55
       height: 28
-    spriteID: d3743e6d5c2882b45876153dc273dcd2
+    spriteID: 5abd6234287693d48933d513954c5e3a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -529,7 +394,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 67, y: 40}
-  - name: UFO_Frame_8
+  - name: UFO_Frame_81
     originalName: 
     pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
@@ -540,7 +405,7 @@ ScriptedImporter:
       y: 40
       width: 55
       height: 28
-    spriteID: 829ebeb0f0a43054fb90768e35439c5b
+    spriteID: e9c65e85d54e079468854ec0f1939c3b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -549,9 +414,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 130, y: 40}
-  - name: UFO_Frame_9
+  - name: UFO_Frame_82
     originalName: 
-    pivot: {x: 0.49090907, y: -0.7857143}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -560,7 +425,7 @@ ScriptedImporter:
       y: 40
       width: 55
       height: 28
-    spriteID: b6a16a63fe75fa74db75a11b21505648
+    spriteID: 7824739090f1d84478cef62f81a70d7e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -569,9 +434,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 193, y: 40}
-  - name: UFO_Frame_11
+  - name: UFO_Frame_83
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -580,7 +445,7 @@ ScriptedImporter:
       y: 40
       width: 55
       height: 28
-    spriteID: fe0c5a507e4e4a148a8ee0aab0ba0b04
+    spriteID: d448eeb9a50efea44b341ac9e3e2da82
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -589,9 +454,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 256, y: 40}
-  - name: UFO_Frame_12
+  - name: UFO_Frame_84
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -600,7 +465,7 @@ ScriptedImporter:
       y: 40
       width: 55
       height: 28
-    spriteID: e9af5a09a71365747a649452966ae629
+    spriteID: f1a8be25cb9ac8743bae9c27b40b9cae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -609,9 +474,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 319, y: 40}
-  - name: UFO_Frame_14
+  - name: UFO_Frame_85
     originalName: 
-    pivot: {x: 0.49090907, y: -0.67857146}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -620,7 +485,7 @@ ScriptedImporter:
       y: 40
       width: 55
       height: 28
-    spriteID: d09d4428872b32545a52a4f3ad8987ba
+    spriteID: 4805955066551b74b871d30422f3d06f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -629,9 +494,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 382, y: 40}
-  - name: UFO_Frame_15
+  - name: UFO_Frame_86
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -640,7 +505,7 @@ ScriptedImporter:
       y: 40
       width: 55
       height: 28
-    spriteID: 31b37eb9a9744ad4395e17f64459f8c0
+    spriteID: 76f2e90836ffbd348be311f665c01ba4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -649,9 +514,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 445, y: 40}
-  - name: UFO_Frame_16
+  - name: UFO_Frame_7
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -660,7 +525,7 @@ ScriptedImporter:
       y: 76
       width: 55
       height: 28
-    spriteID: 65c95ef79ab96424192d90dde830cf67
+    spriteID: d3743e6d5c2882b45876153dc273dcd2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -669,9 +534,149 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 76}
+  - name: UFO_Frame_8
+    originalName: 
+    pivot: {x: 0.53333336, y: -1.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 436
+      width: 30
+      height: 20
+    spriteID: 829ebeb0f0a43054fb90768e35439c5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 256, y: 436}
+  - name: UFO_Frame_9
+    originalName: 
+    pivot: {x: 0.53333336, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 294
+      y: 436
+      width: 30
+      height: 20
+    spriteID: b6a16a63fe75fa74db75a11b21505648
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 294, y: 436}
+  - name: UFO_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -1.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 436
+      width: 30
+      height: 20
+    spriteID: fe0c5a507e4e4a148a8ee0aab0ba0b04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 436}
+  - name: UFO_Frame_12
+    originalName: 
+    pivot: {x: 0.4666667, y: -1.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 370
+      y: 436
+      width: 30
+      height: 20
+    spriteID: e9af5a09a71365747a649452966ae629
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 370, y: 436}
+  - name: UFO_Frame_14
+    originalName: 
+    pivot: {x: 0.4666667, y: -1.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 408
+      y: 436
+      width: 30
+      height: 20
+    spriteID: d09d4428872b32545a52a4f3ad8987ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 408, y: 436}
+  - name: UFO_Frame_15
+    originalName: 
+    pivot: {x: 0.4666667, y: -1.0500001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 446
+      y: 436
+      width: 30
+      height: 20
+    spriteID: 31b37eb9a9744ad4395e17f64459f8c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 446, y: 436}
+  - name: UFO_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 472
+      width: 30
+      height: 20
+    spriteID: 65c95ef79ab96424192d90dde830cf67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 472}
   - name: UFO_Frame_17
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -691,7 +696,7 @@ ScriptedImporter:
     uvTransform: {x: 67, y: 76}
   - name: UFO_Frame_18
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -711,7 +716,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 76}
   - name: UFO_Frame_19
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.7857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -731,7 +736,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 76}
   - name: UFO_Frame_20
     originalName: 
-    pivot: {x: 0.49090907, y: -0.7857143}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -751,7 +756,7 @@ ScriptedImporter:
     uvTransform: {x: 256, y: 76}
   - name: UFO_Frame_21
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -771,7 +776,7 @@ ScriptedImporter:
     uvTransform: {x: 319, y: 76}
   - name: UFO_Frame_22
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.67857146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -811,7 +816,7 @@ ScriptedImporter:
     uvTransform: {x: 445, y: 76}
   - name: UFO_Frame_24
     originalName: 
-    pivot: {x: 0.49090907, y: -0.7857143}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -831,7 +836,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 112}
   - name: UFO_Frame_25
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -851,7 +856,7 @@ ScriptedImporter:
     uvTransform: {x: 67, y: 112}
   - name: UFO_Frame_26
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -871,7 +876,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 112}
   - name: UFO_Frame_27
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -891,7 +896,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 112}
   - name: UFO_Frame_28
     originalName: 
-    pivot: {x: 0.49090907, y: -0.67857146}
+    pivot: {x: 0.49090907, y: -0.7857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -911,7 +916,7 @@ ScriptedImporter:
     uvTransform: {x: 256, y: 112}
   - name: UFO_Frame_29
     originalName: 
-    pivot: {x: 0.49090907, y: -0.67857146}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -971,7 +976,7 @@ ScriptedImporter:
     uvTransform: {x: 445, y: 112}
   - name: UFO_Frame_32
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.7857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -991,7 +996,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 148}
   - name: UFO_Frame_33
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1011,7 +1016,7 @@ ScriptedImporter:
     uvTransform: {x: 67, y: 148}
   - name: UFO_Frame_34
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1031,7 +1036,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 148}
   - name: UFO_Frame_35
     originalName: 
-    pivot: {x: 0.49090907, y: -0.7857143}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1051,7 +1056,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 148}
   - name: UFO_Frame_36
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.67857146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1071,7 +1076,7 @@ ScriptedImporter:
     uvTransform: {x: 256, y: 148}
   - name: UFO_Frame_37
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.67857146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1111,7 +1116,7 @@ ScriptedImporter:
     uvTransform: {x: 382, y: 148}
   - name: UFO_Frame_39
     originalName: 
-    pivot: {x: 0.49090907, y: -0.7857143}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1131,7 +1136,7 @@ ScriptedImporter:
     uvTransform: {x: 445, y: 148}
   - name: UFO_Frame_40
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1151,7 +1156,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 184}
   - name: UFO_Frame_41
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1171,7 +1176,7 @@ ScriptedImporter:
     uvTransform: {x: 67, y: 184}
   - name: UFO_Frame_42
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1191,7 +1196,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 184}
   - name: UFO_Frame_43
     originalName: 
-    pivot: {x: 0.49090907, y: -0.67857146}
+    pivot: {x: 0.49090907, y: -0.7857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1211,7 +1216,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 184}
   - name: UFO_Frame_44
     originalName: 
-    pivot: {x: 0.49090907, y: -0.67857146}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1271,7 +1276,7 @@ ScriptedImporter:
     uvTransform: {x: 382, y: 184}
   - name: UFO_Frame_47
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.7857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1291,7 +1296,7 @@ ScriptedImporter:
     uvTransform: {x: 445, y: 184}
   - name: UFO_Frame_48
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1311,7 +1316,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 220}
   - name: UFO_Frame_49
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1331,7 +1336,7 @@ ScriptedImporter:
     uvTransform: {x: 67, y: 220}
   - name: UFO_Frame_50
     originalName: 
-    pivot: {x: 0.49090907, y: -0.7857143}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1351,7 +1356,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 220}
   - name: UFO_Frame_51
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.67857146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1371,7 +1376,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 220}
   - name: UFO_Frame_52
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.67857146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1411,7 +1416,7 @@ ScriptedImporter:
     uvTransform: {x: 319, y: 220}
   - name: UFO_Frame_54
     originalName: 
-    pivot: {x: 0.49090907, y: -0.7857143}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1431,7 +1436,7 @@ ScriptedImporter:
     uvTransform: {x: 382, y: 220}
   - name: UFO_Frame_55
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1451,7 +1456,7 @@ ScriptedImporter:
     uvTransform: {x: 445, y: 220}
   - name: UFO_Frame_56
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1471,7 +1476,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 256}
   - name: UFO_Frame_57
     originalName: 
-    pivot: {x: 0.49090907, y: -0.6428572}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1491,7 +1496,7 @@ ScriptedImporter:
     uvTransform: {x: 67, y: 256}
   - name: UFO_Frame_58
     originalName: 
-    pivot: {x: 0.49090907, y: -0.67857146}
+    pivot: {x: 0.49090907, y: -0.7857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1511,7 +1516,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 256}
   - name: UFO_Frame_59
     originalName: 
-    pivot: {x: 0.49090907, y: -0.67857146}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1571,7 +1576,7 @@ ScriptedImporter:
     uvTransform: {x: 319, y: 256}
   - name: UFO_Frame_62
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.7857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1591,7 +1596,7 @@ ScriptedImporter:
     uvTransform: {x: 382, y: 256}
   - name: UFO_Frame_63
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1611,7 +1616,7 @@ ScriptedImporter:
     uvTransform: {x: 445, y: 256}
   - name: UFO_Frame_64
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1631,7 +1636,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 292}
   - name: UFO_Frame_65
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.6428572}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1651,7 +1656,7 @@ ScriptedImporter:
     uvTransform: {x: 67, y: 292}
   - name: UFO_Frame_66
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.67857146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1671,7 +1676,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 292}
   - name: UFO_Frame_67
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.67857146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1691,7 +1696,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 292}
   - name: UFO_Frame_68
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1711,7 +1716,7 @@ ScriptedImporter:
     uvTransform: {x: 256, y: 292}
   - name: UFO_Frame_69
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1731,7 +1736,7 @@ ScriptedImporter:
     uvTransform: {x: 319, y: 292}
   - name: UFO_Frame_70
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1751,7 +1756,7 @@ ScriptedImporter:
     uvTransform: {x: 382, y: 292}
   - name: UFO_Frame_71
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1791,7 +1796,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 328}
   - name: UFO_Frame_73
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1811,7 +1816,7 @@ ScriptedImporter:
     uvTransform: {x: 67, y: 328}
   - name: UFO_Frame_74
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1831,7 +1836,7 @@ ScriptedImporter:
     uvTransform: {x: 130, y: 328}
   - name: UFO_Frame_75
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1851,7 +1856,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 328}
   - name: UFO_Frame_76
     originalName: 
-    pivot: {x: 0.49090907, y: -0.75000006}
+    pivot: {x: 0.49090907, y: -0.71428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1891,7 +1896,7 @@ ScriptedImporter:
     uvTransform: {x: 319, y: 328}
   - name: UFO_Frame_78
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1911,7 +1916,7 @@ ScriptedImporter:
     uvTransform: {x: 382, y: 328}
   - name: UFO_Frame_79
     originalName: 
-    pivot: {x: 0.49090907, y: -0.71428573}
+    pivot: {x: 0.49090907, y: -0.75000006}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -1929,6 +1934,406 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 445, y: 328}
+  - name: UFO_Frame_72
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 364
+      width: 55
+      height: 28
+    spriteID: c3621dd0254654c41931d7302da4745a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 364}
+  - name: UFO_Frame_73
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 364
+      width: 55
+      height: 28
+    spriteID: c6764d003f5177e4983a9e7d22b7bac5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 364}
+  - name: UFO_Frame_74
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 364
+      width: 55
+      height: 28
+    spriteID: 1762f7d8d35a99a4f95a70626d68ed55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 364}
+  - name: UFO_Frame_75
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.75000006}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 364
+      width: 55
+      height: 28
+    spriteID: 771f775b26bb76648b6d568eb3d185dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 193, y: 364}
+  - name: UFO_Frame_76
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.75000006}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 364
+      width: 55
+      height: 28
+    spriteID: 24703e12473fbbf419e5a7b3401c3c53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 256, y: 364}
+  - name: UFO_Frame_77
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 364
+      width: 55
+      height: 28
+    spriteID: fa96ac6f577584b43896e313fdb583fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 364}
+  - name: UFO_Frame_78
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 364
+      width: 55
+      height: 28
+    spriteID: da1c3752e21a9ee41897bc4912bae1d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 364}
+  - name: UFO_Frame_79
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 445
+      y: 364
+      width: 55
+      height: 28
+    spriteID: 3f7f488350fd9d043ae4125d25ca6ba6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 445, y: 364}
+  - name: UFO_Frame_80
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.75000006}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 400
+      width: 55
+      height: 28
+    spriteID: a0ff8c8616fda1346ab18a78f0bf18b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 400}
+  - name: UFO_Frame_81
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.75000006}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 400
+      width: 55
+      height: 28
+    spriteID: fd1b08f4024a37043af0a9735c25085a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 400}
+  - name: UFO_Frame_83
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 400
+      width: 55
+      height: 28
+    spriteID: ed80d6f504748a5439f696459c622608
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 400}
+  - name: UFO_Frame_84
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 400
+      width: 55
+      height: 28
+    spriteID: 7eab5fd35746f964f8353f634a5f853f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 193, y: 400}
+  - name: UFO_Frame_86
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.75000006}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 400
+      width: 55
+      height: 28
+    spriteID: 8b86598b78e52f94f8d7176c704d5d64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 256, y: 400}
+  - name: UFO_Frame_87
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 400
+      width: 55
+      height: 28
+    spriteID: 4e2ab069eb652054e8804b2de9b0bd9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 400}
+  - name: UFO_Frame_89
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 382
+      y: 400
+      width: 55
+      height: 28
+    spriteID: 2d9c4f7bf49b70c4f9675d9bf538fb4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 400}
+  - name: UFO_Frame_90
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.75000006}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 445
+      y: 400
+      width: 55
+      height: 28
+    spriteID: 437486979c30bbb47a450dfd9e9cfe91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 445, y: 400}
+  - name: UFO_Frame_92
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 436
+      width: 55
+      height: 28
+    spriteID: ad9562a0211eef043b332efc907dd90a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 436}
+  - name: UFO_Frame_94
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 436
+      width: 55
+      height: 28
+    spriteID: 191013b8f2d2f6940a44ad8ef6341db2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 436}
+  - name: UFO_Frame_96
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.75000006}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 436
+      width: 55
+      height: 28
+    spriteID: fe46183f3ace6b949ac232f4429b7a60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 436}
+  - name: UFO_Frame_98
+    originalName: 
+    pivot: {x: 0.49090907, y: -0.71428573}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 436
+      width: 55
+      height: 28
+    spriteID: bcd5177de514aa3449fe0c2edf6dbd74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 193, y: 436}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -2010,62 +2415,126 @@ ScriptedImporter:
         width: 55
         height: 28
       spriteId: 099b84a405f681f4898534e1d4eb7fee
-    - name: UFO_Frame_80
-      frameIndex: 80
+    - name: UFO_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: 5abd6234287693d48933d513954c5e3a
+    - name: UFO_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 5
+        y: 21
+        width: 55
+        height: 28
+      spriteId: e9c65e85d54e079468854ec0f1939c3b
+    - name: UFO_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: 7824739090f1d84478cef62f81a70d7e
+    - name: UFO_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 5
+        y: 21
+        width: 55
+        height: 28
+      spriteId: d448eeb9a50efea44b341ac9e3e2da82
+    - name: UFO_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: f1a8be25cb9ac8743bae9c27b40b9cae
+    - name: UFO_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 5
+        y: 21
+        width: 55
+        height: 28
+      spriteId: 4805955066551b74b871d30422f3d06f
+    - name: UFO_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: 76f2e90836ffbd348be311f665c01ba4
+    - name: UFO_Frame_99
+      frameIndex: 99
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: d3743e6d5c2882b45876153dc273dcd2
+    - name: UFO_Frame_100
+      frameIndex: 100
       cellRect:
         x: 16
         y: 22
         width: 30
         height: 20
-      spriteId: 5abd6234287693d48933d513954c5e3a
-    - name: UFO_Frame_81
-      frameIndex: 81
+      spriteId: 829ebeb0f0a43054fb90768e35439c5b
+    - name: UFO_Frame_101
+      frameIndex: 101
       cellRect:
         x: 16
         y: 23
         width: 30
         height: 20
-      spriteId: e9c65e85d54e079468854ec0f1939c3b
-    - name: UFO_Frame_82
-      frameIndex: 82
+      spriteId: b6a16a63fe75fa74db75a11b21505648
+    - name: UFO_Frame_102
+      frameIndex: 102
       cellRect:
         x: 17
         y: 24
         width: 30
         height: 20
-      spriteId: 7824739090f1d84478cef62f81a70d7e
-    - name: UFO_Frame_83
-      frameIndex: 83
+      spriteId: fe0c5a507e4e4a148a8ee0aab0ba0b04
+    - name: UFO_Frame_103
+      frameIndex: 103
       cellRect:
         x: 18
         y: 23
         width: 30
         height: 20
-      spriteId: d448eeb9a50efea44b341ac9e3e2da82
-    - name: UFO_Frame_84
-      frameIndex: 84
+      spriteId: e9af5a09a71365747a649452966ae629
+    - name: UFO_Frame_104
+      frameIndex: 104
       cellRect:
         x: 18
         y: 22
         width: 30
         height: 20
-      spriteId: f1a8be25cb9ac8743bae9c27b40b9cae
-    - name: UFO_Frame_85
-      frameIndex: 85
+      spriteId: d09d4428872b32545a52a4f3ad8987ba
+    - name: UFO_Frame_105
+      frameIndex: 105
       cellRect:
         x: 18
         y: 21
         width: 30
         height: 20
-      spriteId: 4805955066551b74b871d30422f3d06f
-    - name: UFO_Frame_86
-      frameIndex: 86
+      spriteId: 31b37eb9a9744ad4395e17f64459f8c0
+    - name: UFO_Frame_106
+      frameIndex: 106
       cellRect:
         x: 17
         y: 20
         width: 30
         height: 20
-      spriteId: 76f2e90836ffbd348be311f665c01ba4
+      spriteId: 65c95ef79ab96424192d90dde830cf67
     - name: UFO_Frame_7
       frameIndex: 7
       cellRect:
@@ -2073,7 +2542,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: d3743e6d5c2882b45876153dc273dcd2
+      spriteId: b594332284346c143af1ec1428b99010
     - name: UFO_Frame_8
       frameIndex: 8
       cellRect:
@@ -2081,7 +2550,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 829ebeb0f0a43054fb90768e35439c5b
+      spriteId: 8f8389d8e6dc8db4fa3caa9083b5e853
     - name: UFO_Frame_9
       frameIndex: 9
       cellRect:
@@ -2089,7 +2558,7 @@ ScriptedImporter:
         y: 22
         width: 55
         height: 28
-      spriteId: b6a16a63fe75fa74db75a11b21505648
+      spriteId: d92660c57b7a25d4cab05acd11be8362
     - name: UFO_Frame_11
       frameIndex: 11
       cellRect:
@@ -2097,7 +2566,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: fe0c5a507e4e4a148a8ee0aab0ba0b04
+      spriteId: 5c22e9972b207c048890ae80f32a0b47
     - name: UFO_Frame_12
       frameIndex: 12
       cellRect:
@@ -2105,7 +2574,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: e9af5a09a71365747a649452966ae629
+      spriteId: 2781abe2ef0f7a845a2ffc8110cb0c91
     - name: UFO_Frame_14
       frameIndex: 14
       cellRect:
@@ -2113,7 +2582,7 @@ ScriptedImporter:
         y: 19
         width: 55
         height: 28
-      spriteId: d09d4428872b32545a52a4f3ad8987ba
+      spriteId: 0ad4d950faa19854bb988d47b6b108c0
     - name: UFO_Frame_15
       frameIndex: 15
       cellRect:
@@ -2121,7 +2590,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 31b37eb9a9744ad4395e17f64459f8c0
+      spriteId: 8f540d39a4952704287abc3fce210383
     - name: UFO_Frame_16
       frameIndex: 16
       cellRect:
@@ -2129,7 +2598,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 65c95ef79ab96424192d90dde830cf67
+      spriteId: 55cf965188de3d942a6c464c5ffdba11
     - name: UFO_Frame_17
       frameIndex: 17
       cellRect:
@@ -2137,7 +2606,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: b594332284346c143af1ec1428b99010
+      spriteId: e70edd4ac7a098a43abb4f4ebe2f5f13
     - name: UFO_Frame_18
       frameIndex: 18
       cellRect:
@@ -2145,7 +2614,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: 8f8389d8e6dc8db4fa3caa9083b5e853
+      spriteId: 32d76cfdb69ab9e4083704e9fd47a5dd
     - name: UFO_Frame_19
       frameIndex: 19
       cellRect:
@@ -2153,7 +2622,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: d92660c57b7a25d4cab05acd11be8362
+      spriteId: f6c46814b182589438564263904c1bf9
     - name: UFO_Frame_20
       frameIndex: 20
       cellRect:
@@ -2161,7 +2630,7 @@ ScriptedImporter:
         y: 22
         width: 55
         height: 28
-      spriteId: 5c22e9972b207c048890ae80f32a0b47
+      spriteId: 4f858e358c3a0704c85c118388215ccd
     - name: UFO_Frame_21
       frameIndex: 21
       cellRect:
@@ -2169,7 +2638,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 2781abe2ef0f7a845a2ffc8110cb0c91
+      spriteId: cf0a815b081d493438d07cf8a0689f4b
     - name: UFO_Frame_22
       frameIndex: 22
       cellRect:
@@ -2177,7 +2646,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 0ad4d950faa19854bb988d47b6b108c0
+      spriteId: 0c6d9f781959cb44b840740bde862f5a
     - name: UFO_Frame_23
       frameIndex: 23
       cellRect:
@@ -2185,7 +2654,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 8f540d39a4952704287abc3fce210383
+      spriteId: 07d9a81ff684d754ca4f971ad05cd0fb
     - name: UFO_Frame_24
       frameIndex: 24
       cellRect:
@@ -2193,7 +2662,7 @@ ScriptedImporter:
         y: 22
         width: 55
         height: 28
-      spriteId: 55cf965188de3d942a6c464c5ffdba11
+      spriteId: d319fc611ae6c324cb756fce7fea65ae
     - name: UFO_Frame_25
       frameIndex: 25
       cellRect:
@@ -2201,7 +2670,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: e70edd4ac7a098a43abb4f4ebe2f5f13
+      spriteId: e8bc03b3011316842b78deefd60356d3
     - name: UFO_Frame_26
       frameIndex: 26
       cellRect:
@@ -2209,7 +2678,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: 32d76cfdb69ab9e4083704e9fd47a5dd
+      spriteId: 715623f262173c744913c93cf93d464a
     - name: UFO_Frame_27
       frameIndex: 27
       cellRect:
@@ -2217,7 +2686,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: f6c46814b182589438564263904c1bf9
+      spriteId: 2f520c8fe8308174dbaea5d3477ac914
     - name: UFO_Frame_28
       frameIndex: 28
       cellRect:
@@ -2225,7 +2694,7 @@ ScriptedImporter:
         y: 19
         width: 55
         height: 28
-      spriteId: 4f858e358c3a0704c85c118388215ccd
+      spriteId: e71dc173d251de24fb6899e39065610a
     - name: UFO_Frame_29
       frameIndex: 29
       cellRect:
@@ -2233,7 +2702,7 @@ ScriptedImporter:
         y: 19
         width: 55
         height: 28
-      spriteId: cf0a815b081d493438d07cf8a0689f4b
+      spriteId: 9941b886e26235c44a345606c8056ff0
     - name: UFO_Frame_30
       frameIndex: 30
       cellRect:
@@ -2241,7 +2710,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 0c6d9f781959cb44b840740bde862f5a
+      spriteId: efca435af2b43fa42b324ff0651a4d77
     - name: UFO_Frame_31
       frameIndex: 31
       cellRect:
@@ -2249,7 +2718,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 07d9a81ff684d754ca4f971ad05cd0fb
+      spriteId: 063b61064425ef843b187e7692087ea4
     - name: UFO_Frame_32
       frameIndex: 32
       cellRect:
@@ -2257,7 +2726,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: d319fc611ae6c324cb756fce7fea65ae
+      spriteId: 30ece0c054487d94db30930a873bea1f
     - name: UFO_Frame_33
       frameIndex: 33
       cellRect:
@@ -2265,7 +2734,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: e8bc03b3011316842b78deefd60356d3
+      spriteId: ad04fc2f2b0f7fe468155a930a49b8a1
     - name: UFO_Frame_34
       frameIndex: 34
       cellRect:
@@ -2273,7 +2742,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: 715623f262173c744913c93cf93d464a
+      spriteId: 76b421c969082e8469f46026f3cf8d5e
     - name: UFO_Frame_35
       frameIndex: 35
       cellRect:
@@ -2281,7 +2750,7 @@ ScriptedImporter:
         y: 22
         width: 55
         height: 28
-      spriteId: 2f520c8fe8308174dbaea5d3477ac914
+      spriteId: d6389a7a12d8afc46a5e537113b1f7d5
     - name: UFO_Frame_36
       frameIndex: 36
       cellRect:
@@ -2289,7 +2758,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: e71dc173d251de24fb6899e39065610a
+      spriteId: 4c5e28bbf1bb8b840b290d3c337d1af8
     - name: UFO_Frame_37
       frameIndex: 37
       cellRect:
@@ -2297,7 +2766,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 9941b886e26235c44a345606c8056ff0
+      spriteId: 5a0a57ef37bbae141986264c45734274
     - name: UFO_Frame_38
       frameIndex: 38
       cellRect:
@@ -2305,7 +2774,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: efca435af2b43fa42b324ff0651a4d77
+      spriteId: 04b4480541e63fa46ae782cc5b75c100
     - name: UFO_Frame_39
       frameIndex: 39
       cellRect:
@@ -2313,7 +2782,7 @@ ScriptedImporter:
         y: 22
         width: 55
         height: 28
-      spriteId: 063b61064425ef843b187e7692087ea4
+      spriteId: 7259d1833844e754fab3a41bacce1c00
     - name: UFO_Frame_40
       frameIndex: 40
       cellRect:
@@ -2321,7 +2790,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: 30ece0c054487d94db30930a873bea1f
+      spriteId: 00c91c6edcb7c3840a28ddc37420e421
     - name: UFO_Frame_41
       frameIndex: 41
       cellRect:
@@ -2329,7 +2798,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: ad04fc2f2b0f7fe468155a930a49b8a1
+      spriteId: 1cfd0e25519ca6e43a7d41f143151471
     - name: UFO_Frame_42
       frameIndex: 42
       cellRect:
@@ -2337,7 +2806,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: 76b421c969082e8469f46026f3cf8d5e
+      spriteId: 0940f4ee75d7c2a4eac9d87fda431c06
     - name: UFO_Frame_43
       frameIndex: 43
       cellRect:
@@ -2345,7 +2814,7 @@ ScriptedImporter:
         y: 19
         width: 55
         height: 28
-      spriteId: d6389a7a12d8afc46a5e537113b1f7d5
+      spriteId: 70e584fb95cf09c49b9ffb482fab7e97
     - name: UFO_Frame_44
       frameIndex: 44
       cellRect:
@@ -2353,7 +2822,7 @@ ScriptedImporter:
         y: 19
         width: 55
         height: 28
-      spriteId: 4c5e28bbf1bb8b840b290d3c337d1af8
+      spriteId: 68c472559491e554992d7006d1c58dcc
     - name: UFO_Frame_45
       frameIndex: 45
       cellRect:
@@ -2361,7 +2830,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 5a0a57ef37bbae141986264c45734274
+      spriteId: 620814e3ce9816e40a846c42172d5098
     - name: UFO_Frame_46
       frameIndex: 46
       cellRect:
@@ -2369,7 +2838,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 04b4480541e63fa46ae782cc5b75c100
+      spriteId: 112fab2e1385e6c47a105a8d4f78f965
     - name: UFO_Frame_47
       frameIndex: 47
       cellRect:
@@ -2377,7 +2846,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: 7259d1833844e754fab3a41bacce1c00
+      spriteId: af4e13524f2522a4c8071d08c7b710f1
     - name: UFO_Frame_48
       frameIndex: 48
       cellRect:
@@ -2385,7 +2854,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: 00c91c6edcb7c3840a28ddc37420e421
+      spriteId: 37706ef5bbb9555449f701d463db1884
     - name: UFO_Frame_49
       frameIndex: 49
       cellRect:
@@ -2393,7 +2862,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: 1cfd0e25519ca6e43a7d41f143151471
+      spriteId: 4032679d56e43b54d81acae5bcd706b0
     - name: UFO_Frame_50
       frameIndex: 50
       cellRect:
@@ -2401,7 +2870,7 @@ ScriptedImporter:
         y: 22
         width: 55
         height: 28
-      spriteId: 0940f4ee75d7c2a4eac9d87fda431c06
+      spriteId: 9d2d467f72879684093bd36fa6c2bad4
     - name: UFO_Frame_51
       frameIndex: 51
       cellRect:
@@ -2409,7 +2878,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 70e584fb95cf09c49b9ffb482fab7e97
+      spriteId: acab15590b85c3a49a9471b7eed01d1c
     - name: UFO_Frame_52
       frameIndex: 52
       cellRect:
@@ -2417,7 +2886,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 68c472559491e554992d7006d1c58dcc
+      spriteId: 1cbfdd0955d2a4441b8e6e1a6116ff18
     - name: UFO_Frame_53
       frameIndex: 53
       cellRect:
@@ -2425,7 +2894,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 620814e3ce9816e40a846c42172d5098
+      spriteId: 8047fd4f936addb4699fd6ac4340d2ee
     - name: UFO_Frame_54
       frameIndex: 54
       cellRect:
@@ -2433,7 +2902,7 @@ ScriptedImporter:
         y: 22
         width: 55
         height: 28
-      spriteId: 112fab2e1385e6c47a105a8d4f78f965
+      spriteId: d185507abd91f2d4d996ce63564a4069
     - name: UFO_Frame_55
       frameIndex: 55
       cellRect:
@@ -2441,7 +2910,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: af4e13524f2522a4c8071d08c7b710f1
+      spriteId: b0190beb6e1265a48b0e367c63a1dea6
     - name: UFO_Frame_56
       frameIndex: 56
       cellRect:
@@ -2449,7 +2918,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: 37706ef5bbb9555449f701d463db1884
+      spriteId: 5be65e86911cc344986b7f9bf9e09ecb
     - name: UFO_Frame_57
       frameIndex: 57
       cellRect:
@@ -2457,7 +2926,7 @@ ScriptedImporter:
         y: 18
         width: 55
         height: 28
-      spriteId: 4032679d56e43b54d81acae5bcd706b0
+      spriteId: 57dbb8faec469e849a2425ba90b88269
     - name: UFO_Frame_58
       frameIndex: 58
       cellRect:
@@ -2465,7 +2934,7 @@ ScriptedImporter:
         y: 19
         width: 55
         height: 28
-      spriteId: 9d2d467f72879684093bd36fa6c2bad4
+      spriteId: 0d97716595f2f55418131f96c6c23137
     - name: UFO_Frame_59
       frameIndex: 59
       cellRect:
@@ -2473,7 +2942,7 @@ ScriptedImporter:
         y: 19
         width: 55
         height: 28
-      spriteId: acab15590b85c3a49a9471b7eed01d1c
+      spriteId: 978120dd14d00194c8020988baaa9f62
     - name: UFO_Frame_60
       frameIndex: 60
       cellRect:
@@ -2481,7 +2950,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 1cbfdd0955d2a4441b8e6e1a6116ff18
+      spriteId: d6cf35459c62a5d4eb452d778e636f02
     - name: UFO_Frame_61
       frameIndex: 61
       cellRect:
@@ -2489,7 +2958,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 8047fd4f936addb4699fd6ac4340d2ee
+      spriteId: c6f77cadea631ca49835d6473c81b647
     - name: UFO_Frame_62
       frameIndex: 62
       cellRect:
@@ -2497,7 +2966,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: d185507abd91f2d4d996ce63564a4069
+      spriteId: 62c46e044c7597b4f97caaa959d49e18
     - name: UFO_Frame_63
       frameIndex: 63
       cellRect:
@@ -2505,7 +2974,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: b0190beb6e1265a48b0e367c63a1dea6
+      spriteId: 0dfd2205427f0a14ebc6ad3257186723
     - name: UFO_Frame_64
       frameIndex: 64
       cellRect:
@@ -2513,7 +2982,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: 5be65e86911cc344986b7f9bf9e09ecb
+      spriteId: 760abd8eb32226e44bd0ab9ece5b4c78
     - name: UFO_Frame_65
       frameIndex: 65
       cellRect:
@@ -2521,7 +2990,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 57dbb8faec469e849a2425ba90b88269
+      spriteId: bc08528ede446514a896142b4e37a195
     - name: UFO_Frame_66
       frameIndex: 66
       cellRect:
@@ -2529,7 +2998,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 0d97716595f2f55418131f96c6c23137
+      spriteId: ac6aeaf3bab7fa44fa66d2959e9129d4
     - name: UFO_Frame_67
       frameIndex: 67
       cellRect:
@@ -2537,7 +3006,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: 978120dd14d00194c8020988baaa9f62
+      spriteId: adbede638cf6e9a44a28b94b007d0952
     - name: UFO_Frame_68
       frameIndex: 68
       cellRect:
@@ -2545,7 +3014,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: d6cf35459c62a5d4eb452d778e636f02
+      spriteId: c99a20f063a1158449bf10ed764868c9
     - name: UFO_Frame_69
       frameIndex: 69
       cellRect:
@@ -2553,7 +3022,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: c6f77cadea631ca49835d6473c81b647
+      spriteId: ae81671cab478ec46a68e850c25db705
     - name: UFO_Frame_70
       frameIndex: 70
       cellRect:
@@ -2561,7 +3030,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 62c46e044c7597b4f97caaa959d49e18
+      spriteId: e4ae638b101215d4d993e761637fe82d
     - name: UFO_Frame_71
       frameIndex: 71
       cellRect:
@@ -2569,7 +3038,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: 0dfd2205427f0a14ebc6ad3257186723
+      spriteId: a85505f2dd94cc148a306c21191a08bb
     - name: UFO_Frame_72
       frameIndex: 72
       cellRect:
@@ -2577,7 +3046,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: 760abd8eb32226e44bd0ab9ece5b4c78
+      spriteId: c3621dd0254654c41931d7302da4745a
     - name: UFO_Frame_73
       frameIndex: 73
       cellRect:
@@ -2585,7 +3054,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: bc08528ede446514a896142b4e37a195
+      spriteId: c6764d003f5177e4983a9e7d22b7bac5
     - name: UFO_Frame_74
       frameIndex: 74
       cellRect:
@@ -2593,7 +3062,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: ac6aeaf3bab7fa44fa66d2959e9129d4
+      spriteId: 1762f7d8d35a99a4f95a70626d68ed55
     - name: UFO_Frame_75
       frameIndex: 75
       cellRect:
@@ -2601,7 +3070,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: adbede638cf6e9a44a28b94b007d0952
+      spriteId: 771f775b26bb76648b6d568eb3d185dc
     - name: UFO_Frame_76
       frameIndex: 76
       cellRect:
@@ -2609,7 +3078,7 @@ ScriptedImporter:
         y: 21
         width: 55
         height: 28
-      spriteId: c99a20f063a1158449bf10ed764868c9
+      spriteId: 24703e12473fbbf419e5a7b3401c3c53
     - name: UFO_Frame_77
       frameIndex: 77
       cellRect:
@@ -2617,7 +3086,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: ae81671cab478ec46a68e850c25db705
+      spriteId: fa96ac6f577584b43896e313fdb583fd
     - name: UFO_Frame_78
       frameIndex: 78
       cellRect:
@@ -2625,7 +3094,7 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: e4ae638b101215d4d993e761637fe82d
+      spriteId: da1c3752e21a9ee41897bc4912bae1d6
     - name: UFO_Frame_79
       frameIndex: 79
       cellRect:
@@ -2633,7 +3102,103 @@ ScriptedImporter:
         y: 20
         width: 55
         height: 28
-      spriteId: a85505f2dd94cc148a306c21191a08bb
+      spriteId: 3f7f488350fd9d043ae4125d25ca6ba6
+    - name: UFO_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 5
+        y: 21
+        width: 55
+        height: 28
+      spriteId: a0ff8c8616fda1346ab18a78f0bf18b7
+    - name: UFO_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 5
+        y: 21
+        width: 55
+        height: 28
+      spriteId: fd1b08f4024a37043af0a9735c25085a
+    - name: UFO_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: ed80d6f504748a5439f696459c622608
+    - name: UFO_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: 7eab5fd35746f964f8353f634a5f853f
+    - name: UFO_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 5
+        y: 21
+        width: 55
+        height: 28
+      spriteId: 8b86598b78e52f94f8d7176c704d5d64
+    - name: UFO_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: 4e2ab069eb652054e8804b2de9b0bd9c
+    - name: UFO_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: 2d9c4f7bf49b70c4f9675d9bf538fb4b
+    - name: UFO_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 5
+        y: 21
+        width: 55
+        height: 28
+      spriteId: 437486979c30bbb47a450dfd9e9cfe91
+    - name: UFO_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: ad9562a0211eef043b332efc907dd90a
+    - name: UFO_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: 191013b8f2d2f6940a44ad8ef6341db2
+    - name: UFO_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 5
+        y: 21
+        width: 55
+        height: 28
+      spriteId: fe46183f3ace6b949ac232f4429b7a60
+    - name: UFO_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 5
+        y: 20
+        width: 55
+        height: 28
+      spriteId: bcd5177de514aa3449fe0c2edf6dbd74
     linkedCells: []
     parentIndex: -1
   platformSettings:
