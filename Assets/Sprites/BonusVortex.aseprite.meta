@@ -1,0 +1,1742 @@
+fileFormatVersion: 2
+guid: 696793698731d5743b12c5ef144e14bd
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Core
+    second: {fileID: 7400000, guid: 2d70737328f169f44a939b5083f03a93, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 56
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638321607425719193
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: BonusVortex_Frame_0
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 120
+      width: 49
+      height: 49
+    spriteID: b33a65dfd41f2dc42b887acd906ba215
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 120}
+  - name: BonusVortex_Frame_1
+    originalName: 
+    pivot: {x: 0.48979592, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 62
+      width: 49
+      height: 50
+    spriteID: 9420f1b3b8e0281468af6fb3dc9575ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 62}
+  - name: BonusVortex_Frame_2
+    originalName: 
+    pivot: {x: 0.48979592, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 62
+      width: 49
+      height: 50
+    spriteID: 23d800f864644a6418c0cca1e9d82f7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 62}
+  - name: BonusVortex_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 62
+      width: 50
+      height: 49
+    spriteID: 0e58149460fbf4440b8c2705a4d03138
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 62}
+  - name: BonusVortex_Frame_4
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.14285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 120
+      width: 49
+      height: 49
+    spriteID: 963828f9edcb8154992a51a7726777fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 120}
+  - name: BonusVortex_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 234
+      y: 62
+      width: 50
+      height: 49
+    spriteID: b9877e95778f41f4bb07ace849ac918b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 234, y: 62}
+  - name: BonusVortex_Frame_6
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 120
+      width: 49
+      height: 49
+    spriteID: e1ddb21f7e96ebe4e8c75308d9281efd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 120}
+  - name: BonusVortex_Frame_7
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 233
+      y: 120
+      width: 49
+      height: 49
+    spriteID: b61839c882665454cba42b7549abaaa9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 233, y: 120}
+  - name: BonusVortex_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 293
+      width: 50
+      height: 48
+    spriteID: a92b12ca76b6c4848a1359b829ab27de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 293}
+  - name: BonusVortex_Frame_9
+    originalName: 
+    pivot: {x: 0.48979592, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 177
+      y: 293
+      width: 49
+      height: 48
+    spriteID: 4883c6815954de44caf00694e135d0f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 177, y: 293}
+  - name: BonusVortex_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 62
+      width: 50
+      height: 49
+    spriteID: ac01b479bfa79f941b30b9699a01d29a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 62}
+  - name: BonusVortex_Frame_11
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 234
+      y: 293
+      width: 49
+      height: 48
+    spriteID: f1fade9683836b2438fffcb857b194e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 234, y: 293}
+  - name: BonusVortex_Frame_12
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 350
+      y: 62
+      width: 49
+      height: 50
+    spriteID: 43c213f7fb59b9a42b7fdf809a59bd1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 350, y: 62}
+  - name: BonusVortex_Frame_13
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 290
+      y: 120
+      width: 49
+      height: 49
+    spriteID: bb06ecc4ee5cfe04e94ebe443b018be3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 290, y: 120}
+  - name: BonusVortex_Frame_14
+    originalName: 
+    pivot: {x: 0.52, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 4
+      width: 50
+      height: 50
+    spriteID: 0ba9ec896eab43d47ad4840df5d6aadc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 4}
+  - name: BonusVortex_Frame_15
+    originalName: 
+    pivot: {x: 0.5106383, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 461
+      y: 120
+      width: 47
+      height: 49
+    spriteID: cccdbb3797e7ab74e8502b15f2d38865
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 461, y: 120}
+  - name: BonusVortex_Frame_16
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 347
+      y: 120
+      width: 49
+      height: 49
+    spriteID: a659d1651abc36849b6d4fdbb3db12bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 347, y: 120}
+  - name: BonusVortex_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 407
+      y: 62
+      width: 50
+      height: 49
+    spriteID: 1a5d85e2df57ab64ba35cc1ba8d526cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 62}
+  - name: BonusVortex_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 120
+      width: 50
+      height: 49
+    spriteID: 211e7e8d5304be1428a80eddcd2d4e25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 120}
+  - name: BonusVortex_Frame_19
+    originalName: 
+    pivot: {x: 0.50980395, y: -0.16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 51
+      height: 50
+    spriteID: 44aede54ee9506c4ea5de33361da566c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: BonusVortex_Frame_20
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 120
+      width: 49
+      height: 49
+    spriteID: fb73d15e86ba8c0419dac91bde402741
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 120}
+  - name: BonusVortex_Frame_21
+    originalName: 
+    pivot: {x: 0.52, y: -0.16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 4
+      width: 50
+      height: 50
+    spriteID: 3cf1c0da406d9f34d8eaa92c5317d093
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 4}
+  - name: BonusVortex_Frame_22
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 293
+      width: 49
+      height: 48
+    spriteID: 5417be23da2e2e04896a19fa168fac0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 291, y: 293}
+  - name: BonusVortex_Frame_23
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 235
+      width: 49
+      height: 49
+    spriteID: 00d5a12298c5f934ea576fbbd99cac26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 235}
+  - name: BonusVortex_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 460
+      y: 235
+      width: 48
+      height: 50
+    spriteID: 28b4cdcc2731a7245b504238789fea09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 460, y: 235}
+  - name: BonusVortex_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 350
+      width: 48
+      height: 50
+    spriteID: d7cb7a203d1bca74fb53e2e3cf525daf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 350}
+  - name: BonusVortex_Frame_26
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 177
+      width: 49
+      height: 50
+    spriteID: ef3368312cb50cc458b5395a8d5509c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 177}
+  - name: BonusVortex_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 238
+      y: 4
+      width: 50
+      height: 50
+    spriteID: e56717a9803aadd438d5376b7046342d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 238, y: 4}
+  - name: BonusVortex_Frame_28
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 118
+      y: 235
+      width: 49
+      height: 49
+    spriteID: 52aa3d35ba0ef1e4291cb2f59d17c819
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 118, y: 235}
+  - name: BonusVortex_Frame_29
+    originalName: 
+    pivot: {x: 0.48979592, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 177
+      width: 49
+      height: 50
+    spriteID: 73b3f23a90071ff449d5caecb909a1da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 177}
+  - name: BonusVortex_Frame_30
+    originalName: 
+    pivot: {x: 0.48979592, y: -0.14285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 175
+      y: 235
+      width: 49
+      height: 49
+    spriteID: 16986b56b37ef3a42ad8994c0082ef91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 175, y: 235}
+  - name: BonusVortex_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 118
+      y: 177
+      width: 50
+      height: 49
+    spriteID: 62971f14f4aa27849b96e370240db560
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 118, y: 177}
+  - name: BonusVortex_Frame_32
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.14285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 235
+      width: 49
+      height: 49
+    spriteID: 9f92ce1ffd8c49f49bdb1b85d8b1308f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 235}
+  - name: BonusVortex_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 177
+      width: 50
+      height: 49
+    spriteID: a51e9cb2e1ae3c3468d32a656a0fca75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 177}
+  - name: BonusVortex_Frame_34
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 289
+      y: 235
+      width: 49
+      height: 49
+    spriteID: 4a642c3ee54136d4b920178268f69e9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 289, y: 235}
+  - name: BonusVortex_Frame_35
+    originalName: 
+    pivot: {x: 0.50980395, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 4
+      width: 51
+      height: 50
+    spriteID: 5e40cf510207c694c86502a931ffec26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 63, y: 4}
+  - name: BonusVortex_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 293
+      width: 50
+      height: 48
+    spriteID: eae15353930c7ba42bdaf5834537ec2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 293}
+  - name: BonusVortex_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 234
+      y: 177
+      width: 50
+      height: 49
+    spriteID: b8e10300bf9ff754ab204d334cc18c60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 234, y: 177}
+  - name: BonusVortex_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 296
+      y: 4
+      width: 50
+      height: 50
+    spriteID: aaff8b677b75fd84b97d55083aecd848
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 296, y: 4}
+  - name: BonusVortex_Frame_39
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 348
+      y: 293
+      width: 49
+      height: 48
+    spriteID: ccb2da85b78349d40992c73292f64e26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 348, y: 293}
+  - name: BonusVortex_Frame_40
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 177
+      width: 49
+      height: 50
+    spriteID: d9826fc6d2e9f1e49ba483638140f96b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 177}
+  - name: BonusVortex_Frame_41
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 346
+      y: 235
+      width: 49
+      height: 49
+    spriteID: b17588b48e755024eb329813182f3801
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 346, y: 235}
+  - name: BonusVortex_Frame_42
+    originalName: 
+    pivot: {x: 0.52, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 354
+      y: 4
+      width: 50
+      height: 50
+    spriteID: dc452f099b6fad24fbb22e1629c07a93
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 354, y: 4}
+  - name: BonusVortex_Frame_43
+    originalName: 
+    pivot: {x: 0.5106383, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 285
+      y: 350
+      width: 47
+      height: 49
+    spriteID: 6e6595cdbf0c38c4c83c3db6352ce572
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 285, y: 350}
+  - name: BonusVortex_Frame_44
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 403
+      y: 235
+      width: 49
+      height: 49
+    spriteID: 5a465cfae951df147957305e771cd2c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 403, y: 235}
+  - name: BonusVortex_Frame_45
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 405
+      y: 293
+      width: 49
+      height: 48
+    spriteID: 0906f5164b573744c86d436f5f836dc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 405, y: 293}
+  - name: BonusVortex_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 349
+      y: 177
+      width: 50
+      height: 49
+    spriteID: bda11f5af99967e4eb259baec78a997a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 349, y: 177}
+  - name: BonusVortex_Frame_47
+    originalName: 
+    pivot: {x: 0.52, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 407
+      y: 177
+      width: 50
+      height: 49
+    spriteID: 99c8d9ebf66389c4f92d725640fe17b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 177}
+  - name: BonusVortex_Frame_48
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 293
+      width: 49
+      height: 49
+    spriteID: 333b03763846f704e91ab6dac93c22aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 293}
+  - name: BonusVortex_Frame_49
+    originalName: 
+    pivot: {x: 0.52, y: -0.16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 412
+      y: 4
+      width: 50
+      height: 50
+    spriteID: a07d10142ded8234fa18e09b5eebe693
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 412, y: 4}
+  - name: BonusVortex_Frame_50
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 350
+      width: 49
+      height: 48
+    spriteID: 4ce6190d08162284fa3336c46af21b3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 350}
+  - name: BonusVortex_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: -0.1632653}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 350
+      width: 48
+      height: 49
+    spriteID: 3a95527c713bd614c9f70cf2cb9339cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 229, y: 350}
+  - name: BonusVortex_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 350
+      width: 48
+      height: 50
+    spriteID: 10eb0a4f31ab9254487c51dd7f34ff06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 350}
+  - name: BonusVortex_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 350
+      width: 48
+      height: 50
+    spriteID: 1572333a2223bde4390ed0f6ad205023
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 350}
+  - name: BonusVortex_Frame_54
+    originalName: 
+    pivot: {x: 0.5102041, y: -0.16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 235
+      width: 49
+      height: 50
+    spriteID: 783c0640bf13f7642897ba1eb0bbb792
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 235}
+  - name: BonusVortex_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 62
+      width: 50
+      height: 50
+    spriteID: 64005a41513e2ec4db4566a87de3e450
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 62}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 919211107
+    name: BonusVortex
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BonusVortex_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: b33a65dfd41f2dc42b887acd906ba215
+    - name: BonusVortex_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 8
+        y: 7
+        width: 49
+        height: 50
+      spriteId: 9420f1b3b8e0281468af6fb3dc9575ae
+    - name: BonusVortex_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 8
+        y: 7
+        width: 49
+        height: 50
+      spriteId: 23d800f864644a6418c0cca1e9d82f7c
+    - name: BonusVortex_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 7
+        y: 7
+        width: 50
+        height: 49
+      spriteId: 0e58149460fbf4440b8c2705a4d03138
+    - name: BonusVortex_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 7
+        y: 7
+        width: 49
+        height: 49
+      spriteId: 963828f9edcb8154992a51a7726777fc
+    - name: BonusVortex_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 7
+        y: 8
+        width: 50
+        height: 49
+      spriteId: b9877e95778f41f4bb07ace849ac918b
+    - name: BonusVortex_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: e1ddb21f7e96ebe4e8c75308d9281efd
+    - name: BonusVortex_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: b61839c882665454cba42b7549abaaa9
+    - name: BonusVortex_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 7
+        y: 8
+        width: 50
+        height: 48
+      spriteId: a92b12ca76b6c4848a1359b829ab27de
+    - name: BonusVortex_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 8
+        y: 8
+        width: 49
+        height: 48
+      spriteId: 4883c6815954de44caf00694e135d0f7
+    - name: BonusVortex_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 7
+        y: 8
+        width: 50
+        height: 49
+      spriteId: ac01b479bfa79f941b30b9699a01d29a
+    - name: BonusVortex_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 48
+      spriteId: f1fade9683836b2438fffcb857b194e8
+    - name: BonusVortex_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 7
+        y: 7
+        width: 49
+        height: 50
+      spriteId: 43c213f7fb59b9a42b7fdf809a59bd1a
+    - name: BonusVortex_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: bb06ecc4ee5cfe04e94ebe443b018be3
+    - name: BonusVortex_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 6
+        y: 7
+        width: 50
+        height: 50
+      spriteId: 0ba9ec896eab43d47ad4840df5d6aadc
+    - name: BonusVortex_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 8
+        y: 8
+        width: 47
+        height: 49
+      spriteId: cccdbb3797e7ab74e8502b15f2d38865
+    - name: BonusVortex_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: a659d1651abc36849b6d4fdbb3db12bb
+    - name: BonusVortex_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 7
+        y: 8
+        width: 50
+        height: 49
+      spriteId: 1a5d85e2df57ab64ba35cc1ba8d526cb
+    - name: BonusVortex_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 7
+        y: 8
+        width: 50
+        height: 49
+      spriteId: 211e7e8d5304be1428a80eddcd2d4e25
+    - name: BonusVortex_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 6
+        y: 8
+        width: 51
+        height: 50
+      spriteId: 44aede54ee9506c4ea5de33361da566c
+    - name: BonusVortex_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: fb73d15e86ba8c0419dac91bde402741
+    - name: BonusVortex_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 6
+        y: 8
+        width: 50
+        height: 50
+      spriteId: 3cf1c0da406d9f34d8eaa92c5317d093
+    - name: BonusVortex_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 48
+      spriteId: 5417be23da2e2e04896a19fa168fac0c
+    - name: BonusVortex_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: 00d5a12298c5f934ea576fbbd99cac26
+    - name: BonusVortex_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 8
+        y: 7
+        width: 48
+        height: 50
+      spriteId: 28b4cdcc2731a7245b504238789fea09
+    - name: BonusVortex_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 8
+        y: 7
+        width: 48
+        height: 50
+      spriteId: d7cb7a203d1bca74fb53e2e3cf525daf
+    - name: BonusVortex_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 50
+      spriteId: ef3368312cb50cc458b5395a8d5509c0
+    - name: BonusVortex_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 7
+        y: 7
+        width: 50
+        height: 50
+      spriteId: e56717a9803aadd438d5376b7046342d
+    - name: BonusVortex_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: 52aa3d35ba0ef1e4291cb2f59d17c819
+    - name: BonusVortex_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 8
+        y: 7
+        width: 49
+        height: 50
+      spriteId: 73b3f23a90071ff449d5caecb909a1da
+    - name: BonusVortex_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 8
+        y: 7
+        width: 49
+        height: 49
+      spriteId: 16986b56b37ef3a42ad8994c0082ef91
+    - name: BonusVortex_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 7
+        y: 7
+        width: 50
+        height: 49
+      spriteId: 62971f14f4aa27849b96e370240db560
+    - name: BonusVortex_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 7
+        y: 7
+        width: 49
+        height: 49
+      spriteId: 9f92ce1ffd8c49f49bdb1b85d8b1308f
+    - name: BonusVortex_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 7
+        y: 8
+        width: 50
+        height: 49
+      spriteId: a51e9cb2e1ae3c3468d32a656a0fca75
+    - name: BonusVortex_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: 4a642c3ee54136d4b920178268f69e9c
+    - name: BonusVortex_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 6
+        y: 7
+        width: 51
+        height: 50
+      spriteId: 5e40cf510207c694c86502a931ffec26
+    - name: BonusVortex_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 7
+        y: 8
+        width: 50
+        height: 48
+      spriteId: eae15353930c7ba42bdaf5834537ec2f
+    - name: BonusVortex_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 7
+        y: 7
+        width: 50
+        height: 49
+      spriteId: b8e10300bf9ff754ab204d334cc18c60
+    - name: BonusVortex_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 7
+        y: 7
+        width: 50
+        height: 50
+      spriteId: aaff8b677b75fd84b97d55083aecd848
+    - name: BonusVortex_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 48
+      spriteId: ccb2da85b78349d40992c73292f64e26
+    - name: BonusVortex_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 7
+        y: 7
+        width: 49
+        height: 50
+      spriteId: d9826fc6d2e9f1e49ba483638140f96b
+    - name: BonusVortex_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: b17588b48e755024eb329813182f3801
+    - name: BonusVortex_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 6
+        y: 7
+        width: 50
+        height: 50
+      spriteId: dc452f099b6fad24fbb22e1629c07a93
+    - name: BonusVortex_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 8
+        y: 8
+        width: 47
+        height: 49
+      spriteId: 6e6595cdbf0c38c4c83c3db6352ce572
+    - name: BonusVortex_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: 5a465cfae951df147957305e771cd2c4
+    - name: BonusVortex_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 7
+        y: 9
+        width: 49
+        height: 48
+      spriteId: 0906f5164b573744c86d436f5f836dc9
+    - name: BonusVortex_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 7
+        y: 8
+        width: 50
+        height: 49
+      spriteId: bda11f5af99967e4eb259baec78a997a
+    - name: BonusVortex_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 6
+        y: 8
+        width: 50
+        height: 49
+      spriteId: 99c8d9ebf66389c4f92d725640fe17b3
+    - name: BonusVortex_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 49
+      spriteId: 333b03763846f704e91ab6dac93c22aa
+    - name: BonusVortex_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 6
+        y: 8
+        width: 50
+        height: 50
+      spriteId: a07d10142ded8234fa18e09b5eebe693
+    - name: BonusVortex_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 48
+      spriteId: 4ce6190d08162284fa3336c46af21b3a
+    - name: BonusVortex_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 8
+        y: 8
+        width: 48
+        height: 49
+      spriteId: 3a95527c713bd614c9f70cf2cb9339cd
+    - name: BonusVortex_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 8
+        y: 7
+        width: 48
+        height: 50
+      spriteId: 10eb0a4f31ab9254487c51dd7f34ff06
+    - name: BonusVortex_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 8
+        y: 7
+        width: 48
+        height: 50
+      spriteId: 1572333a2223bde4390ed0f6ad205023
+    - name: BonusVortex_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 7
+        y: 8
+        width: 49
+        height: 50
+      spriteId: 783c0640bf13f7642897ba1eb0bbb792
+    - name: BonusVortex_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 7
+        y: 7
+        width: 50
+        height: 50
+      spriteId: 64005a41513e2ec4db4566a87de3e450
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}
