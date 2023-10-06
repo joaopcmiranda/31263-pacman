@@ -100,7 +100,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638321607425719193
+  platformSettingsDirtyTick: 638322015279267520
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -124,7 +124,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: BonusVortex_Frame_0
+  - name: 6 - Power Pellet_Frame_0
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -135,7 +135,7 @@ ScriptedImporter:
       y: 120
       width: 49
       height: 49
-    spriteID: b33a65dfd41f2dc42b887acd906ba215
+    spriteID: 6dac5d562c2c04f478c561633dbd17bf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,7 +144,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 62, y: 120}
-  - name: BonusVortex_Frame_1
+  - name: 6 - Power Pellet_Frame_1
     originalName: 
     pivot: {x: 0.48979592, y: -0.14}
     alignment: 9
@@ -155,7 +155,7 @@ ScriptedImporter:
       y: 62
       width: 49
       height: 50
-    spriteID: 9420f1b3b8e0281468af6fb3dc9575ae
+    spriteID: d6ed73d801a79f44a825adf4d206ce8f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -164,7 +164,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 62, y: 62}
-  - name: BonusVortex_Frame_2
+  - name: 6 - Power Pellet_Frame_2
     originalName: 
     pivot: {x: 0.48979592, y: -0.14}
     alignment: 9
@@ -175,7 +175,7 @@ ScriptedImporter:
       y: 62
       width: 49
       height: 50
-    spriteID: 23d800f864644a6418c0cca1e9d82f7c
+    spriteID: 8724eb98daf045a4b8b902ee911abf00
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -184,7 +184,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 119, y: 62}
-  - name: BonusVortex_Frame_3
+  - name: 6 - Power Pellet_Frame_3
     originalName: 
     pivot: {x: 0.5, y: -0.14285713}
     alignment: 9
@@ -195,7 +195,7 @@ ScriptedImporter:
       y: 62
       width: 50
       height: 49
-    spriteID: 0e58149460fbf4440b8c2705a4d03138
+    spriteID: 6545ace03f714864cbdff5e3bc50c836
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -204,7 +204,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 176, y: 62}
-  - name: BonusVortex_Frame_4
+  - name: 6 - Power Pellet_Frame_4
     originalName: 
     pivot: {x: 0.5102041, y: -0.14285713}
     alignment: 9
@@ -215,7 +215,7 @@ ScriptedImporter:
       y: 120
       width: 49
       height: 49
-    spriteID: 963828f9edcb8154992a51a7726777fc
+    spriteID: d36dc8e782f14d447a0af1962c591ba4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -224,7 +224,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 119, y: 120}
-  - name: BonusVortex_Frame_5
+  - name: 6 - Power Pellet_Frame_5
     originalName: 
     pivot: {x: 0.5, y: -0.1632653}
     alignment: 9
@@ -235,7 +235,7 @@ ScriptedImporter:
       y: 62
       width: 50
       height: 49
-    spriteID: b9877e95778f41f4bb07ace849ac918b
+    spriteID: efb2ad9ba9879194ab0b79881a010f5d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -244,7 +244,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 234, y: 62}
-  - name: BonusVortex_Frame_6
+  - name: 6 - Power Pellet_Frame_6
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -255,7 +255,7 @@ ScriptedImporter:
       y: 120
       width: 49
       height: 49
-    spriteID: e1ddb21f7e96ebe4e8c75308d9281efd
+    spriteID: 30d548c1927bd94438081d1592943f1a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -264,7 +264,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 176, y: 120}
-  - name: BonusVortex_Frame_7
+  - name: 6 - Power Pellet_Frame_7
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -275,7 +275,7 @@ ScriptedImporter:
       y: 120
       width: 49
       height: 49
-    spriteID: b61839c882665454cba42b7549abaaa9
+    spriteID: d7e0888e96265344496f291742a62431
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -284,7 +284,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 233, y: 120}
-  - name: BonusVortex_Frame_8
+  - name: 6 - Power Pellet_Frame_8
     originalName: 
     pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
@@ -295,7 +295,7 @@ ScriptedImporter:
       y: 293
       width: 50
       height: 48
-    spriteID: a92b12ca76b6c4848a1359b829ab27de
+    spriteID: e9dd5ac886c11fa4184aeede60b8f951
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -304,7 +304,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 61, y: 293}
-  - name: BonusVortex_Frame_9
+  - name: 6 - Power Pellet_Frame_9
     originalName: 
     pivot: {x: 0.48979592, y: -0.16666667}
     alignment: 9
@@ -315,7 +315,7 @@ ScriptedImporter:
       y: 293
       width: 49
       height: 48
-    spriteID: 4883c6815954de44caf00694e135d0f7
+    spriteID: 698a67cc5d6655b4a8c6e3809b7461d1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -324,7 +324,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 177, y: 293}
-  - name: BonusVortex_Frame_10
+  - name: 6 - Power Pellet_Frame_10
     originalName: 
     pivot: {x: 0.5, y: -0.1632653}
     alignment: 9
@@ -335,7 +335,7 @@ ScriptedImporter:
       y: 62
       width: 50
       height: 49
-    spriteID: ac01b479bfa79f941b30b9699a01d29a
+    spriteID: 3cfc5011c6e457541810a384a7dff93a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -344,7 +344,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 292, y: 62}
-  - name: BonusVortex_Frame_11
+  - name: 6 - Power Pellet_Frame_11
     originalName: 
     pivot: {x: 0.5102041, y: -0.16666667}
     alignment: 9
@@ -355,7 +355,7 @@ ScriptedImporter:
       y: 293
       width: 49
       height: 48
-    spriteID: f1fade9683836b2438fffcb857b194e8
+    spriteID: b602596a7d1f5ae4c83d97118120f95e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -364,7 +364,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 234, y: 293}
-  - name: BonusVortex_Frame_12
+  - name: 6 - Power Pellet_Frame_12
     originalName: 
     pivot: {x: 0.5102041, y: -0.14}
     alignment: 9
@@ -375,7 +375,7 @@ ScriptedImporter:
       y: 62
       width: 49
       height: 50
-    spriteID: 43c213f7fb59b9a42b7fdf809a59bd1a
+    spriteID: f43623f94deabaf4da20737b1fcf6b64
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -384,7 +384,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 350, y: 62}
-  - name: BonusVortex_Frame_13
+  - name: 6 - Power Pellet_Frame_13
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -395,7 +395,7 @@ ScriptedImporter:
       y: 120
       width: 49
       height: 49
-    spriteID: bb06ecc4ee5cfe04e94ebe443b018be3
+    spriteID: acd3873acc877174b850fd8a3289222c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -404,7 +404,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 290, y: 120}
-  - name: BonusVortex_Frame_14
+  - name: 6 - Power Pellet_Frame_14
     originalName: 
     pivot: {x: 0.52, y: -0.14}
     alignment: 9
@@ -415,7 +415,7 @@ ScriptedImporter:
       y: 4
       width: 50
       height: 50
-    spriteID: 0ba9ec896eab43d47ad4840df5d6aadc
+    spriteID: 04aed4e386b37804ca67fa7569fb0454
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -424,7 +424,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 122, y: 4}
-  - name: BonusVortex_Frame_15
+  - name: 6 - Power Pellet_Frame_15
     originalName: 
     pivot: {x: 0.5106383, y: -0.1632653}
     alignment: 9
@@ -435,7 +435,7 @@ ScriptedImporter:
       y: 120
       width: 47
       height: 49
-    spriteID: cccdbb3797e7ab74e8502b15f2d38865
+    spriteID: 53ab3c33c19b8a648aeabf55c53400d6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -444,7 +444,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 461, y: 120}
-  - name: BonusVortex_Frame_16
+  - name: 6 - Power Pellet_Frame_16
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -455,7 +455,7 @@ ScriptedImporter:
       y: 120
       width: 49
       height: 49
-    spriteID: a659d1651abc36849b6d4fdbb3db12bb
+    spriteID: f7add097975e1384fbd982f4a340f92c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -464,7 +464,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 347, y: 120}
-  - name: BonusVortex_Frame_17
+  - name: 6 - Power Pellet_Frame_17
     originalName: 
     pivot: {x: 0.5, y: -0.1632653}
     alignment: 9
@@ -475,7 +475,7 @@ ScriptedImporter:
       y: 62
       width: 50
       height: 49
-    spriteID: 1a5d85e2df57ab64ba35cc1ba8d526cb
+    spriteID: 959c1abcbe5b70a4980c21493231405c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -484,7 +484,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 407, y: 62}
-  - name: BonusVortex_Frame_18
+  - name: 6 - Power Pellet_Frame_18
     originalName: 
     pivot: {x: 0.5, y: -0.1632653}
     alignment: 9
@@ -495,7 +495,7 @@ ScriptedImporter:
       y: 120
       width: 50
       height: 49
-    spriteID: 211e7e8d5304be1428a80eddcd2d4e25
+    spriteID: 5fd75084ecbd82b4cbc074afe2bc95ac
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -504,7 +504,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 120}
-  - name: BonusVortex_Frame_19
+  - name: 6 - Power Pellet_Frame_19
     originalName: 
     pivot: {x: 0.50980395, y: -0.16}
     alignment: 9
@@ -515,7 +515,7 @@ ScriptedImporter:
       y: 4
       width: 51
       height: 50
-    spriteID: 44aede54ee9506c4ea5de33361da566c
+    spriteID: da6111244c7e64647826d35d2508d7c5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -524,7 +524,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: BonusVortex_Frame_20
+  - name: 6 - Power Pellet_Frame_20
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -535,7 +535,7 @@ ScriptedImporter:
       y: 120
       width: 49
       height: 49
-    spriteID: fb73d15e86ba8c0419dac91bde402741
+    spriteID: 137a6aa1524f539479e51c0e5d8c80ac
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -544,7 +544,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 120}
-  - name: BonusVortex_Frame_21
+  - name: 6 - Power Pellet_Frame_21
     originalName: 
     pivot: {x: 0.52, y: -0.16}
     alignment: 9
@@ -555,7 +555,7 @@ ScriptedImporter:
       y: 4
       width: 50
       height: 50
-    spriteID: 3cf1c0da406d9f34d8eaa92c5317d093
+    spriteID: c2a0b150aca81fa47b861fdc2dfc7491
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -564,7 +564,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 180, y: 4}
-  - name: BonusVortex_Frame_22
+  - name: 6 - Power Pellet_Frame_22
     originalName: 
     pivot: {x: 0.5102041, y: -0.16666667}
     alignment: 9
@@ -575,7 +575,7 @@ ScriptedImporter:
       y: 293
       width: 49
       height: 48
-    spriteID: 5417be23da2e2e04896a19fa168fac0c
+    spriteID: dc8a58150fcee654c816ada447983216
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -584,7 +584,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 291, y: 293}
-  - name: BonusVortex_Frame_23
+  - name: 6 - Power Pellet_Frame_23
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -595,7 +595,7 @@ ScriptedImporter:
       y: 235
       width: 49
       height: 49
-    spriteID: 00d5a12298c5f934ea576fbbd99cac26
+    spriteID: f80e90e43868dbe44a007c1b5277789c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -604,7 +604,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 61, y: 235}
-  - name: BonusVortex_Frame_24
+  - name: 6 - Power Pellet_Frame_24
     originalName: 
     pivot: {x: 0.5, y: -0.14}
     alignment: 9
@@ -615,7 +615,7 @@ ScriptedImporter:
       y: 235
       width: 48
       height: 50
-    spriteID: 28b4cdcc2731a7245b504238789fea09
+    spriteID: c5a055985f1a9d84b9b1b543764e023a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -624,7 +624,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 460, y: 235}
-  - name: BonusVortex_Frame_25
+  - name: 6 - Power Pellet_Frame_25
     originalName: 
     pivot: {x: 0.5, y: -0.14}
     alignment: 9
@@ -635,7 +635,7 @@ ScriptedImporter:
       y: 350
       width: 48
       height: 50
-    spriteID: d7cb7a203d1bca74fb53e2e3cf525daf
+    spriteID: 2c9697572c027a443889ff5736a0b6db
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -644,7 +644,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 350}
-  - name: BonusVortex_Frame_26
+  - name: 6 - Power Pellet_Frame_26
     originalName: 
     pivot: {x: 0.5102041, y: -0.16}
     alignment: 9
@@ -655,7 +655,7 @@ ScriptedImporter:
       y: 177
       width: 49
       height: 50
-    spriteID: ef3368312cb50cc458b5395a8d5509c0
+    spriteID: 560a0e1ae3417764294ff907f5e2e97b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -664,7 +664,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 177}
-  - name: BonusVortex_Frame_27
+  - name: 6 - Power Pellet_Frame_27
     originalName: 
     pivot: {x: 0.5, y: -0.14}
     alignment: 9
@@ -675,7 +675,7 @@ ScriptedImporter:
       y: 4
       width: 50
       height: 50
-    spriteID: e56717a9803aadd438d5376b7046342d
+    spriteID: 3e30c9ea2673b554a8ee1ad05885957b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -684,7 +684,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 238, y: 4}
-  - name: BonusVortex_Frame_28
+  - name: 6 - Power Pellet_Frame_28
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -695,7 +695,7 @@ ScriptedImporter:
       y: 235
       width: 49
       height: 49
-    spriteID: 52aa3d35ba0ef1e4291cb2f59d17c819
+    spriteID: 867ea66b86a673649b4f16cbb7df79e3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -704,7 +704,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 118, y: 235}
-  - name: BonusVortex_Frame_29
+  - name: 6 - Power Pellet_Frame_29
     originalName: 
     pivot: {x: 0.48979592, y: -0.14}
     alignment: 9
@@ -715,7 +715,7 @@ ScriptedImporter:
       y: 177
       width: 49
       height: 50
-    spriteID: 73b3f23a90071ff449d5caecb909a1da
+    spriteID: 2496645efcc754c4b91be774690407be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -724,7 +724,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 61, y: 177}
-  - name: BonusVortex_Frame_30
+  - name: 6 - Power Pellet_Frame_30
     originalName: 
     pivot: {x: 0.48979592, y: -0.14285713}
     alignment: 9
@@ -735,7 +735,7 @@ ScriptedImporter:
       y: 235
       width: 49
       height: 49
-    spriteID: 16986b56b37ef3a42ad8994c0082ef91
+    spriteID: 5ff438b395807784b88697b9d68c264c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -744,7 +744,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 175, y: 235}
-  - name: BonusVortex_Frame_31
+  - name: 6 - Power Pellet_Frame_31
     originalName: 
     pivot: {x: 0.5, y: -0.14285713}
     alignment: 9
@@ -755,7 +755,7 @@ ScriptedImporter:
       y: 177
       width: 50
       height: 49
-    spriteID: 62971f14f4aa27849b96e370240db560
+    spriteID: 24f75713b7fb1ff4183d76209d68febe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -764,7 +764,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 118, y: 177}
-  - name: BonusVortex_Frame_32
+  - name: 6 - Power Pellet_Frame_32
     originalName: 
     pivot: {x: 0.5102041, y: -0.14285713}
     alignment: 9
@@ -775,7 +775,7 @@ ScriptedImporter:
       y: 235
       width: 49
       height: 49
-    spriteID: 9f92ce1ffd8c49f49bdb1b85d8b1308f
+    spriteID: 0f207f7655d05d84eb4e3218c530d93c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -784,7 +784,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 232, y: 235}
-  - name: BonusVortex_Frame_33
+  - name: 6 - Power Pellet_Frame_33
     originalName: 
     pivot: {x: 0.5, y: -0.1632653}
     alignment: 9
@@ -795,7 +795,7 @@ ScriptedImporter:
       y: 177
       width: 50
       height: 49
-    spriteID: a51e9cb2e1ae3c3468d32a656a0fca75
+    spriteID: 805bac880c5081c45a461c697e880e3a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -804,7 +804,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 176, y: 177}
-  - name: BonusVortex_Frame_34
+  - name: 6 - Power Pellet_Frame_34
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -815,7 +815,7 @@ ScriptedImporter:
       y: 235
       width: 49
       height: 49
-    spriteID: 4a642c3ee54136d4b920178268f69e9c
+    spriteID: c05af004461d8c6438295f39342dacde
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -824,7 +824,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 289, y: 235}
-  - name: BonusVortex_Frame_35
+  - name: 6 - Power Pellet_Frame_35
     originalName: 
     pivot: {x: 0.50980395, y: -0.14}
     alignment: 9
@@ -835,7 +835,7 @@ ScriptedImporter:
       y: 4
       width: 51
       height: 50
-    spriteID: 5e40cf510207c694c86502a931ffec26
+    spriteID: ff32f0dbb221dc1409a4aabef5064842
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -844,7 +844,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 63, y: 4}
-  - name: BonusVortex_Frame_36
+  - name: 6 - Power Pellet_Frame_36
     originalName: 
     pivot: {x: 0.5, y: -0.16666667}
     alignment: 9
@@ -855,7 +855,7 @@ ScriptedImporter:
       y: 293
       width: 50
       height: 48
-    spriteID: eae15353930c7ba42bdaf5834537ec2f
+    spriteID: 9f3a325ab2877844eb3a3f8cdab0c484
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -864,7 +864,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 119, y: 293}
-  - name: BonusVortex_Frame_37
+  - name: 6 - Power Pellet_Frame_37
     originalName: 
     pivot: {x: 0.5, y: -0.14285713}
     alignment: 9
@@ -875,7 +875,7 @@ ScriptedImporter:
       y: 177
       width: 50
       height: 49
-    spriteID: b8e10300bf9ff754ab204d334cc18c60
+    spriteID: 7792b9a397f3b7d47ac8d924f79a4f03
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -884,7 +884,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 234, y: 177}
-  - name: BonusVortex_Frame_38
+  - name: 6 - Power Pellet_Frame_38
     originalName: 
     pivot: {x: 0.5, y: -0.14}
     alignment: 9
@@ -895,7 +895,7 @@ ScriptedImporter:
       y: 4
       width: 50
       height: 50
-    spriteID: aaff8b677b75fd84b97d55083aecd848
+    spriteID: 44964c2bab7989046a24b3ad9c9acf70
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -904,7 +904,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 296, y: 4}
-  - name: BonusVortex_Frame_39
+  - name: 6 - Power Pellet_Frame_39
     originalName: 
     pivot: {x: 0.5102041, y: -0.16666667}
     alignment: 9
@@ -915,7 +915,7 @@ ScriptedImporter:
       y: 293
       width: 49
       height: 48
-    spriteID: ccb2da85b78349d40992c73292f64e26
+    spriteID: 2521f1b3e7a21334cbdbb71657ccf9a3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -924,7 +924,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 348, y: 293}
-  - name: BonusVortex_Frame_40
+  - name: 6 - Power Pellet_Frame_40
     originalName: 
     pivot: {x: 0.5102041, y: -0.14}
     alignment: 9
@@ -935,7 +935,7 @@ ScriptedImporter:
       y: 177
       width: 49
       height: 50
-    spriteID: d9826fc6d2e9f1e49ba483638140f96b
+    spriteID: 126f543574f44274a9816712d03891fe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -944,7 +944,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 292, y: 177}
-  - name: BonusVortex_Frame_41
+  - name: 6 - Power Pellet_Frame_41
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -955,7 +955,7 @@ ScriptedImporter:
       y: 235
       width: 49
       height: 49
-    spriteID: b17588b48e755024eb329813182f3801
+    spriteID: dddda52b356fd2b47b7a79250b5b747a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -964,7 +964,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 346, y: 235}
-  - name: BonusVortex_Frame_42
+  - name: 6 - Power Pellet_Frame_42
     originalName: 
     pivot: {x: 0.52, y: -0.14}
     alignment: 9
@@ -975,7 +975,7 @@ ScriptedImporter:
       y: 4
       width: 50
       height: 50
-    spriteID: dc452f099b6fad24fbb22e1629c07a93
+    spriteID: 15ed9e46b6819304db152a1d8518abfa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -984,7 +984,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 354, y: 4}
-  - name: BonusVortex_Frame_43
+  - name: 6 - Power Pellet_Frame_43
     originalName: 
     pivot: {x: 0.5106383, y: -0.1632653}
     alignment: 9
@@ -995,7 +995,7 @@ ScriptedImporter:
       y: 350
       width: 47
       height: 49
-    spriteID: 6e6595cdbf0c38c4c83c3db6352ce572
+    spriteID: 752bb02a6a37f1049abffdcec04493ad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1004,7 +1004,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 285, y: 350}
-  - name: BonusVortex_Frame_44
+  - name: 6 - Power Pellet_Frame_44
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -1015,7 +1015,7 @@ ScriptedImporter:
       y: 235
       width: 49
       height: 49
-    spriteID: 5a465cfae951df147957305e771cd2c4
+    spriteID: 1d15512470ab78b46af5f08dc403422a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1024,7 +1024,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 403, y: 235}
-  - name: BonusVortex_Frame_45
+  - name: 6 - Power Pellet_Frame_45
     originalName: 
     pivot: {x: 0.5102041, y: -0.1875}
     alignment: 9
@@ -1035,7 +1035,7 @@ ScriptedImporter:
       y: 293
       width: 49
       height: 48
-    spriteID: 0906f5164b573744c86d436f5f836dc9
+    spriteID: bbddab30dca7a6c48bbab1d297655e62
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1044,7 +1044,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 405, y: 293}
-  - name: BonusVortex_Frame_46
+  - name: 6 - Power Pellet_Frame_46
     originalName: 
     pivot: {x: 0.5, y: -0.1632653}
     alignment: 9
@@ -1055,7 +1055,7 @@ ScriptedImporter:
       y: 177
       width: 50
       height: 49
-    spriteID: bda11f5af99967e4eb259baec78a997a
+    spriteID: 205f1015570dd9645bcdddc2d73bb05e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1064,7 +1064,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 349, y: 177}
-  - name: BonusVortex_Frame_47
+  - name: 6 - Power Pellet_Frame_47
     originalName: 
     pivot: {x: 0.52, y: -0.1632653}
     alignment: 9
@@ -1075,7 +1075,7 @@ ScriptedImporter:
       y: 177
       width: 50
       height: 49
-    spriteID: 99c8d9ebf66389c4f92d725640fe17b3
+    spriteID: 974e04d589b550245a808a6d2a4da3bb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1084,7 +1084,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 407, y: 177}
-  - name: BonusVortex_Frame_48
+  - name: 6 - Power Pellet_Frame_48
     originalName: 
     pivot: {x: 0.5102041, y: -0.1632653}
     alignment: 9
@@ -1095,7 +1095,7 @@ ScriptedImporter:
       y: 293
       width: 49
       height: 49
-    spriteID: 333b03763846f704e91ab6dac93c22aa
+    spriteID: 1c39d2e39d2dd2a419d18cc5029d768f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1104,7 +1104,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 293}
-  - name: BonusVortex_Frame_49
+  - name: 6 - Power Pellet_Frame_49
     originalName: 
     pivot: {x: 0.52, y: -0.16}
     alignment: 9
@@ -1115,7 +1115,7 @@ ScriptedImporter:
       y: 4
       width: 50
       height: 50
-    spriteID: a07d10142ded8234fa18e09b5eebe693
+    spriteID: b6fa7d27be23ab7439dee7e9acab09c8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1124,7 +1124,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 412, y: 4}
-  - name: BonusVortex_Frame_50
+  - name: 6 - Power Pellet_Frame_50
     originalName: 
     pivot: {x: 0.5102041, y: -0.16666667}
     alignment: 9
@@ -1135,7 +1135,7 @@ ScriptedImporter:
       y: 350
       width: 49
       height: 48
-    spriteID: 4ce6190d08162284fa3336c46af21b3a
+    spriteID: 94a14b9a6cc5eeb4b9a3b4a9cc29e840
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1144,7 +1144,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 172, y: 350}
-  - name: BonusVortex_Frame_51
+  - name: 6 - Power Pellet_Frame_51
     originalName: 
     pivot: {x: 0.5, y: -0.1632653}
     alignment: 9
@@ -1155,7 +1155,7 @@ ScriptedImporter:
       y: 350
       width: 48
       height: 49
-    spriteID: 3a95527c713bd614c9f70cf2cb9339cd
+    spriteID: d8f4b2df449059e4ba7c8bacd86eec17
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1164,7 +1164,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 229, y: 350}
-  - name: BonusVortex_Frame_52
+  - name: 6 - Power Pellet_Frame_52
     originalName: 
     pivot: {x: 0.5, y: -0.14}
     alignment: 9
@@ -1175,7 +1175,7 @@ ScriptedImporter:
       y: 350
       width: 48
       height: 50
-    spriteID: 10eb0a4f31ab9254487c51dd7f34ff06
+    spriteID: b4d1a85725428e84faff4d9ff002b959
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1184,7 +1184,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 60, y: 350}
-  - name: BonusVortex_Frame_53
+  - name: 6 - Power Pellet_Frame_53
     originalName: 
     pivot: {x: 0.5, y: -0.14}
     alignment: 9
@@ -1195,7 +1195,7 @@ ScriptedImporter:
       y: 350
       width: 48
       height: 50
-    spriteID: 1572333a2223bde4390ed0f6ad205023
+    spriteID: 0d35059a292e3594ea86caa81675a372
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1204,7 +1204,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 116, y: 350}
-  - name: BonusVortex_Frame_54
+  - name: 6 - Power Pellet_Frame_54
     originalName: 
     pivot: {x: 0.5102041, y: -0.16}
     alignment: 9
@@ -1215,7 +1215,7 @@ ScriptedImporter:
       y: 235
       width: 49
       height: 50
-    spriteID: 783c0640bf13f7642897ba1eb0bbb792
+    spriteID: 0e5a93400acaaee4b9a9cf8d53cba4af
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1224,7 +1224,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 235}
-  - name: BonusVortex_Frame_55
+  - name: 6 - Power Pellet_Frame_55
     originalName: 
     pivot: {x: 0.5, y: -0.14}
     alignment: 9
@@ -1235,7 +1235,7 @@ ScriptedImporter:
       y: 62
       width: 50
       height: 50
-    spriteID: 64005a41513e2ec4db4566a87de3e450
+    spriteID: d242488d99dea9a4e82ddafe514fbb67
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1247,460 +1247,460 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 919211107
-    name: BonusVortex
+    guid: 807248604
+    name: 6 - Power Pellet
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: BonusVortex_Frame_0
+    - name: 6 - Power Pellet_Frame_0
       frameIndex: 0
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: b33a65dfd41f2dc42b887acd906ba215
-    - name: BonusVortex_Frame_1
+      spriteId: 6dac5d562c2c04f478c561633dbd17bf
+    - name: 6 - Power Pellet_Frame_1
       frameIndex: 1
       cellRect:
         x: 8
         y: 7
         width: 49
         height: 50
-      spriteId: 9420f1b3b8e0281468af6fb3dc9575ae
-    - name: BonusVortex_Frame_2
+      spriteId: d6ed73d801a79f44a825adf4d206ce8f
+    - name: 6 - Power Pellet_Frame_2
       frameIndex: 2
       cellRect:
         x: 8
         y: 7
         width: 49
         height: 50
-      spriteId: 23d800f864644a6418c0cca1e9d82f7c
-    - name: BonusVortex_Frame_3
+      spriteId: 8724eb98daf045a4b8b902ee911abf00
+    - name: 6 - Power Pellet_Frame_3
       frameIndex: 3
       cellRect:
         x: 7
         y: 7
         width: 50
         height: 49
-      spriteId: 0e58149460fbf4440b8c2705a4d03138
-    - name: BonusVortex_Frame_4
+      spriteId: 6545ace03f714864cbdff5e3bc50c836
+    - name: 6 - Power Pellet_Frame_4
       frameIndex: 4
       cellRect:
         x: 7
         y: 7
         width: 49
         height: 49
-      spriteId: 963828f9edcb8154992a51a7726777fc
-    - name: BonusVortex_Frame_5
+      spriteId: d36dc8e782f14d447a0af1962c591ba4
+    - name: 6 - Power Pellet_Frame_5
       frameIndex: 5
       cellRect:
         x: 7
         y: 8
         width: 50
         height: 49
-      spriteId: b9877e95778f41f4bb07ace849ac918b
-    - name: BonusVortex_Frame_6
+      spriteId: efb2ad9ba9879194ab0b79881a010f5d
+    - name: 6 - Power Pellet_Frame_6
       frameIndex: 6
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: e1ddb21f7e96ebe4e8c75308d9281efd
-    - name: BonusVortex_Frame_7
+      spriteId: 30d548c1927bd94438081d1592943f1a
+    - name: 6 - Power Pellet_Frame_7
       frameIndex: 7
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: b61839c882665454cba42b7549abaaa9
-    - name: BonusVortex_Frame_8
+      spriteId: d7e0888e96265344496f291742a62431
+    - name: 6 - Power Pellet_Frame_8
       frameIndex: 8
       cellRect:
         x: 7
         y: 8
         width: 50
         height: 48
-      spriteId: a92b12ca76b6c4848a1359b829ab27de
-    - name: BonusVortex_Frame_9
+      spriteId: e9dd5ac886c11fa4184aeede60b8f951
+    - name: 6 - Power Pellet_Frame_9
       frameIndex: 9
       cellRect:
         x: 8
         y: 8
         width: 49
         height: 48
-      spriteId: 4883c6815954de44caf00694e135d0f7
-    - name: BonusVortex_Frame_10
+      spriteId: 698a67cc5d6655b4a8c6e3809b7461d1
+    - name: 6 - Power Pellet_Frame_10
       frameIndex: 10
       cellRect:
         x: 7
         y: 8
         width: 50
         height: 49
-      spriteId: ac01b479bfa79f941b30b9699a01d29a
-    - name: BonusVortex_Frame_11
+      spriteId: 3cfc5011c6e457541810a384a7dff93a
+    - name: 6 - Power Pellet_Frame_11
       frameIndex: 11
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 48
-      spriteId: f1fade9683836b2438fffcb857b194e8
-    - name: BonusVortex_Frame_12
+      spriteId: b602596a7d1f5ae4c83d97118120f95e
+    - name: 6 - Power Pellet_Frame_12
       frameIndex: 12
       cellRect:
         x: 7
         y: 7
         width: 49
         height: 50
-      spriteId: 43c213f7fb59b9a42b7fdf809a59bd1a
-    - name: BonusVortex_Frame_13
+      spriteId: f43623f94deabaf4da20737b1fcf6b64
+    - name: 6 - Power Pellet_Frame_13
       frameIndex: 13
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: bb06ecc4ee5cfe04e94ebe443b018be3
-    - name: BonusVortex_Frame_14
+      spriteId: acd3873acc877174b850fd8a3289222c
+    - name: 6 - Power Pellet_Frame_14
       frameIndex: 14
       cellRect:
         x: 6
         y: 7
         width: 50
         height: 50
-      spriteId: 0ba9ec896eab43d47ad4840df5d6aadc
-    - name: BonusVortex_Frame_15
+      spriteId: 04aed4e386b37804ca67fa7569fb0454
+    - name: 6 - Power Pellet_Frame_15
       frameIndex: 15
       cellRect:
         x: 8
         y: 8
         width: 47
         height: 49
-      spriteId: cccdbb3797e7ab74e8502b15f2d38865
-    - name: BonusVortex_Frame_16
+      spriteId: 53ab3c33c19b8a648aeabf55c53400d6
+    - name: 6 - Power Pellet_Frame_16
       frameIndex: 16
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: a659d1651abc36849b6d4fdbb3db12bb
-    - name: BonusVortex_Frame_17
+      spriteId: f7add097975e1384fbd982f4a340f92c
+    - name: 6 - Power Pellet_Frame_17
       frameIndex: 17
       cellRect:
         x: 7
         y: 8
         width: 50
         height: 49
-      spriteId: 1a5d85e2df57ab64ba35cc1ba8d526cb
-    - name: BonusVortex_Frame_18
+      spriteId: 959c1abcbe5b70a4980c21493231405c
+    - name: 6 - Power Pellet_Frame_18
       frameIndex: 18
       cellRect:
         x: 7
         y: 8
         width: 50
         height: 49
-      spriteId: 211e7e8d5304be1428a80eddcd2d4e25
-    - name: BonusVortex_Frame_19
+      spriteId: 5fd75084ecbd82b4cbc074afe2bc95ac
+    - name: 6 - Power Pellet_Frame_19
       frameIndex: 19
       cellRect:
         x: 6
         y: 8
         width: 51
         height: 50
-      spriteId: 44aede54ee9506c4ea5de33361da566c
-    - name: BonusVortex_Frame_20
+      spriteId: da6111244c7e64647826d35d2508d7c5
+    - name: 6 - Power Pellet_Frame_20
       frameIndex: 20
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: fb73d15e86ba8c0419dac91bde402741
-    - name: BonusVortex_Frame_21
+      spriteId: 137a6aa1524f539479e51c0e5d8c80ac
+    - name: 6 - Power Pellet_Frame_21
       frameIndex: 21
       cellRect:
         x: 6
         y: 8
         width: 50
         height: 50
-      spriteId: 3cf1c0da406d9f34d8eaa92c5317d093
-    - name: BonusVortex_Frame_22
+      spriteId: c2a0b150aca81fa47b861fdc2dfc7491
+    - name: 6 - Power Pellet_Frame_22
       frameIndex: 22
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 48
-      spriteId: 5417be23da2e2e04896a19fa168fac0c
-    - name: BonusVortex_Frame_23
+      spriteId: dc8a58150fcee654c816ada447983216
+    - name: 6 - Power Pellet_Frame_23
       frameIndex: 23
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: 00d5a12298c5f934ea576fbbd99cac26
-    - name: BonusVortex_Frame_24
+      spriteId: f80e90e43868dbe44a007c1b5277789c
+    - name: 6 - Power Pellet_Frame_24
       frameIndex: 24
       cellRect:
         x: 8
         y: 7
         width: 48
         height: 50
-      spriteId: 28b4cdcc2731a7245b504238789fea09
-    - name: BonusVortex_Frame_25
+      spriteId: c5a055985f1a9d84b9b1b543764e023a
+    - name: 6 - Power Pellet_Frame_25
       frameIndex: 25
       cellRect:
         x: 8
         y: 7
         width: 48
         height: 50
-      spriteId: d7cb7a203d1bca74fb53e2e3cf525daf
-    - name: BonusVortex_Frame_26
+      spriteId: 2c9697572c027a443889ff5736a0b6db
+    - name: 6 - Power Pellet_Frame_26
       frameIndex: 26
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 50
-      spriteId: ef3368312cb50cc458b5395a8d5509c0
-    - name: BonusVortex_Frame_27
+      spriteId: 560a0e1ae3417764294ff907f5e2e97b
+    - name: 6 - Power Pellet_Frame_27
       frameIndex: 27
       cellRect:
         x: 7
         y: 7
         width: 50
         height: 50
-      spriteId: e56717a9803aadd438d5376b7046342d
-    - name: BonusVortex_Frame_28
+      spriteId: 3e30c9ea2673b554a8ee1ad05885957b
+    - name: 6 - Power Pellet_Frame_28
       frameIndex: 28
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: 52aa3d35ba0ef1e4291cb2f59d17c819
-    - name: BonusVortex_Frame_29
+      spriteId: 867ea66b86a673649b4f16cbb7df79e3
+    - name: 6 - Power Pellet_Frame_29
       frameIndex: 29
       cellRect:
         x: 8
         y: 7
         width: 49
         height: 50
-      spriteId: 73b3f23a90071ff449d5caecb909a1da
-    - name: BonusVortex_Frame_30
+      spriteId: 2496645efcc754c4b91be774690407be
+    - name: 6 - Power Pellet_Frame_30
       frameIndex: 30
       cellRect:
         x: 8
         y: 7
         width: 49
         height: 49
-      spriteId: 16986b56b37ef3a42ad8994c0082ef91
-    - name: BonusVortex_Frame_31
+      spriteId: 5ff438b395807784b88697b9d68c264c
+    - name: 6 - Power Pellet_Frame_31
       frameIndex: 31
       cellRect:
         x: 7
         y: 7
         width: 50
         height: 49
-      spriteId: 62971f14f4aa27849b96e370240db560
-    - name: BonusVortex_Frame_32
+      spriteId: 24f75713b7fb1ff4183d76209d68febe
+    - name: 6 - Power Pellet_Frame_32
       frameIndex: 32
       cellRect:
         x: 7
         y: 7
         width: 49
         height: 49
-      spriteId: 9f92ce1ffd8c49f49bdb1b85d8b1308f
-    - name: BonusVortex_Frame_33
+      spriteId: 0f207f7655d05d84eb4e3218c530d93c
+    - name: 6 - Power Pellet_Frame_33
       frameIndex: 33
       cellRect:
         x: 7
         y: 8
         width: 50
         height: 49
-      spriteId: a51e9cb2e1ae3c3468d32a656a0fca75
-    - name: BonusVortex_Frame_34
+      spriteId: 805bac880c5081c45a461c697e880e3a
+    - name: 6 - Power Pellet_Frame_34
       frameIndex: 34
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: 4a642c3ee54136d4b920178268f69e9c
-    - name: BonusVortex_Frame_35
+      spriteId: c05af004461d8c6438295f39342dacde
+    - name: 6 - Power Pellet_Frame_35
       frameIndex: 35
       cellRect:
         x: 6
         y: 7
         width: 51
         height: 50
-      spriteId: 5e40cf510207c694c86502a931ffec26
-    - name: BonusVortex_Frame_36
+      spriteId: ff32f0dbb221dc1409a4aabef5064842
+    - name: 6 - Power Pellet_Frame_36
       frameIndex: 36
       cellRect:
         x: 7
         y: 8
         width: 50
         height: 48
-      spriteId: eae15353930c7ba42bdaf5834537ec2f
-    - name: BonusVortex_Frame_37
+      spriteId: 9f3a325ab2877844eb3a3f8cdab0c484
+    - name: 6 - Power Pellet_Frame_37
       frameIndex: 37
       cellRect:
         x: 7
         y: 7
         width: 50
         height: 49
-      spriteId: b8e10300bf9ff754ab204d334cc18c60
-    - name: BonusVortex_Frame_38
+      spriteId: 7792b9a397f3b7d47ac8d924f79a4f03
+    - name: 6 - Power Pellet_Frame_38
       frameIndex: 38
       cellRect:
         x: 7
         y: 7
         width: 50
         height: 50
-      spriteId: aaff8b677b75fd84b97d55083aecd848
-    - name: BonusVortex_Frame_39
+      spriteId: 44964c2bab7989046a24b3ad9c9acf70
+    - name: 6 - Power Pellet_Frame_39
       frameIndex: 39
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 48
-      spriteId: ccb2da85b78349d40992c73292f64e26
-    - name: BonusVortex_Frame_40
+      spriteId: 2521f1b3e7a21334cbdbb71657ccf9a3
+    - name: 6 - Power Pellet_Frame_40
       frameIndex: 40
       cellRect:
         x: 7
         y: 7
         width: 49
         height: 50
-      spriteId: d9826fc6d2e9f1e49ba483638140f96b
-    - name: BonusVortex_Frame_41
+      spriteId: 126f543574f44274a9816712d03891fe
+    - name: 6 - Power Pellet_Frame_41
       frameIndex: 41
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: b17588b48e755024eb329813182f3801
-    - name: BonusVortex_Frame_42
+      spriteId: dddda52b356fd2b47b7a79250b5b747a
+    - name: 6 - Power Pellet_Frame_42
       frameIndex: 42
       cellRect:
         x: 6
         y: 7
         width: 50
         height: 50
-      spriteId: dc452f099b6fad24fbb22e1629c07a93
-    - name: BonusVortex_Frame_43
+      spriteId: 15ed9e46b6819304db152a1d8518abfa
+    - name: 6 - Power Pellet_Frame_43
       frameIndex: 43
       cellRect:
         x: 8
         y: 8
         width: 47
         height: 49
-      spriteId: 6e6595cdbf0c38c4c83c3db6352ce572
-    - name: BonusVortex_Frame_44
+      spriteId: 752bb02a6a37f1049abffdcec04493ad
+    - name: 6 - Power Pellet_Frame_44
       frameIndex: 44
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: 5a465cfae951df147957305e771cd2c4
-    - name: BonusVortex_Frame_45
+      spriteId: 1d15512470ab78b46af5f08dc403422a
+    - name: 6 - Power Pellet_Frame_45
       frameIndex: 45
       cellRect:
         x: 7
         y: 9
         width: 49
         height: 48
-      spriteId: 0906f5164b573744c86d436f5f836dc9
-    - name: BonusVortex_Frame_46
+      spriteId: bbddab30dca7a6c48bbab1d297655e62
+    - name: 6 - Power Pellet_Frame_46
       frameIndex: 46
       cellRect:
         x: 7
         y: 8
         width: 50
         height: 49
-      spriteId: bda11f5af99967e4eb259baec78a997a
-    - name: BonusVortex_Frame_47
+      spriteId: 205f1015570dd9645bcdddc2d73bb05e
+    - name: 6 - Power Pellet_Frame_47
       frameIndex: 47
       cellRect:
         x: 6
         y: 8
         width: 50
         height: 49
-      spriteId: 99c8d9ebf66389c4f92d725640fe17b3
-    - name: BonusVortex_Frame_48
+      spriteId: 974e04d589b550245a808a6d2a4da3bb
+    - name: 6 - Power Pellet_Frame_48
       frameIndex: 48
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 49
-      spriteId: 333b03763846f704e91ab6dac93c22aa
-    - name: BonusVortex_Frame_49
+      spriteId: 1c39d2e39d2dd2a419d18cc5029d768f
+    - name: 6 - Power Pellet_Frame_49
       frameIndex: 49
       cellRect:
         x: 6
         y: 8
         width: 50
         height: 50
-      spriteId: a07d10142ded8234fa18e09b5eebe693
-    - name: BonusVortex_Frame_50
+      spriteId: b6fa7d27be23ab7439dee7e9acab09c8
+    - name: 6 - Power Pellet_Frame_50
       frameIndex: 50
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 48
-      spriteId: 4ce6190d08162284fa3336c46af21b3a
-    - name: BonusVortex_Frame_51
+      spriteId: 94a14b9a6cc5eeb4b9a3b4a9cc29e840
+    - name: 6 - Power Pellet_Frame_51
       frameIndex: 51
       cellRect:
         x: 8
         y: 8
         width: 48
         height: 49
-      spriteId: 3a95527c713bd614c9f70cf2cb9339cd
-    - name: BonusVortex_Frame_52
+      spriteId: d8f4b2df449059e4ba7c8bacd86eec17
+    - name: 6 - Power Pellet_Frame_52
       frameIndex: 52
       cellRect:
         x: 8
         y: 7
         width: 48
         height: 50
-      spriteId: 10eb0a4f31ab9254487c51dd7f34ff06
-    - name: BonusVortex_Frame_53
+      spriteId: b4d1a85725428e84faff4d9ff002b959
+    - name: 6 - Power Pellet_Frame_53
       frameIndex: 53
       cellRect:
         x: 8
         y: 7
         width: 48
         height: 50
-      spriteId: 1572333a2223bde4390ed0f6ad205023
-    - name: BonusVortex_Frame_54
+      spriteId: 0d35059a292e3594ea86caa81675a372
+    - name: 6 - Power Pellet_Frame_54
       frameIndex: 54
       cellRect:
         x: 7
         y: 8
         width: 49
         height: 50
-      spriteId: 783c0640bf13f7642897ba1eb0bbb792
-    - name: BonusVortex_Frame_55
+      spriteId: 0e5a93400acaaee4b9a9cf8d53cba4af
+    - name: 6 - Power Pellet_Frame_55
       frameIndex: 55
       cellRect:
         x: 7
         y: 7
         width: 50
         height: 50
-      spriteId: 64005a41513e2ec4db4566a87de3e450
+      spriteId: d242488d99dea9a4e82ddafe514fbb67
     linkedCells: []
     parentIndex: -1
   platformSettings:
