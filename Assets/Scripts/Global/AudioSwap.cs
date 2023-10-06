@@ -17,9 +17,11 @@ public class AudioSwap : MonoBehaviour
 
     private IEnumerator SwapMusicToNormal()
     {
-        yield return new WaitForSeconds(35.0f);
+        yield return new WaitForSeconds(16.0f);
+        m_BgMusicAudioSource.volume = 0.0f;
         m_BgMusicAudioSource.Stop();
         m_BgMusicAudioSource.clip = normalBg;
+        m_BgMusicAudioSource.volume = 1.0f;
         m_BgMusicAudioSource.Play();
     }
 }
