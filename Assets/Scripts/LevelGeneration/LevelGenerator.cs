@@ -45,7 +45,7 @@ public class LevelGenerator : MonoBehaviour
         // set up camera size and position
         var camera = Camera.main;
         if (camera == null) throw new NullReferenceException("Camera.main is null");
-        camera.orthographicSize = levelMap.GetLength(0);
+        camera.orthographicSize = Math.Max(levelMap.GetLength(0), levelMap.GetLength(1));
         camera.transform.position = new Vector3(levelMap.GetLength(1), levelMap.GetLength(0), -10);
 
 
@@ -357,7 +357,7 @@ public class LevelGenerator : MonoBehaviour
         foreach (var side in sides)
         {
             rotation += 90;
-            if(side is 3 or 4)
+            if (side is 3 or 4)
                 return rotation;
         }
 

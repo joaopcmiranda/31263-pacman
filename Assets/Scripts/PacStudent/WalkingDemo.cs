@@ -4,10 +4,10 @@ public class WalkingDemo : MonoBehaviour
 {
     private static readonly int WalkingParam = Animator.StringToHash("walking");
     private static readonly int DirectionParam = Animator.StringToHash("direction");
+    public float speed;
     private Animator m_Animator;
     private int m_currentDirection = (int)Direction.RIGHT;
     private Tween m_Tween;
-    public float speed;
 
     private void Start()
     {
@@ -20,7 +20,9 @@ public class WalkingDemo : MonoBehaviour
     {
         var timeFraction = (Time.time - m_Tween.startTime) / m_Tween.duration;
         if (timeFraction < 1.0f)
+        {
             transform.position = Vector3.Lerp(m_Tween.startPos, m_Tween.endPos, timeFraction);
+        }
         else
         {
             m_currentDirection = (m_currentDirection + 1) % 4; // new direction cycling clockwise
@@ -30,12 +32,12 @@ public class WalkingDemo : MonoBehaviour
 
     private void MoveToDirection(int direction)
     {
-        Vector3 startPos = m_Tween?.endPos ?? transform.position;
+        var startPos = m_Tween?.endPos ?? transform.position;
         transform.position = startPos;
         m_Animator.SetInteger(DirectionParam, direction); // set new direction animation
-        Vector3 movementVector = GetDirectionVector(); // new direction vector
-        Vector3 endPos = transform.position + movementVector; // new end position
-        float duration = movementVector.magnitude / speed; // new duration
+        var movementVector = GetDirectionVector(); // new direction vector
+        var endPos = transform.position + movementVector; // new end position
+        var duration = movementVector.magnitude / speed; // new duration
 
         m_Tween = new Tween(startPos, endPos, Time.time, duration);
     }
