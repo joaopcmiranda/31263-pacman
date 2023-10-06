@@ -10,7 +10,7 @@ public class LevelGenerator : MonoBehaviour
     public Sprite pellet;
     public GameObject powerPellet;
     public Sprite tJunction;
-    
+
     public GameObject tilePrefab;
 
     public GameObject powerPelletParent;
@@ -41,14 +41,14 @@ public class LevelGenerator : MonoBehaviour
         // clear the level
         powerPelletParent.SetActive(false);
         grid.SetActive(false);
-        
+
         // set up camera size and position
         var camera = Camera.main;
         if (camera == null) throw new NullReferenceException("Camera.main is null");
         camera.orthographicSize = levelMap.GetLength(0);
         camera.transform.position = new Vector3(levelMap.GetLength(1), levelMap.GetLength(0), -10);
-        
-        
+
+
         GenerateLevel(PrepareLevelMap());
     }
 
@@ -112,69 +112,62 @@ public class LevelGenerator : MonoBehaviour
                     CreatePellet(position);
                     break;
                 case 6:
-                    CreateTJunction(position, levelArray);
+                    CreatePowerPellet(position);
                     break;
                 case 7:
-                    CreatePowerPellet(position);
+                    CreateTJunction(position, levelArray);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
         }
     }
-    
+
     private void CreateOutsideWallCorner(Vector3 position, int[,] levelArray)
     {
-        var tile = Instantiate(tilePrefab,  position, Quaternion.identity, transform);
+        var tile = Instantiate(tilePrefab, position, Quaternion.identity, transform);
         tile.name = $"[{position.x}, {position.y}] Outside Wall Corner";
         tile.GetComponent<SpriteRenderer>().sprite = outsideWallCorner;
-        
     }
-    
+
     private void CreateOutsideWallStraight(Vector3 position, int[,] levelArray)
     {
         var tile = Instantiate(tilePrefab, position, Quaternion.identity, transform);
-        tile.name =  $"[{position.x}, {position.y}] Outside Wall Straight";
+        tile.name = $"[{position.x}, {position.y}] Outside Wall Straight";
         tile.GetComponent<SpriteRenderer>().sprite = outsideWallStraight;
-        
     }
-    
+
     private void CreateInsideWallCorner(Vector3 position, int[,] levelArray)
     {
         var tile = Instantiate(tilePrefab, position, Quaternion.identity, transform);
-        tile.name =  $"[{position.x}, {position.y}] Inside Wall Corner";
+        tile.name = $"[{position.x}, {position.y}] Inside Wall Corner";
         tile.GetComponent<SpriteRenderer>().sprite = insideWallCorner;
-        
     }
-    
+
     private void CreateInsideWallStraight(Vector3 position, int[,] levelArray)
     {
         var tile = Instantiate(tilePrefab, position, Quaternion.identity, transform);
-        tile.name =  $"[{position.x}, {position.y}] Inside Wall Straight";
+        tile.name = $"[{position.x}, {position.y}] Inside Wall Straight";
         tile.GetComponent<SpriteRenderer>().sprite = insideWallStraight;
-        
     }
-    
+
     private void CreatePellet(Vector3 position)
     {
         var tile = Instantiate(tilePrefab, position, Quaternion.identity, transform);
-        tile.name =  $"[{position.x}, {position.y}] Pellet";
+        tile.name = $"[{position.x}, {position.y}] Pellet";
         tile.GetComponent<SpriteRenderer>().sprite = pellet;
-        
     }
-    
+
     private void CreatePowerPellet(Vector3 position)
     {
-        var tile = Instantiate(powerPellet, position, Quaternion.identity, transform);
-        tile.name =  $"[{position.x}, {position.y}] Power Pellet";
-        
+        var tile = Instantiate(powerPellet, position - new Vector3(0, 0.5f, 0), Quaternion.identity, transform);
+        tile.name = $"[{position.x}, {position.y}] Power Pellet";
     }
 
     private void CreateTJunction(Vector3 position, int[,] levelArray)
     {
         var tile = Instantiate(tilePrefab, position, Quaternion.identity, transform);
-        tile.name =  $"[{position.x}, {position.y}] T Junction";
+        tile.name = $"[{position.x}, {position.y}] T Junction";
         tile.GetComponent<SpriteRenderer>().sprite = tJunction;
-
     }
 }
