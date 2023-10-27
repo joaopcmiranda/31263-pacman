@@ -4,6 +4,7 @@ public class Tween
 {
     public Tween(Vector3 startPos, Vector3 endPos, float startTime, float duration)
     {
+        
         this.startPos = startPos;
         this.endPos = endPos;
         this.startTime = startTime;
