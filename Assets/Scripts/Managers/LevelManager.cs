@@ -1,22 +1,9 @@
 using System;
 using UnityEngine;
 
-public class LevelGenerator : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
-    public Sprite outsideWallCorner;
-    public Sprite outsideWallStraight;
-    public Sprite insideWallCorner;
-    public Sprite insideWallStraight;
-    public Sprite pellet;
-    public GameObject powerPellet;
-    public Sprite tJunction;
-
-    public GameObject tilePrefab;
-
-    public GameObject powerPelletParent;
-    public GameObject grid;
-
-    private readonly int[,] levelMap =
+    private static readonly int[,] levelMap =
     {
         { 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7 },
         { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4 },
@@ -35,6 +22,21 @@ public class LevelGenerator : MonoBehaviour
         { 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 4, 0, 0, 0 }
     };
 
+    public static readonly int[,] LEVEL_MAP = PrepareLevelMap();
+
+    public Sprite outsideWallCorner;
+    public Sprite outsideWallStraight;
+    public Sprite insideWallCorner;
+    public Sprite insideWallStraight;
+    public Sprite pellet;
+    public GameObject powerPellet;
+    public Sprite tJunction;
+
+    public GameObject tilePrefab;
+
+    public GameObject powerPelletParent;
+    public GameObject grid;
+
 
     private void Start()
     {
@@ -43,16 +45,16 @@ public class LevelGenerator : MonoBehaviour
         grid.SetActive(false);
 
         // set up camera size and position
-        var camera = Camera.main;
-        if (camera == null) throw new NullReferenceException("Camera.main is null");
-        camera.orthographicSize = Math.Max(levelMap.GetLength(0), levelMap.GetLength(1));
-        camera.transform.position = new Vector3(levelMap.GetLength(1), levelMap.GetLength(0), -10);
+        var mainCamera = Camera.main;
+        if (mainCamera == null) throw new NullReferenceException("Camera.main is null");
+        mainCamera.orthographicSize = Math.Max(levelMap.GetLength(0) + .5f, levelMap.GetLength(1) + .5f);
+        mainCamera.transform.position = new Vector3(levelMap.GetLength(1) + 5, levelMap.GetLength(0) - 1f, -10);
 
 
-        GenerateLevel(PrepareLevelMap());
+        GenerateLevel(LEVEL_MAP);
     }
 
-    private int[,] PrepareLevelMap()
+    private static int[,] PrepareLevelMap()
     {
         // Mirror the levelMap array into 4 quadrants not copying the bottom row
         var newLevelMap = new int[levelMap.GetLength(0) * 2 - 1, levelMap.GetLength(1) * 2];
@@ -79,6 +81,19 @@ public class LevelGenerator : MonoBehaviour
         }
 
         return newLevelMap;
+    }
+
+    public static bool CheckPositionWalkable(Vector2 position)
+    {
+        var row = (int)position.y;
+        var col = (int)position.x;
+
+        if (row < 0 || row >= LEVEL_MAP.GetLength(0) || col < 0 || col >= LEVEL_MAP.GetLength(1))
+            return false;
+
+        var value = LEVEL_MAP[row, col];
+
+        return value is 0 or 5 or 6;
     }
 
     private void GenerateLevel(int[,] levelArray)
@@ -127,6 +142,7 @@ public class LevelGenerator : MonoBehaviour
     {
         var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
         tile.name = $"[{position.x}, {position.y}] Pellet";
+        Debug.Log(tile.name + " " + tile.transform.position);
         tile.GetComponent<SpriteRenderer>().sprite = pellet;
     }
 
