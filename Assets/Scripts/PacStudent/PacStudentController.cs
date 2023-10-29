@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PacStudentController : MonoBehaviour
@@ -7,10 +8,10 @@ public class PacStudentController : MonoBehaviour
     public float speed;
 
     // ReSharper disable once InconsistentNaming because assessment required specific variable naming
-    private Direction currentInput;
+    private Direction currentInput = Direction.NONE;
 
     // ReSharper disable once InconsistentNaming because assessment required specific variable naming
-    private Direction lastInput;
+    private Direction lastInput = Direction.NONE;
 
     private Animator m_Animator;
 
@@ -27,6 +28,8 @@ public class PacStudentController : MonoBehaviour
     {
         m_Animator = GetComponent<Animator>();
         m_Animator.SetBool(WalkingParam, false);
+        
+        m_Tween = new Tween(transform.position, transform.position, Time.time, 0.0001f);
     }
 
     private void Update()
@@ -40,6 +43,7 @@ public class PacStudentController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             lastInput = Direction.LEFT;
 
+        
         var timeFraction = (Time.time - m_Tween.startTime) / m_Tween.duration;
         if (timeFraction < 1.0f)
         {
@@ -50,11 +54,18 @@ public class PacStudentController : MonoBehaviour
             transform.position = m_Tween.endPos;
 
             // If the last input is not walkable, try the current input, otherwise stay still
-            currentInput = LevelManager.CheckPositionWalkable(m_Position + GetDirectionVector2(lastInput)) ? lastInput
-                : LevelManager.CheckPositionWalkable(m_Position + GetDirectionVector2(currentInput)) ? currentInput
+            currentInput = LevelManager.CheckPositionWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(lastInput))) ? lastInput
+                : LevelManager.CheckPositionWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(currentInput))) ? currentInput
                 : Direction.NONE;
 
-            MoveTo(currentInput);
+            if (currentInput != Direction.NONE) 
+            {
+                MoveTo(currentInput);
+            }
+            else
+            {
+                m_Animator.SetBool(WalkingParam, false);
+            }
         }
     }
 
@@ -68,19 +79,20 @@ public class PacStudentController : MonoBehaviour
 
         // set new direction animation
         m_Animator.SetInteger(DirectionParam, (int)direction);
+        m_Animator.SetBool(WalkingParam, true);
 
         // new direction vector
         var movementVector = GetDirectionVector2(direction);
 
         // Update position with target position
-        m_Position += movementVector;
+        m_Position = GetTargetPosition(m_Position, movementVector);
 
         // new end position - convert to Vector3 to for compatibility with transform.position
         var endPos = transform.position + (Vector3)movementVector;
 
         // new duration
         var duration = movementVector.magnitude / speed;
-
+        
         m_Tween = new Tween(startPos, endPos, Time.time, duration);
     }
 
@@ -99,5 +111,10 @@ public class PacStudentController : MonoBehaviour
             default:
                 return Vector2.zero;
         }
+    }
+
+    private Vector2 GetTargetPosition(Vector2 currentPosition, Vector2 change)
+    {
+        return new Vector2(currentPosition.x + change.x, currentPosition.y - change.y);
     }
 }
