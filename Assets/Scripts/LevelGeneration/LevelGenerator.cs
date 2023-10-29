@@ -46,7 +46,7 @@ public class LevelGenerator : MonoBehaviour
         var camera = Camera.main;
         if (camera == null) throw new NullReferenceException("Camera.main is null");
         camera.orthographicSize = Math.Max(levelMap.GetLength(0) + .5f, levelMap.GetLength(1) + .5f);
-        camera.transform.position = new Vector3(levelMap.GetLength(1) + 5f, levelMap.GetLength(0) - 1.0f, -10);
+        camera.transform.position = new Vector3(levelMap.GetLength(1) + 6.5f, levelMap.GetLength(0) + .5f, -10);
 
 
         GenerateLevel(PrepareLevelMap());
