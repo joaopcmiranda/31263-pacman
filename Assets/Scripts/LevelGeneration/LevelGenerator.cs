@@ -19,7 +19,7 @@ public class LevelGenerator : MonoBehaviour
     private readonly int[,] levelMap =
     {
         { 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4 },
+        { 2, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4 },
         { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 4 },
         { 2, 6, 4, 0, 0, 4, 5, 4, 0, 0, 0, 4, 5, 4 },
         { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 3 },
@@ -45,8 +45,8 @@ public class LevelGenerator : MonoBehaviour
         // set up camera size and position
         var camera = Camera.main;
         if (camera == null) throw new NullReferenceException("Camera.main is null");
-        camera.orthographicSize = Math.Max(levelMap.GetLength(0), levelMap.GetLength(1));
-        camera.transform.position = new Vector3(levelMap.GetLength(1), levelMap.GetLength(0), -10);
+        camera.orthographicSize = Math.Max(levelMap.GetLength(0) + .5f, levelMap.GetLength(1) + .5f);
+        camera.transform.position = new Vector3(levelMap.GetLength(1) + 5f, levelMap.GetLength(0) - 1.0f, -10);
 
 
         GenerateLevel(PrepareLevelMap());
