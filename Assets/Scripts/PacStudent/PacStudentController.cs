@@ -6,7 +6,7 @@ public class PacStudentController : MonoBehaviour
     private static readonly int WalkingParam = Animator.StringToHash("walking");
     private static readonly int DirectionParam = Animator.StringToHash("direction");
     public float speed;
-
+    
     // ReSharper disable once InconsistentNaming because assessment required specific variable naming
     private Direction currentInput = Direction.NONE;
 
@@ -14,6 +14,11 @@ public class PacStudentController : MonoBehaviour
     private Direction lastInput = Direction.NONE;
 
     private Animator m_Animator;
+    private AudioSource m_WalkingAudioSource;
+
+    public AudioClip walkingOnEmptySound;
+    public AudioClip walkingOnPelletSound;
+    public AudioClip hitWallSound;
 
     // I decided to use a different position than the world position because
     // the world position has some quirks that make it difficult to use like
@@ -22,6 +27,8 @@ public class PacStudentController : MonoBehaviour
     // moving, it makes the code a lot easier to read and understand. 
     private Vector2 m_Position = new(1, 1);
     private Tween m_Tween;
+    
+    private bool m_IsMoving = false;
 
 
     private void Start()
@@ -30,6 +37,8 @@ public class PacStudentController : MonoBehaviour
         m_Animator.SetBool(WalkingParam, false);
         
         m_Tween = new Tween(transform.position, transform.position, Time.time, 0.0001f);
+        
+        m_WalkingAudioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -54,16 +63,23 @@ public class PacStudentController : MonoBehaviour
             transform.position = m_Tween.endPos;
 
             // If the last input is not walkable, try the current input, otherwise stay still
-            currentInput = LevelManager.CheckPositionWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(lastInput))) ? lastInput
-                : LevelManager.CheckPositionWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(currentInput))) ? currentInput
+            currentInput = LevelManager.IsTileWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(lastInput))) ? lastInput
+                : LevelManager.IsTileWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(currentInput))) ? currentInput
                 : Direction.NONE;
 
             if (currentInput != Direction.NONE) 
             {
+                m_IsMoving = true;
                 MoveTo(currentInput);
             }
-            else
+            else if (m_IsMoving)
             {
+                m_IsMoving = false;
+                m_WalkingAudioSource.Stop();
+                m_WalkingAudioSource.loop = false;
+                m_WalkingAudioSource.clip = hitWallSound;
+                m_WalkingAudioSource.Play();
+
                 m_Animator.SetBool(WalkingParam, false);
             }
         }
@@ -86,6 +102,21 @@ public class PacStudentController : MonoBehaviour
 
         // Update position with target position
         m_Position = GetTargetPosition(m_Position, movementVector);
+        
+        // Play walking sound
+        m_WalkingAudioSource.Stop();
+        
+        if (LevelManager.GetTileOnPosition(m_Position) == TileContent.EMPTY)
+        {
+            m_WalkingAudioSource.clip = walkingOnEmptySound;
+        }
+        else if (LevelManager.GetTileOnPosition(m_Position) == TileContent.PELLET)
+        {
+            m_WalkingAudioSource.clip = walkingOnPelletSound;
+        }
+        
+        m_WalkingAudioSource.loop = true;
+        m_WalkingAudioSource.Play();
 
         // new end position - convert to Vector3 to for compatibility with transform.position
         var endPos = transform.position + (Vector3)movementVector;
