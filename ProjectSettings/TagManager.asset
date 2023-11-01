@@ -50,3 +50,6 @@ TagManager:
   - name: Ghosts
     uniqueID: 677859049
     locked: 0
+  - name: HUD
+    uniqueID: 3562960547
+    locked: 0
