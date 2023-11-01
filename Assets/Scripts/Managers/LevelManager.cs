@@ -1,6 +1,15 @@
 using System;
 using UnityEngine;
 
+public enum TileContent
+{
+    EMPTY,
+    WALL,
+    PELLET,
+    POWER_PELLET,
+    OUTSIDE_MAP
+}
+
 public class LevelManager : MonoBehaviour
 {
     private static readonly int[,] levelMap =
@@ -83,17 +92,34 @@ public class LevelManager : MonoBehaviour
         return newLevelMap;
     }
 
-    public static bool CheckPositionWalkable(Vector2 position)
+    public static TileContent GetTileOnPosition(Vector2 position)
     {
         var row = (int)position.y;
         var col = (int)position.x;
 
         if (row < 0 || row >= LEVEL_MAP.GetLength(0) || col < 0 || col >= LEVEL_MAP.GetLength(1))
-            return false;
+            return TileContent.OUTSIDE_MAP;
 
         var value = LEVEL_MAP[row, col];
 
-        return value is 0 or 5 or 6;
+        return value switch
+        {
+            0 => TileContent.EMPTY,
+            5 => TileContent.PELLET,
+            6 => TileContent.POWER_PELLET,
+            _ => TileContent.WALL
+        };
+    }
+
+    public static bool IsTileWalkable(Vector2 position)
+    {
+        return GetTileOnPosition(position) switch
+        {
+            TileContent.EMPTY => true,
+            TileContent.PELLET => true,
+            TileContent.POWER_PELLET => true,
+            _ => false
+        };
     }
 
     private void GenerateLevel(int[,] levelArray)

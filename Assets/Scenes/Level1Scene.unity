@@ -899,7 +899,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -2202,6 +2202,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  walkingOnEmptySound: {fileID: 8300000, guid: 4c621721b09ac4342b4ea625ea522f1c, type: 3}
+  walkingOnPelletSound: {fileID: 8300000, guid: e9db8e482f3d21246943fd6449cafa49, type: 3}
+  hitWallSound: {fileID: 8300000, guid: e71bdd8f18019954b85c03ac703ef5b2, type: 3}
 --- !u!4 &1203629534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 78790417125009349, guid: df12729f2192f544cb92ae1e463a09fa, type: 3}
