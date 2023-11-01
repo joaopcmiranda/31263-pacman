@@ -33,6 +33,8 @@ public class LevelManager : MonoBehaviour
 
     public static readonly int[,] LEVEL_MAP = PrepareLevelMap();
 
+    public GameObject levelObject;
+
     public Sprite outsideWallCorner;
     public Sprite outsideWallStraight;
     public Sprite insideWallCorner;
@@ -47,6 +49,8 @@ public class LevelManager : MonoBehaviour
     public GameObject grid;
 
 
+    private Transform m_LTransform;
+
     private void Start()
     {
         // clear the level
@@ -57,8 +61,9 @@ public class LevelManager : MonoBehaviour
         var mainCamera = Camera.main;
         if (mainCamera == null) throw new NullReferenceException("Camera.main is null");
         mainCamera.orthographicSize = Math.Max(levelMap.GetLength(0) + .5f, levelMap.GetLength(1) + .5f);
-        mainCamera.transform.position = new Vector3(levelMap.GetLength(1) + 5, levelMap.GetLength(0) - 1f, -10);
+        mainCamera.transform.position = new Vector3(levelMap.GetLength(1) + 6.5f, levelMap.GetLength(0) + .5f, -10);
 
+        m_LTransform = levelObject.transform;
 
         GenerateLevel(LEVEL_MAP);
     }
@@ -166,23 +171,24 @@ public class LevelManager : MonoBehaviour
 
     private void CreatePellet(Vector3 position)
     {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
+        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
         tile.name = $"[{position.x}, {position.y}] Pellet";
         Debug.Log(tile.name + " " + tile.transform.position);
         tile.GetComponent<SpriteRenderer>().sprite = pellet;
+        tile.GetComponent<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("Collectables");
     }
 
     private void CreatePowerPellet(Vector3 position)
     {
-        var tile = Instantiate(powerPellet, position + transform.position - new Vector3(0, 0.5f, 0),
-            Quaternion.identity, transform);
+        var tile = Instantiate(powerPellet, position + m_LTransform.position - new Vector3(0, 0.5f, 0),
+            Quaternion.identity, m_LTransform);
         tile.name = $"[{position.x}, {position.y}] Power Pellet";
     }
 
 
     private void CreateOutsideWallCorner(Vector3 position, int[,] levelArray)
     {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
+        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
         tile.name = $"[{position.x}, {position.y}] Outside Wall Corner";
         tile.GetComponent<SpriteRenderer>().sprite = outsideWallCorner;
         tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
@@ -190,7 +196,7 @@ public class LevelManager : MonoBehaviour
 
     private void CreateOutsideWallStraight(Vector3 position, int[,] levelArray)
     {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
+        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
         tile.name = $"[{position.x}, {position.y}] Outside Wall Straight";
         tile.GetComponent<SpriteRenderer>().sprite = outsideWallStraight;
         tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
@@ -198,7 +204,7 @@ public class LevelManager : MonoBehaviour
 
     private void CreateInsideWallCorner(Vector3 position, int[,] levelArray)
     {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
+        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
         tile.name = $"[{position.x}, {position.y}] Inside Wall Corner";
         tile.GetComponent<SpriteRenderer>().sprite = insideWallCorner;
         tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
@@ -206,7 +212,7 @@ public class LevelManager : MonoBehaviour
 
     private void CreateInsideWallStraight(Vector3 position, int[,] levelArray)
     {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
+        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
         tile.name = $"[{position.x}, {position.y}] Inside Wall Straight";
         tile.GetComponent<SpriteRenderer>().sprite = insideWallStraight;
         tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
@@ -214,7 +220,7 @@ public class LevelManager : MonoBehaviour
 
     private void CreateTJunction(Vector3 position, int[,] levelArray)
     {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
+        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
         tile.name = $"[{position.x}, {position.y}] T Junction";
         tile.GetComponent<SpriteRenderer>().sprite = tJunction;
         tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
@@ -223,7 +229,7 @@ public class LevelManager : MonoBehaviour
     private int CalculateTileRotation(Vector3 position, int[,] levelArray)
     {
         var piece = levelArray[(int)position.y, (int)position.x];
-        var match = 0;
+        int match;
 
         switch (piece)
         {
@@ -423,5 +429,19 @@ public class LevelManager : MonoBehaviour
             return array[newRow, newCol];
 
         return 0;
+    }
+
+    public Vector3 GetWorldPositionForTile(Vector2 tilePosition)
+    {
+        return (Vector3)tilePosition + m_LTransform.position;
+    }
+
+    public Vector2 GetCentreOfMap()
+    {
+        // x is always even, y is always odd
+        var x = (LEVEL_MAP.GetLength(1) - 1) / 2f;
+        var y = (LEVEL_MAP.GetLength(0) - 1) / 2f - 1f;
+
+        return new Vector2(x, y);
     }
 }
