@@ -596,8 +596,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1603499709}
   - {fileID: 1156979144}
+  - {fileID: 1603499709}
   - {fileID: 91150}
   m_Father: {fileID: 1879157550}
   m_RootOrder: -1
@@ -881,7 +881,6 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
-  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -973,11 +972,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8eedd95a14962b94b8e996951fd6d0df, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1059,20 +1058,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &519420034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d7805cef36be3348ba944ac5ad709a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introBg: {fileID: 8300000, guid: f6d04e4883ce97347bb0ce3965736ed3, type: 3}
-  normalBg: {fileID: 8300000, guid: 8eedd95a14962b94b8e996951fd6d0df, type: 3}
 --- !u!224 &532524079 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1771019494255896324, guid: d326ff589a625e044a495de35ee4c908, type: 3}
@@ -1179,6 +1164,8 @@ GameObject:
   - component: {fileID: 697772708}
   - component: {fileID: 697772707}
   - component: {fileID: 697772706}
+  - component: {fileID: 697772709}
+  - component: {fileID: 697772710}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1240,6 +1227,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &697772709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697772705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adc3f30ef824d7ba532b7793a00adc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  scoreText: {fileID: 504535872}
+  timerText: {fileID: 2135387782}
+  highScoreText: {fileID: 0}
+  highScoreTimeText: {fileID: 0}
+--- !u!114 &697772710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697772705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d2a919cd2e47d889d88e3b5a97c4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life1: {fileID: 1156979145}
+  life2: {fileID: 1603499710}
+  life3: {fileID: 91151}
+  lifeCount: 3
 --- !u!1001 &698842009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2349,7 +2369,7 @@ GameObject:
   - component: {fileID: 1156979146}
   - component: {fileID: 1156979145}
   m_Layer: 5
-  m_Name: Life2
+  m_Name: Life1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3550,7 +3570,7 @@ GameObject:
   - component: {fileID: 1603499711}
   - component: {fileID: 1603499710}
   m_Layer: 5
-  m_Name: Life1
+  m_Name: Life2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11465,6 +11485,10 @@ PrefabInstance:
     - target: {fileID: 7777473542257147686, guid: df12729f2192f544cb92ae1e463a09fa, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8799199977409748963, guid: df12729f2192f544cb92ae1e463a09fa, type: 3}
+      propertyPath: m_Volume
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8970086893320697767, guid: df12729f2192f544cb92ae1e463a09fa, type: 3}
       propertyPath: m_Simulated
