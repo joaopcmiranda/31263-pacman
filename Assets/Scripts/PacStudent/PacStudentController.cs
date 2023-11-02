@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PacStudentController : MonoBehaviour
@@ -32,9 +33,16 @@ public class PacStudentController : MonoBehaviour
     private Tween m_Tween;
     private AudioSource m_WalkingAudioSource;
 
+    public GameObject manager;
+    private CherryController m_CherryController;
+    private Level1Manager m_LevelManager;
+
 
     private void Start()
     {
+        m_LevelManager = manager.GetComponent<Level1Manager>();
+        m_CherryController = manager.GetComponent<CherryController>();
+        
         m_Animator = GetComponent<Animator>();
         m_Animator.SetBool(WalkingParam, false);
 
@@ -153,5 +161,34 @@ public class PacStudentController : MonoBehaviour
     private Vector2 GetTargetPosition(Vector2 currentPosition, Vector2 change)
     {
         return new Vector2(currentPosition.x + change.x, currentPosition.y - change.y);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Pellet"))
+        {
+            // m_LevelManager.PelletEaten();
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("PowerPellet"))
+        {
+            // m_LevelManager.PowerPelletEaten();
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("Cherry"))
+        {
+            // m_LevelManager.CherryEaten();
+            m_CherryController.CherryEaten();
+        } else if (other.CompareTag("RightTeleporter")){
+            var rightTeleporter = other.GetComponent<RightTeleporterController>();
+            var otherTeleporterPosition = rightTeleporter.leftTeleporter.transform.position;
+            otherTeleporterPosition.x += 1;
+            m_Tween = new Tween(transform.position, otherTeleporterPosition, Time.time, 0.0001f);
+        } else if (other.CompareTag("LeftTeleporter")){
+            var leftTeleporter = other.GetComponent<LeftTeleporterController>();
+            var otherTeleporterPosition = leftTeleporter.rightTeleporter.transform.position;
+            otherTeleporterPosition.x -= 1;
+            m_Tween = new Tween(transform.position, otherTeleporterPosition, Time.time, 0.0001f);
+        }
     }
 }

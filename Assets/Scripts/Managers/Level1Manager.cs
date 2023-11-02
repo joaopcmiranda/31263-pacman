@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum TileContent
 {
@@ -10,7 +11,7 @@ public enum TileContent
     OUTSIDE_MAP
 }
 
-public class Level1Manager : MonoBehaviour 
+public class Level1Manager : MonoBehaviour
 {
     private static readonly int[,] levelMap =
     {
@@ -39,7 +40,7 @@ public class Level1Manager : MonoBehaviour
     public Sprite outsideWallStraight;
     public Sprite insideWallCorner;
     public Sprite insideWallStraight;
-    public Sprite pellet;
+    public GameObject pellet;
     public GameObject powerPellet;
     public Sprite tJunction;
 
@@ -47,6 +48,9 @@ public class Level1Manager : MonoBehaviour
 
     public GameObject powerPelletParent;
     public GameObject grid;
+
+    public GameObject teleporterLeft;
+    public GameObject teleporterRight;
 
 
     private Transform m_LTransform;
@@ -123,6 +127,7 @@ public class Level1Manager : MonoBehaviour
             TileContent.EMPTY => true,
             TileContent.PELLET => true,
             TileContent.POWER_PELLET => true,
+            TileContent.OUTSIDE_MAP => true,
             _ => false
         };
     }
@@ -167,15 +172,19 @@ public class Level1Manager : MonoBehaviour
                     throw new ArgumentOutOfRangeException();
             }
         }
+
+        // Prepare teleporters
+        var leftTeleporterPosition = new Vector3(-1.94f, rows / 2f - .5f, -3);
+        var rightTeleporterPosition = new Vector3(cols + 1.04f, rows / 2f - .5f, -3);
+
+        teleporterLeft.transform.position = leftTeleporterPosition + m_LTransform.position;
+        teleporterRight.transform.position = rightTeleporterPosition + m_LTransform.position;
     }
 
     private void CreatePellet(Vector3 position)
     {
-        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
+        var tile = Instantiate(pellet, position + m_LTransform.position, Quaternion.identity, m_LTransform);
         tile.name = $"[{position.x}, {position.y}] Pellet";
-        Debug.Log(tile.name + " " + tile.transform.position);
-        tile.GetComponent<SpriteRenderer>().sprite = pellet;
-        tile.GetComponent<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("Collectables");
     }
 
     private void CreatePowerPellet(Vector3 position)
@@ -444,9 +453,9 @@ public class Level1Manager : MonoBehaviour
 
         return new Vector2(x, y);
     }
-    
+
     public void ExitToStartScreen()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
     }
 }

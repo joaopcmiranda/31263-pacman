@@ -72,4 +72,10 @@ public class CherryController : MonoBehaviour
 
         return centre + directionToCentre;
     }
+    
+    public void CherryEaten()
+    {
+        m_IsCherryOnMap = false;
+        Destroy(m_ActiveCherry);
+    }
 }
