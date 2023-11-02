@@ -2398,6 +2398,7 @@ MonoBehaviour:
   walkingOnEmptySound: {fileID: 8300000, guid: 4c621721b09ac4342b4ea625ea522f1c, type: 3}
   walkingOnPelletSound: {fileID: 8300000, guid: 048f4cdac951e124fbc3bb946c6dce52, type: 3}
   hitWallSound: {fileID: 8300000, guid: e71bdd8f18019954b85c03ac703ef5b2, type: 3}
+  dustParticleSystem: {fileID: 1699021136}
 --- !u!4 &1203629534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 78790417125009349, guid: df12729f2192f544cb92ae1e463a09fa, type: 3}

@@ -41,7 +41,6 @@ public class CherryController : MonoBehaviour
         var yMax = Level1Manager.LEVEL_MAP.GetLength(0) + 1;
 
         if (xOrY)
-
         {
             // randomise x
             x = Random.Range(0, xMax);

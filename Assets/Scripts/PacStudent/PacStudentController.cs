@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class PacStudentController : MonoBehaviour
@@ -6,7 +5,13 @@ public class PacStudentController : MonoBehaviour
     private static readonly int WalkingParam = Animator.StringToHash("walking");
     private static readonly int DirectionParam = Animator.StringToHash("direction");
     public float speed;
-    
+
+    public AudioClip walkingOnEmptySound;
+    public AudioClip walkingOnPelletSound;
+    public AudioClip hitWallSound;
+
+    public GameObject dustParticleSystem;
+
     // ReSharper disable once InconsistentNaming because assessment required specific variable naming
     private Direction currentInput = Direction.NONE;
 
@@ -14,11 +19,9 @@ public class PacStudentController : MonoBehaviour
     private Direction lastInput = Direction.NONE;
 
     private Animator m_Animator;
-    private AudioSource m_WalkingAudioSource;
+    private ParticleSystem m_DustParticleSystem;
 
-    public AudioClip walkingOnEmptySound;
-    public AudioClip walkingOnPelletSound;
-    public AudioClip hitWallSound;
+    private bool m_IsMoving;
 
     // I decided to use a different position than the world position because
     // the world position has some quirks that make it difficult to use like
@@ -27,17 +30,19 @@ public class PacStudentController : MonoBehaviour
     // moving, it makes the code a lot easier to read and understand. 
     private Vector2 m_Position = new(1, 1);
     private Tween m_Tween;
-    
-    private bool m_IsMoving = false;
+    private AudioSource m_WalkingAudioSource;
 
 
     private void Start()
     {
         m_Animator = GetComponent<Animator>();
         m_Animator.SetBool(WalkingParam, false);
-        
+
+        m_DustParticleSystem = dustParticleSystem.GetComponent<ParticleSystem>();
+        m_DustParticleSystem.Stop();
+
         m_Tween = new Tween(transform.position, transform.position, Time.time, 0.0001f);
-        
+
         m_WalkingAudioSource = GetComponent<AudioSource>();
     }
 
@@ -52,7 +57,7 @@ public class PacStudentController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             lastInput = Direction.LEFT;
 
-        
+
         var timeFraction = (Time.time - m_Tween.startTime) / m_Tween.duration;
         if (timeFraction < 1.0f)
         {
@@ -63,13 +68,16 @@ public class PacStudentController : MonoBehaviour
             transform.position = m_Tween.endPos;
 
             // If the last input is not walkable, try the current input, otherwise stay still
-            currentInput = Level1Manager.IsTileWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(lastInput))) ? lastInput
-                : Level1Manager.IsTileWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(currentInput))) ? currentInput
-                : Direction.NONE;
+            currentInput = Level1Manager.IsTileWalkable(GetTargetPosition(m_Position, GetDirectionVector2(lastInput)))
+                ? lastInput
+                : Level1Manager.IsTileWalkable(GetTargetPosition(m_Position, GetDirectionVector2(currentInput)))
+                    ? currentInput
+                    : Direction.NONE;
 
-            if (currentInput != Direction.NONE) 
+            if (currentInput != Direction.NONE)
             {
                 m_IsMoving = true;
+                m_DustParticleSystem.Play();
                 MoveTo(currentInput);
             }
             else if (m_IsMoving)
@@ -79,6 +87,8 @@ public class PacStudentController : MonoBehaviour
                 m_WalkingAudioSource.loop = false;
                 m_WalkingAudioSource.clip = hitWallSound;
                 m_WalkingAudioSource.Play();
+
+                m_DustParticleSystem.Stop();
 
                 m_Animator.SetBool(WalkingParam, false);
             }
@@ -102,19 +112,15 @@ public class PacStudentController : MonoBehaviour
 
         // Update position with target position
         m_Position = GetTargetPosition(m_Position, movementVector);
-        
+
         // Play walking sound
         m_WalkingAudioSource.Stop();
-        
+
         if (Level1Manager.GetTileOnPosition(m_Position) == TileContent.EMPTY)
-        {
             m_WalkingAudioSource.clip = walkingOnEmptySound;
-        }
         else if (Level1Manager.GetTileOnPosition(m_Position) == TileContent.PELLET)
-        {
             m_WalkingAudioSource.clip = walkingOnPelletSound;
-        }
-        
+
         m_WalkingAudioSource.loop = true;
         m_WalkingAudioSource.Play();
 
@@ -123,7 +129,7 @@ public class PacStudentController : MonoBehaviour
 
         // new duration
         var duration = movementVector.magnitude / speed;
-        
+
         m_Tween = new Tween(startPos, endPos, Time.time, duration);
     }
 
