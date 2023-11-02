@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum TileContent
 {
@@ -10,36 +11,15 @@ public enum TileContent
     OUTSIDE_MAP
 }
 
-public class Level1Manager : MonoBehaviour 
+public class Level1Manager : MonoBehaviour
 {
-    private static readonly int[,] levelMap =
-    {
-        { 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 4 },
-        { 2, 6, 4, 0, 0, 4, 5, 4, 0, 0, 0, 4, 5, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 3 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 3, 5, 3, 4, 4, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 4, 4, 5, 3, 4, 4, 3 },
-        { 2, 5, 5, 5, 5, 5, 5, 4, 4, 5, 5, 5, 5, 4 },
-        { 1, 2, 2, 2, 2, 1, 5, 4, 3, 4, 4, 3, 0, 4 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 3, 4, 4, 3, 0, 3 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 0, 0, 0, 0 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 3, 4, 4, 0 },
-        { 2, 2, 2, 2, 2, 1, 5, 3, 3, 0, 4, 0, 0, 0 },
-        { 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 4, 0, 0, 0 }
-    };
-
-    public static readonly int[,] LEVEL_MAP = PrepareLevelMap();
-
     public GameObject levelObject;
 
     public Sprite outsideWallCorner;
     public Sprite outsideWallStraight;
     public Sprite insideWallCorner;
     public Sprite insideWallStraight;
-    public Sprite pellet;
+    public GameObject pellet;
     public GameObject powerPellet;
     public Sprite tJunction;
 
@@ -47,6 +27,10 @@ public class Level1Manager : MonoBehaviour
 
     public GameObject powerPelletParent;
     public GameObject grid;
+
+    public GameObject teleporterLeft;
+    public GameObject teleporterRight;
+    public int[,] LEVEL_MAP = LevelGenerator.PrepareLevelMap(Level.Level1);
 
 
     private Transform m_LTransform;
@@ -60,44 +44,28 @@ public class Level1Manager : MonoBehaviour
         // set up camera size and position
         var mainCamera = Camera.main;
         if (mainCamera == null) throw new NullReferenceException("Camera.main is null");
-        mainCamera.orthographicSize = Math.Max(levelMap.GetLength(0) + .5f, levelMap.GetLength(1) + .5f);
-        mainCamera.transform.position = new Vector3(levelMap.GetLength(1) + 6.5f, levelMap.GetLength(0) + .5f, -10);
+        mainCamera.orthographicSize =
+            Math.Max(LEVEL_MAP.GetLength(0) / 2f + 1f, LEVEL_MAP.GetLength(1) / 2f + 1f);
+        mainCamera.transform.position = new Vector3(LEVEL_MAP.GetLength(1) / 2f + 6.5f,
+            LEVEL_MAP.GetLength(0) / 2f + 1f, -10);
 
         m_LTransform = levelObject.transform;
 
-        GenerateLevel(LEVEL_MAP);
+        GenerateLevel(LEVEL_MAP, m_LTransform);
+
+        var rows = LEVEL_MAP.GetLength(0);
+        var cols = LEVEL_MAP.GetLength(1);
+
+        // Prepare teleporters
+        var leftTeleporterPosition = new Vector3(-1.94f, rows / 2f - .5f, -3);
+        var rightTeleporterPosition = new Vector3(cols + 1.04f, rows / 2f - .5f, -3);
+
+        teleporterLeft.transform.position = leftTeleporterPosition + m_LTransform.position;
+        teleporterRight.transform.position = rightTeleporterPosition + m_LTransform.position;
     }
 
-    private static int[,] PrepareLevelMap()
-    {
-        // Mirror the levelMap array into 4 quadrants not copying the bottom row
-        var newLevelMap = new int[levelMap.GetLength(0) * 2 - 1, levelMap.GetLength(1) * 2];
 
-        var rows = levelMap.GetLength(0);
-        var cols = levelMap.GetLength(1);
-
-        for (var i = 0; i < rows; i++)
-        for (var j = 0; j < cols; j++)
-        {
-            var value = levelMap[i, j];
-
-            // Top left
-            newLevelMap[i, j] = value;
-
-            // Top right
-            newLevelMap[i, 2 * cols - 1 - j] = value;
-
-            // Bottom left
-            newLevelMap[2 * rows - 2 - i, j] = value;
-
-            // Bottom right
-            newLevelMap[2 * rows - 2 - i, 2 * cols - 1 - j] = value;
-        }
-
-        return newLevelMap;
-    }
-
-    public static TileContent GetTileOnPosition(Vector2 position)
+    public TileContent GetTileOnPosition(Vector2 position)
     {
         var row = (int)position.y;
         var col = (int)position.x;
@@ -116,18 +84,19 @@ public class Level1Manager : MonoBehaviour
         };
     }
 
-    public static bool IsTileWalkable(Vector2 position)
+    public bool IsTileWalkable(Vector2 position)
     {
         return GetTileOnPosition(position) switch
         {
             TileContent.EMPTY => true,
             TileContent.PELLET => true,
             TileContent.POWER_PELLET => true,
+            TileContent.OUTSIDE_MAP => true,
             _ => false
         };
     }
 
-    private void GenerateLevel(int[,] levelArray)
+    private void GenerateLevel(int[,] levelArray, Transform parent)
     {
         var rows = levelArray.GetLength(0);
         var cols = levelArray.GetLength(1);
@@ -143,292 +112,30 @@ public class Level1Manager : MonoBehaviour
                 case 0:
                     break;
                 case 1:
-                    CreateOutsideWallCorner(position, levelArray);
+                    LevelGenerator.CreateWall(tilePrefab, outsideWallCorner, position, levelArray, parent);
                     break;
                 case 2:
-                    CreateOutsideWallStraight(position, levelArray);
+                    LevelGenerator.CreateWall(tilePrefab, outsideWallStraight, position, levelArray, parent);
                     break;
                 case 3:
-                    CreateInsideWallCorner(position, levelArray);
+                    LevelGenerator.CreateWall(tilePrefab, insideWallCorner, position, levelArray, parent);
                     break;
                 case 4:
-                    CreateInsideWallStraight(position, levelArray);
+                    LevelGenerator.CreateWall(tilePrefab, insideWallStraight, position, levelArray, parent);
                     break;
                 case 5:
-                    CreatePellet(position);
+                    LevelGenerator.CreatePellet(pellet, position, parent);
                     break;
                 case 6:
-                    CreatePowerPellet(position);
+                    LevelGenerator.CreatePowerPellet(powerPellet, position, parent);
                     break;
                 case 7:
-                    CreateTJunction(position, levelArray);
+                    LevelGenerator.CreateWall(tilePrefab, tJunction, position, levelArray, parent);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
         }
-    }
-
-    private void CreatePellet(Vector3 position)
-    {
-        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
-        tile.name = $"[{position.x}, {position.y}] Pellet";
-        Debug.Log(tile.name + " " + tile.transform.position);
-        tile.GetComponent<SpriteRenderer>().sprite = pellet;
-        tile.GetComponent<SpriteRenderer>().sortingLayerID = SortingLayer.NameToID("Collectables");
-    }
-
-    private void CreatePowerPellet(Vector3 position)
-    {
-        var tile = Instantiate(powerPellet, position + m_LTransform.position - new Vector3(0, 0.5f, 0),
-            Quaternion.identity, m_LTransform);
-        tile.name = $"[{position.x}, {position.y}] Power Pellet";
-    }
-
-
-    private void CreateOutsideWallCorner(Vector3 position, int[,] levelArray)
-    {
-        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
-        tile.name = $"[{position.x}, {position.y}] Outside Wall Corner";
-        tile.GetComponent<SpriteRenderer>().sprite = outsideWallCorner;
-        tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
-    }
-
-    private void CreateOutsideWallStraight(Vector3 position, int[,] levelArray)
-    {
-        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
-        tile.name = $"[{position.x}, {position.y}] Outside Wall Straight";
-        tile.GetComponent<SpriteRenderer>().sprite = outsideWallStraight;
-        tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
-    }
-
-    private void CreateInsideWallCorner(Vector3 position, int[,] levelArray)
-    {
-        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
-        tile.name = $"[{position.x}, {position.y}] Inside Wall Corner";
-        tile.GetComponent<SpriteRenderer>().sprite = insideWallCorner;
-        tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
-    }
-
-    private void CreateInsideWallStraight(Vector3 position, int[,] levelArray)
-    {
-        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
-        tile.name = $"[{position.x}, {position.y}] Inside Wall Straight";
-        tile.GetComponent<SpriteRenderer>().sprite = insideWallStraight;
-        tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
-    }
-
-    private void CreateTJunction(Vector3 position, int[,] levelArray)
-    {
-        var tile = Instantiate(tilePrefab, position + m_LTransform.position, Quaternion.identity, m_LTransform);
-        tile.name = $"[{position.x}, {position.y}] T Junction";
-        tile.GetComponent<SpriteRenderer>().sprite = tJunction;
-        tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
-    }
-
-    private int CalculateTileRotation(Vector3 position, int[,] levelArray)
-    {
-        var piece = levelArray[(int)position.y, (int)position.x];
-        int match;
-
-        switch (piece)
-        {
-            case 1:
-                match = 2;
-                return -90 + MatchCornerNeighbours(position, levelArray, match);
-            case 2:
-                match = 1;
-                return -90 + MatchStraightNeighbours(position, levelArray, match);
-            case 3:
-                match = 4;
-                return MatchCornerNeighbours(position, levelArray, match);
-            case 4:
-                match = 3;
-                return MatchStraightNeighbours(position, levelArray, match);
-            case 7:
-                return MatchTJunctionNeighbours(position, levelArray);
-            default:
-                return 0;
-        }
-    }
-
-    private int MatchStraightNeighbours(Vector3 position, int[,] levelArray, int corner)
-    {
-        var col = (int)position.x;
-        var row = (int)position.y;
-        if (col < 0 || col >= levelArray.GetLength(1) || row < 0 || row >= levelArray.GetLength(0))
-            throw new ArgumentOutOfRangeException(nameof(position), "position is out of range");
-
-        var above = GetValueAtPosition(row, col, -1, 0, levelArray);
-        var below = GetValueAtPosition(row, col, 1, 0, levelArray);
-        var left = GetValueAtPosition(row, col, 0, -1, levelArray);
-        var right = GetValueAtPosition(row, col, 0, 1, levelArray);
-
-        // The straight piece, the corner piece, the t junction
-
-        var straight = levelArray[row, col];
-        const int junction = 7;
-
-        if (Is(above, corner, straight, junction) && Is(below, corner, straight, junction))
-            return 0;
-        if (Is(left, corner, straight, junction) && Is(right, corner, straight, junction))
-            return 90;
-        if (Is(above, corner, straight, junction) || Is(below, corner, straight, junction))
-            return 0;
-
-        return 90;
-    }
-
-    private int MatchCornerNeighbours(Vector3 position, int[,] levelArray, int straight)
-    {
-        var col = (int)position.x;
-        var row = (int)position.y;
-        if (col < 0 || col >= levelArray.GetLength(1) || row < 0 || row >= levelArray.GetLength(0))
-            throw new ArgumentOutOfRangeException(nameof(position), "position is out of range");
-
-
-        var above = GetValueAtPosition(row, col, -1, 0, levelArray);
-        var below = GetValueAtPosition(row, col, 1, 0, levelArray);
-        var left = GetValueAtPosition(row, col, 0, -1, levelArray);
-        var right = GetValueAtPosition(row, col, 0, 1, levelArray);
-        var topLeft = GetValueAtPosition(row, col, -1, -1, levelArray);
-        var topRight = GetValueAtPosition(row, col, -1, 1, levelArray);
-        var bottomLeft = GetValueAtPosition(row, col, 1, -1, levelArray);
-        var bottomRight = GetValueAtPosition(row, col, 1, 1, levelArray);
-
-
-        var corner = levelArray[row, col];
-        const int junction = 7;
-
-        // Perfect L 
-
-        //   #
-        // # L X
-        //   X
-
-        if (Is(above, straight, corner, junction)
-            && Is(left, straight, corner, junction)
-            && !Is(below, straight, corner, junction)
-            && !Is(right, straight, corner, junction))
-            return 180;
-
-        //   #
-        // X L #
-        //   X
-
-        if (Is(above, straight, corner, junction)
-            && Is(right, straight, corner, junction)
-            && !Is(below, straight, corner, junction)
-            && !Is(left, straight, corner, junction))
-            return -90;
-
-        //   X
-        // X L #
-        //   #
-
-        if (Is(below, straight, corner, junction)
-            && Is(right, straight, corner, junction)
-            && !Is(above, straight, corner, junction)
-            && !Is(left, straight, corner, junction))
-            return 0;
-
-        //   X
-        // # L X
-        //   #
-
-        if (Is(below, straight, corner, junction)
-            && Is(left, straight, corner, junction)
-            && !Is(above, straight, corner, junction)
-            && !Is(right, straight, corner, junction))
-            return 90;
-
-        // Complex L
-
-
-        // X #  
-        // # L
-        //   #
-
-        if (Is(above, straight, corner, junction)
-            && Is(left, straight, corner, junction)
-            && Is(below, straight, corner, junction)
-            && !Is(topLeft, straight, corner, junction))
-            return 180;
-
-        //   # X
-        // # L #
-        // 
-
-        if (Is(above, straight, corner, junction)
-            && Is(left, straight, corner, junction)
-            && Is(right, straight, corner, junction)
-            && !Is(topRight, straight, corner, junction))
-            return -90;
-
-        //   # 
-        //   L #
-        //   # X
-
-        if (Is(above, straight, corner, junction)
-            && Is(right, straight, corner, junction)
-            && Is(below, straight, corner, junction)
-            && !Is(bottomRight, straight, corner, junction))
-            return 0;
-
-        //    
-        // # L #
-        // X #
-
-        if (Is(below, straight, corner, junction)
-            && Is(left, straight, corner, junction)
-            && Is(right, straight, corner, junction)
-            && !Is(bottomLeft, straight, corner, junction))
-            return 90;
-
-        return 0;
-    }
-
-    private int MatchTJunctionNeighbours(Vector3 position, int[,] levelArray)
-    {
-        var col = (int)position.x;
-        var row = (int)position.y;
-        if (col < 0 || col >= levelArray.GetLength(1) || row < 0 || row >= levelArray.GetLength(0))
-            throw new ArgumentOutOfRangeException(nameof(position), "position is out of range");
-
-        var above = GetValueAtPosition(row, col, -1, 0, levelArray);
-        var below = GetValueAtPosition(row, col, 1, 0, levelArray);
-        var left = GetValueAtPosition(row, col, 0, -1, levelArray);
-        var right = GetValueAtPosition(row, col, 0, 1, levelArray);
-
-        int[] sides = { left, above, right, below };
-        var rotation = -90;
-        foreach (var side in sides)
-        {
-            rotation += 90;
-            if (side is 3 or 4)
-                return rotation;
-        }
-
-        return rotation;
-    }
-
-    private static bool Is(int target, int a, int b, int c)
-    {
-        return target == a || target == b || target == c;
-    }
-
-    private static int GetValueAtPosition(int row, int col, int rowOffset, int colOffset, int[,] array)
-    {
-        var newRow = row + rowOffset;
-        var newCol = col + colOffset;
-
-        if (newRow >= 0
-            && newRow < array.GetLength(0)
-            && newCol >= 0
-            && newCol < array.GetLength(1))
-            return array[newRow, newCol];
-
-        return 0;
     }
 
     public Vector3 GetWorldPositionForTile(Vector2 tilePosition)
@@ -444,9 +151,25 @@ public class Level1Manager : MonoBehaviour
 
         return new Vector2(x, y);
     }
-    
+
     public void ExitToStartScreen()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
+    }
+
+    // Interactions
+
+    public void PelletEaten(Vector2 position)
+    {
+        LEVEL_MAP[(int)position.y, (int)position.x] = 0;
+    }
+
+    public void PowerPelletEaten(Vector2 position)
+    {
+        LEVEL_MAP[(int)position.y, (int)position.x] = 0;
+    }
+
+    public void CherryEaten()
+    {
     }
 }

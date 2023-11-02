@@ -37,11 +37,10 @@ public class CherryController : MonoBehaviour
         int x;
         int y;
 
-        var xMax = Level1Manager.LEVEL_MAP.GetLength(1) + 1;
-        var yMax = Level1Manager.LEVEL_MAP.GetLength(0) + 1;
+        var xMax = m_LevelManager.LEVEL_MAP.GetLength(1) + 1;
+        var yMax = m_LevelManager.LEVEL_MAP.GetLength(0) + 1;
 
         if (xOrY)
-
         {
             // randomise x
             x = Random.Range(0, xMax);
@@ -72,5 +71,11 @@ public class CherryController : MonoBehaviour
         var directionToCentre = centre - start;
 
         return centre + directionToCentre;
+    }
+    
+    public void CherryEaten()
+    {
+        m_IsCherryOnMap = false;
+        Destroy(m_ActiveCherry);
     }
 }
