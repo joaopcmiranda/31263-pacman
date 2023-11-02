@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class PacStudentController : MonoBehaviour
@@ -13,6 +12,8 @@ public class PacStudentController : MonoBehaviour
 
     public GameObject dustParticleSystem;
 
+    public GameObject manager;
+
     // ReSharper disable once InconsistentNaming because assessment required specific variable naming
     private Direction currentInput = Direction.NONE;
 
@@ -20,9 +21,11 @@ public class PacStudentController : MonoBehaviour
     private Direction lastInput = Direction.NONE;
 
     private Animator m_Animator;
+    private CherryController m_CherryController;
     private ParticleSystem m_DustParticleSystem;
 
     private bool m_IsMoving;
+    private Level1Manager m_LevelManager;
 
     // I decided to use a different position than the world position because
     // the world position has some quirks that make it difficult to use like
@@ -33,16 +36,12 @@ public class PacStudentController : MonoBehaviour
     private Tween m_Tween;
     private AudioSource m_WalkingAudioSource;
 
-    public GameObject manager;
-    private CherryController m_CherryController;
-    private Level1Manager m_LevelManager;
-
 
     private void Start()
     {
         m_LevelManager = manager.GetComponent<Level1Manager>();
         m_CherryController = manager.GetComponent<CherryController>();
-        
+
         m_Animator = GetComponent<Animator>();
         m_Animator.SetBool(WalkingParam, false);
 
@@ -76,9 +75,9 @@ public class PacStudentController : MonoBehaviour
             transform.position = m_Tween.endPos;
 
             // If the last input is not walkable, try the current input, otherwise stay still
-            currentInput = Level1Manager.IsTileWalkable(GetTargetPosition(m_Position, GetDirectionVector2(lastInput)))
+            currentInput = m_LevelManager.IsTileWalkable(GetTargetPosition(m_Position, GetDirectionVector2(lastInput)))
                 ? lastInput
-                : Level1Manager.IsTileWalkable(GetTargetPosition(m_Position, GetDirectionVector2(currentInput)))
+                : m_LevelManager.IsTileWalkable(GetTargetPosition(m_Position, GetDirectionVector2(currentInput)))
                     ? currentInput
                     : Direction.NONE;
 
@@ -103,6 +102,41 @@ public class PacStudentController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Pellet"))
+        {
+            m_LevelManager.PelletEaten(m_Position);
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("PowerPellet"))
+        {
+            m_LevelManager.PowerPelletEaten(m_Position);
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("Cherry"))
+        {
+            m_LevelManager.CherryEaten();
+            m_CherryController.CherryEaten();
+        }
+        else if (other.CompareTag("RightTeleporter"))
+        {
+            var rightTeleporter = other.GetComponent<RightTeleporterController>();
+            var otherTeleporterPosition = rightTeleporter.leftTeleporter.transform.position;
+            otherTeleporterPosition.x += 1;
+            m_Position = new Vector2(-1, m_LevelManager.LEVEL_MAP.GetLength(1) / 2f + .5f);
+            m_Tween = new Tween(transform.position, otherTeleporterPosition, Time.time, 0.00001f);
+        }
+        else if (other.CompareTag("LeftTeleporter"))
+        {
+            var leftTeleporter = other.GetComponent<LeftTeleporterController>();
+            var otherTeleporterPosition = leftTeleporter.rightTeleporter.transform.position;
+            otherTeleporterPosition.x -= 1;
+            m_Position = new Vector2(m_LevelManager.LEVEL_MAP.GetLength(0) -1, m_LevelManager.LEVEL_MAP.GetLength(1) / 2f + .5f);
+            m_Tween = new Tween(transform.position, otherTeleporterPosition, Time.time, 0.00001f);
+        }
+    }
+
 
     private void MoveTo(Direction direction)
     {
@@ -124,9 +158,9 @@ public class PacStudentController : MonoBehaviour
         // Play walking sound
         m_WalkingAudioSource.Stop();
 
-        if (Level1Manager.GetTileOnPosition(m_Position) == TileContent.EMPTY)
+        if (m_LevelManager.GetTileOnPosition(m_Position) == TileContent.EMPTY)
             m_WalkingAudioSource.clip = walkingOnEmptySound;
-        else if (Level1Manager.GetTileOnPosition(m_Position) == TileContent.PELLET)
+        else if (m_LevelManager.GetTileOnPosition(m_Position) == TileContent.PELLET)
             m_WalkingAudioSource.clip = walkingOnPelletSound;
 
         m_WalkingAudioSource.loop = true;
@@ -161,34 +195,5 @@ public class PacStudentController : MonoBehaviour
     private Vector2 GetTargetPosition(Vector2 currentPosition, Vector2 change)
     {
         return new Vector2(currentPosition.x + change.x, currentPosition.y - change.y);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Pellet"))
-        {
-            // m_LevelManager.PelletEaten();
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("PowerPellet"))
-        {
-            // m_LevelManager.PowerPelletEaten();
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("Cherry"))
-        {
-            // m_LevelManager.CherryEaten();
-            m_CherryController.CherryEaten();
-        } else if (other.CompareTag("RightTeleporter")){
-            var rightTeleporter = other.GetComponent<RightTeleporterController>();
-            var otherTeleporterPosition = rightTeleporter.leftTeleporter.transform.position;
-            otherTeleporterPosition.x += 1;
-            m_Tween = new Tween(transform.position, otherTeleporterPosition, Time.time, 0.0001f);
-        } else if (other.CompareTag("LeftTeleporter")){
-            var leftTeleporter = other.GetComponent<LeftTeleporterController>();
-            var otherTeleporterPosition = leftTeleporter.rightTeleporter.transform.position;
-            otherTeleporterPosition.x -= 1;
-            m_Tween = new Tween(transform.position, otherTeleporterPosition, Time.time, 0.0001f);
-        }
     }
 }
