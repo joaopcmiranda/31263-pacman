@@ -3,14 +3,11 @@ using UnityEngine;
 
 public class BorderGhostController : MonoBehaviour
 {
-    private static readonly int DeadParam = Animator.StringToHash("dead");
 
     private static readonly float MinX = -15.4f;
     private static readonly float MaxX = 15.5f;
-    private static readonly float MinY = -15.3f;
-    private static readonly float MaxY = 12.8f;
-
-    private Animator m_Animator;
+    private static readonly float MinY = -14f;
+    private static readonly float MaxY = 14f;
 
     private Vector2 m_MovingTarget;
 
@@ -19,8 +16,6 @@ public class BorderGhostController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        m_Animator = GetComponent<Animator>();
-        m_Animator.SetBool(DeadParam, true);
 
         // can start anywhere, find closest corner and go there
         var transformPosition = transform.position;

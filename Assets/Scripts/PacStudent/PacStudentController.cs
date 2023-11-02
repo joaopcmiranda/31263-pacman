@@ -63,8 +63,8 @@ public class PacStudentController : MonoBehaviour
             transform.position = m_Tween.endPos;
 
             // If the last input is not walkable, try the current input, otherwise stay still
-            currentInput = LevelManager.IsTileWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(lastInput))) ? lastInput
-                : LevelManager.IsTileWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(currentInput))) ? currentInput
+            currentInput = Level1Manager.IsTileWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(lastInput))) ? lastInput
+                : Level1Manager.IsTileWalkable(GetTargetPosition(m_Position ,GetDirectionVector2(currentInput))) ? currentInput
                 : Direction.NONE;
 
             if (currentInput != Direction.NONE) 
@@ -106,11 +106,11 @@ public class PacStudentController : MonoBehaviour
         // Play walking sound
         m_WalkingAudioSource.Stop();
         
-        if (LevelManager.GetTileOnPosition(m_Position) == TileContent.EMPTY)
+        if (Level1Manager.GetTileOnPosition(m_Position) == TileContent.EMPTY)
         {
             m_WalkingAudioSource.clip = walkingOnEmptySound;
         }
-        else if (LevelManager.GetTileOnPosition(m_Position) == TileContent.PELLET)
+        else if (Level1Manager.GetTileOnPosition(m_Position) == TileContent.PELLET)
         {
             m_WalkingAudioSource.clip = walkingOnPelletSound;
         }

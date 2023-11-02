@@ -10,7 +10,7 @@ public enum TileContent
     OUTSIDE_MAP
 }
 
-public class LevelManager : MonoBehaviour
+public class Level1Manager : MonoBehaviour 
 {
     private static readonly int[,] levelMap =
     {
@@ -443,5 +443,10 @@ public class LevelManager : MonoBehaviour
         var y = (LEVEL_MAP.GetLength(0) - 1) / 2f - 1f;
 
         return new Vector2(x, y);
+    }
+    
+    public void ExitToStartScreen()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 }

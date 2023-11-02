@@ -7,7 +7,7 @@ public class CherryController : MonoBehaviour
 
     private GameObject m_ActiveCherry;
     private bool m_IsCherryOnMap;
-    private LevelManager m_LevelManager;
+    private Level1Manager m_LevelManager;
 
     private Tween m_Tween;
 
@@ -15,7 +15,7 @@ public class CherryController : MonoBehaviour
     {
         // spawn every 10 seconds
         InvokeRepeating(nameof(SpawnCherry), 10, 10);
-        m_LevelManager = gameObject.GetComponent<LevelManager>();
+        m_LevelManager = gameObject.GetComponent<Level1Manager>();
     }
 
     private void Update()
@@ -37,8 +37,8 @@ public class CherryController : MonoBehaviour
         int x;
         int y;
 
-        var xMax = LevelManager.LEVEL_MAP.GetLength(1) + 1;
-        var yMax = LevelManager.LEVEL_MAP.GetLength(0) + 1;
+        var xMax = Level1Manager.LEVEL_MAP.GetLength(1) + 1;
+        var yMax = Level1Manager.LEVEL_MAP.GetLength(0) + 1;
 
         if (xOrY)
 
