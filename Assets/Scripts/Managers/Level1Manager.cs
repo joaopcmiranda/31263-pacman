@@ -34,6 +34,7 @@ public class Level1Manager : MonoBehaviour
 
 
     private Transform m_LTransform;
+    private ScoreManager m_ScoreManager;
 
     private void Start()
     {
@@ -50,6 +51,7 @@ public class Level1Manager : MonoBehaviour
             LEVEL_MAP.GetLength(0) / 2f + 1f, -10);
 
         m_LTransform = levelObject.transform;
+        m_ScoreManager = gameObject.GetComponent<ScoreManager>();
 
         GenerateLevel(LEVEL_MAP, m_LTransform);
 
@@ -162,6 +164,7 @@ public class Level1Manager : MonoBehaviour
     public void PelletEaten(Vector2 position)
     {
         LEVEL_MAP[(int)position.y, (int)position.x] = 0;
+        m_ScoreManager.AddScore(10);
     }
 
     public void PowerPelletEaten(Vector2 position)
@@ -171,5 +174,6 @@ public class Level1Manager : MonoBehaviour
 
     public void CherryEaten()
     {
+        m_ScoreManager.AddScore(100);
     }
 }
