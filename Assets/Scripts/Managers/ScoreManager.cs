@@ -19,6 +19,8 @@ public class ScoreManager : MonoBehaviour
     private int score;
     private ulong startTime;
     private ulong timer;
+    
+    private bool _isTimerRunning = false;
 
 
     private void Start()
@@ -29,34 +31,45 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
-        timer = (ulong)(Time.time * 1000) - startTime;
-        if (timerText != null) timerText.text = TimeUtil.FormatTime(timer);
+        if (_isTimerRunning)
+        {
+            timer = (ulong)(Time.time * 1000) - startTime;
+            if (timerText != null) timerText.text = TimeUtil.FormatTime(timer);
 
-        if (scoreText != null) scoreText.text = score.ToString();
+            if (scoreText != null) scoreText.text = score.ToString();
 
-        if (highScoreText != null) highScoreText.text = highScore.ToString();
+            if (highScoreText != null) highScoreText.text = highScore.ToString();
 
-        if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTime(highScoreTime);
+            if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTime(highScoreTime);
+        }
     }
 
     public void BeginTimer()
     {
+        _isTimerRunning = true;
         startTime = (ulong)(Time.time * 1000);
     }
 
-    public void ResetTimer()
+    public void StopTimer()
     {
-        startTime = 0;
-        timer = 0;
+        _isTimerRunning = false;
     }
 
     public void AddScore(int scoreToAdd)
     {
         score += scoreToAdd;
+    }
+    
+    public void SaveHighScore()
+    {
         if (score > highScore || (score == highScore && timer < highScoreTime))
         {
             highScore = score;
             highScoreTime = timer;
+            
+            if (highScoreText != null) highScoreText.text = highScore.ToString();
+            if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTime(highScoreTime);
+            
             PlayerPrefs.SetInt("highScore_score_lvl_" + level, highScore);
             PlayerPrefs.SetInt("highScore_time_lvl_" + level, (int)highScoreTime);
             PlayerPrefs.Save();

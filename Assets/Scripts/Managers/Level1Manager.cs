@@ -35,6 +35,7 @@ public class Level1Manager : MonoBehaviour
 
     private Transform m_LTransform;
     private ScoreManager m_ScoreManager;
+    private GhostManager m_GhostManager;
 
     private void Start()
     {
@@ -52,6 +53,9 @@ public class Level1Manager : MonoBehaviour
 
         m_LTransform = levelObject.transform;
         m_ScoreManager = gameObject.GetComponent<ScoreManager>();
+        m_GhostManager = gameObject.GetComponent<GhostManager>();
+        
+        m_ScoreManager.BeginTimer();
 
         GenerateLevel(LEVEL_MAP, m_LTransform);
 
@@ -175,5 +179,18 @@ public class Level1Manager : MonoBehaviour
     public void CherryEaten()
     {
         m_ScoreManager.AddScore(100);
+    }
+    
+    public void GhostKilled()
+    {
+        m_ScoreManager.AddScore(300);
+    }
+    
+    public void GameOver()
+    {
+        m_GhostManager.StopAllGhosts();
+        m_ScoreManager.StopTimer();
+        m_ScoreManager.SaveHighScore();
+        Invoke(nameof(ExitToStartScreen), 3f);   
     }
 }
