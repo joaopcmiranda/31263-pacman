@@ -53,7 +53,7 @@ public class BackgroundMusicManager : MonoBehaviour
     {
         const float timeToFade = 1f;
         const float maxVolume = .5f;
-        
+          
         for (float t = 0; t < timeToFade; t += Time.deltaTime)
         {
             active.volume = maxVolume * ((timeToFade - t) / timeToFade);
