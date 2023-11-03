@@ -1,6 +1,6 @@
 namespace Util
 {
-    public class TimeUtil
+    public static class TimeUtil
     {
 
         public static string FormatTimeMs(ulong timeMs)

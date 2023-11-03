@@ -24,8 +24,11 @@ public class GhostManager : MonoBehaviour
         m_BackgroundMusicManager = GetComponent<BackgroundMusicManager>();
         m_GhostTimerManager = GetComponent<GhostTimerManager>();
     }
-    
-    public void Begin(){}
+
+    public void Begin()
+    {
+        foreach (var ghost in ghosts) ghost.Begin();
+    }
 
     public void StopAllGhosts()
     {
@@ -36,6 +39,9 @@ public class GhostManager : MonoBehaviour
     {
         switch (newState)
         {
+            case GhostState.Dead:
+                m_BackgroundMusicManager.PlayOneDeathMusic();
+                break;
             case GhostState.Scared:
                 m_GhostTimerManager.BeginTimer();
                 m_BackgroundMusicManager.PlayScaredMusic();
