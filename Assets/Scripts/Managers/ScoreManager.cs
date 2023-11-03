@@ -27,6 +27,8 @@ public class ScoreManager : MonoBehaviour
     {
         highScore = PlayerPrefs.GetInt("highScore_score_lvl_" + level, 0);
         highScoreTime = (ulong)PlayerPrefs.GetInt("highScore_time_lvl_" + level, 0);
+        if (highScoreText != null) highScoreText.text = highScore.ToString();
+        if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTimeMs(highScoreTime);
     }
 
     private void Update()
@@ -34,13 +36,9 @@ public class ScoreManager : MonoBehaviour
         if (_isTimerRunning)
         {
             timer = (ulong)(Time.time * 1000) - startTime;
-            if (timerText != null) timerText.text = TimeUtil.FormatTime(timer);
+            if (timerText != null) timerText.text = TimeUtil.FormatTimeMs(timer);
 
             if (scoreText != null) scoreText.text = score.ToString();
-
-            if (highScoreText != null) highScoreText.text = highScore.ToString();
-
-            if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTime(highScoreTime);
         }
     }
 
@@ -68,7 +66,7 @@ public class ScoreManager : MonoBehaviour
             highScoreTime = timer;
             
             if (highScoreText != null) highScoreText.text = highScore.ToString();
-            if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTime(highScoreTime);
+            if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTimeMs(highScoreTime);
             
             PlayerPrefs.SetInt("highScore_score_lvl_" + level, highScore);
             PlayerPrefs.SetInt("highScore_time_lvl_" + level, (int)highScoreTime);

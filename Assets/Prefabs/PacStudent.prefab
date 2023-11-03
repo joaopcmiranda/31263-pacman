@@ -4912,7 +4912,7 @@ GameObject:
   - component: {fileID: 7777473542257147686}
   m_Layer: 0
   m_Name: PacStudent
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5118,7 +5118,7 @@ MonoBehaviour:
   walkingOnEmptySound: {fileID: 8300000, guid: 4c621721b09ac4342b4ea625ea522f1c, type: 3}
   walkingOnPelletSound: {fileID: 8300000, guid: 048f4cdac951e124fbc3bb946c6dce52, type: 3}
   hitWallSound: {fileID: 8300000, guid: e71bdd8f18019954b85c03ac703ef5b2, type: 3}
-  dustParticleSystem: {fileID: 1699021136}
+  dustParticleSystem: {fileID: 1699021139}
   abductionParticleSystem: {fileID: 6395143231909189218}
   manager: {fileID: 0}
 --- !u!50 &8970086893320697767
@@ -5209,7 +5209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8432987763407128592}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.03, y: -2.18, z: 0}
+  m_LocalPosition: {x: -0.42, y: -1.11, z: -5.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5233,7 +5233,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5934,7 +5934,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 3.39
     radius:
-      value: 17.13
+      value: 7.8
       mode: 0
       spread: 0
       speed:
@@ -6053,7 +6053,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 1
-      scalar: 100
+      scalar: 50
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -6749,7 +6749,7 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 13.35
+      scalar: 11.36
       minScalar: 0
       maxCurve:
         serializedVersion: 2

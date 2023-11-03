@@ -1,8 +1,9 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum GhostState
 {
-    Alive,
+    Normal,
     Dead,
     Scared,
     Recovering
@@ -10,15 +11,36 @@ public enum GhostState
 
 public class GhostManager : MonoBehaviour
 {
-    public GhostState state = GhostState.Alive;
+    
+    public List<GhostController> ghosts;
+    public GhostState state = GhostState.Normal;
+    
+    private GhostTimerManager m_GhostTimerManager;
     
     public void StopAllGhosts()
     {
-        var ghosts = FindObjectsOfType<GhostController>();
         foreach (var ghost in ghosts)
         {
-            ghost.GetComponent<GhostController>().enabled = false;
+            ghost.enabled = false;
             
         }
     }
+    
+    public void SetState( GhostState newState)
+    {
+        switch (newState)
+        {
+            case GhostState.Scared:
+                m_GhostTimerManager.BeginTimer();
+                break;
+        }
+        state = newState;
+        foreach (var ghost in ghosts)
+        {
+            if (ghost.state != GhostState.Dead)
+            {
+                ghost.SetState(newState);
+            }
+        }
+    } 
 }
