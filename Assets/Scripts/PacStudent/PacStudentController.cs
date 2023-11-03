@@ -30,7 +30,7 @@ public class PacStudentController : MonoBehaviour
     private bool m_IsMoving;
     private Level1Manager m_LevelManager;
     private LifeManager m_LifeManager;
-    private bool m_locked;
+    private bool m_Locked = true;
 
     // I decided to use a different position than the world position because
     // the world position has some quirks that make it difficult to use like
@@ -60,9 +60,15 @@ public class PacStudentController : MonoBehaviour
         m_WalkingAudioSource = GetComponent<AudioSource>();
     }
 
+    public void Begin()
+    {
+        m_InputManager.enabled = false;
+        m_Locked = false;
+    }
+
     private void Update()
     {
-        if (!m_locked)
+        if (!m_Locked)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
                 lastInput = Direction.UP;
@@ -79,7 +85,7 @@ public class PacStudentController : MonoBehaviour
         {
             transform.position = Vector3.Lerp(m_Tween.startPos, m_Tween.endPos, timeFraction);
         }
-        else if (!m_locked)
+        else if (!m_Locked)
         {
             transform.position = m_Tween.endPos;
 
@@ -260,7 +266,7 @@ public class PacStudentController : MonoBehaviour
         m_Animator.SetBool("dead", false);
         m_Position = new Vector2(1, 1);
         m_InputManager.enabled = true;
-        m_locked = false;
+        m_Locked = false;
     }
 
     public void StopPlayer()
@@ -269,7 +275,7 @@ public class PacStudentController : MonoBehaviour
         m_Tween = new Tween(transform.position, transform.position, Time.time, 0.00001f);
         m_InputManager.enabled = false;
         m_IsMoving = false;
-        m_locked = true;
+        m_Locked = true;
         lastInput = Direction.NONE; // overriding to prevent player from moving after death
         currentInput = Direction.NONE;
         m_Animator.SetBool(WalkingParam, false);

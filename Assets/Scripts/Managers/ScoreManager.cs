@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Util;
@@ -12,64 +13,80 @@ public class ScoreManager : MonoBehaviour
     public Text highScoreText;
     public Text highScoreTimeText;
 
-    private int highScore;
-    private ulong highScoreTime;
+    public Text goText;
+
+    private int m_HighScore;
+    private ulong m_HighScoreTime;
+
+    private bool m_IsTimerRunning;
 
 
-    private int score;
-    private ulong startTime;
-    private ulong timer;
-    
-    private bool _isTimerRunning = false;
+    private int m_Score;
+    private ulong m_StartTime;
+    private ulong m_Timer;
 
 
     private void Start()
     {
-        highScore = PlayerPrefs.GetInt("highScore_score_lvl_" + level, 0);
-        highScoreTime = (ulong)PlayerPrefs.GetInt("highScore_time_lvl_" + level, 0);
-        if (highScoreText != null) highScoreText.text = highScore.ToString();
-        if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTimeMs(highScoreTime);
+        m_HighScore = PlayerPrefs.GetInt("highScore_score_lvl_" + level, 0);
+        m_HighScoreTime = (ulong)PlayerPrefs.GetInt("highScore_time_lvl_" + level, 0);
+        if (highScoreText != null) highScoreText.text = m_HighScore.ToString();
+        if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTimeMs(m_HighScoreTime);
     }
 
     private void Update()
     {
-        if (_isTimerRunning)
+        if (m_IsTimerRunning)
         {
-            timer = (ulong)(Time.time * 1000) - startTime;
-            if (timerText != null) timerText.text = TimeUtil.FormatTimeMs(timer);
+            m_Timer = (ulong)(Time.time * 1000) - m_StartTime;
+            if (timerText != null) timerText.text = TimeUtil.FormatTimeMs(m_Timer);
 
-            if (scoreText != null) scoreText.text = score.ToString();
+            if (scoreText != null) scoreText.text = m_Score.ToString();
         }
+    }
+
+    public IEnumerator Countdown()
+    {
+        goText.gameObject.SetActive(true);
+        goText.text = "3";
+        yield return new WaitForSeconds(1f);
+        goText.text = "2";
+        yield return new WaitForSeconds(1f);
+        goText.text = "1";
+        yield return new WaitForSeconds(1f);
+        goText.text = "GO!";
+        yield return new WaitForSeconds(1f);
+        goText.gameObject.SetActive(false);
     }
 
     public void BeginTimer()
     {
-        _isTimerRunning = true;
-        startTime = (ulong)(Time.time * 1000);
+        m_IsTimerRunning = true;
+        m_StartTime = (ulong)(Time.time * 1000);
     }
 
     public void StopTimer()
     {
-        _isTimerRunning = false;
+        m_IsTimerRunning = false;
     }
 
     public void AddScore(int scoreToAdd)
     {
-        score += scoreToAdd;
+        m_Score += scoreToAdd;
     }
-    
+
     public void SaveHighScore()
     {
-        if (score > highScore || (score == highScore && timer < highScoreTime))
+        if (m_Score > m_HighScore || (m_Score == m_HighScore && m_Timer < m_HighScoreTime))
         {
-            highScore = score;
-            highScoreTime = timer;
-            
-            if (highScoreText != null) highScoreText.text = highScore.ToString();
-            if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTimeMs(highScoreTime);
-            
-            PlayerPrefs.SetInt("highScore_score_lvl_" + level, highScore);
-            PlayerPrefs.SetInt("highScore_time_lvl_" + level, (int)highScoreTime);
+            m_HighScore = m_Score;
+            m_HighScoreTime = m_Timer;
+
+            if (highScoreText != null) highScoreText.text = m_HighScore.ToString();
+            if (highScoreTimeText != null) highScoreTimeText.text = TimeUtil.FormatTimeMs(m_HighScoreTime);
+
+            PlayerPrefs.SetInt("highScore_score_lvl_" + level, m_HighScore);
+            PlayerPrefs.SetInt("highScore_time_lvl_" + level, (int)m_HighScoreTime);
             PlayerPrefs.Save();
         }
     }

@@ -1,7 +1,8 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Scripting;
+using UnityEngine.Serialization;
 
 public enum TileContent
 {
@@ -32,9 +33,12 @@ public class Level1Manager : MonoBehaviour
     public GameObject teleporterLeft;
     public GameObject teleporterRight;
     public int[,] LEVEL_MAP = LevelGenerator.PrepareLevelMap(Level.Level1);
+    
+    public PacStudentController playerController;
+    
     private GhostManager m_GhostManager;
     private LifeManager m_LifeManager;
-    public PacStudentController m_PlayerController;
+    private BackgroundMusicManager m_BackgroundMusicManager;
 
 
     private Transform m_LTransform;
@@ -44,6 +48,22 @@ public class Level1Manager : MonoBehaviour
 
     private void Start()
     {
+        Setup();
+        StartCoroutine(Begin());
+    }
+
+    private void Setup()
+    {
+        // Managers
+        m_ScoreManager = gameObject.GetComponent<ScoreManager>();
+        m_GhostManager = gameObject.GetComponent<GhostManager>();
+        m_LifeManager = gameObject.GetComponent<LifeManager>();
+        m_BackgroundMusicManager = gameObject.GetComponent<BackgroundMusicManager>();
+
+        // cached variables
+        playerController = GameObject.FindWithTag("Player").GetComponent<PacStudentController>();
+        m_LTransform = levelObject.transform;
+
         // clear the level
         powerPelletParent.SetActive(false);
         grid.SetActive(false);
@@ -56,26 +76,29 @@ public class Level1Manager : MonoBehaviour
         mainCamera.transform.position = new Vector3(LEVEL_MAP.GetLength(1) / 2f + 6.5f,
             LEVEL_MAP.GetLength(0) / 2f + 1f, -10);
 
-        m_PlayerController = GameObject.FindWithTag("Player").GetComponent<PacStudentController>();
-        
-        m_LTransform = levelObject.transform;
-        m_ScoreManager = gameObject.GetComponent<ScoreManager>();
-        m_GhostManager = gameObject.GetComponent<GhostManager>();
-        m_LifeManager = gameObject.GetComponent<LifeManager>();
-
-        m_ScoreManager.BeginTimer();
-
+        // Generate level
         GenerateLevel(LEVEL_MAP, m_LTransform);
 
+        // Prepare teleporters
         var rows = LEVEL_MAP.GetLength(0);
         var cols = LEVEL_MAP.GetLength(1);
 
-        // Prepare teleporters
         var leftTeleporterPosition = new Vector3(-1.94f, rows / 2f - .5f, -3);
         var rightTeleporterPosition = new Vector3(cols + 1.04f, rows / 2f - .5f, -3);
 
         teleporterLeft.transform.position = leftTeleporterPosition + m_LTransform.position;
         teleporterRight.transform.position = rightTeleporterPosition + m_LTransform.position;
+    }
+
+    private IEnumerator Begin()
+    {
+        StartCoroutine(m_ScoreManager.Countdown());
+
+        yield return new WaitForSeconds(3f);
+        m_ScoreManager.BeginTimer();
+        playerController.Begin();
+        m_GhostManager.Begin();
+        m_BackgroundMusicManager.PlayNormalMusic();
     }
 
 
@@ -179,10 +202,7 @@ public class Level1Manager : MonoBehaviour
         LEVEL_MAP[(int)position.y, (int)position.x] = 0;
         m_ScoreManager.AddScore(10);
         m_UneatenPellets--;
-        if (m_UneatenPellets == 0)
-        {
-            GameOver();
-        }
+        if (m_UneatenPellets == 0) GameOver();
     }
 
     public void PowerPelletEaten(Vector2 position)
@@ -205,7 +225,7 @@ public class Level1Manager : MonoBehaviour
     {
         m_LifeManager.GameOver();
         m_GhostManager.StopAllGhosts();
-        m_PlayerController.StopPlayer();
+        playerController.StopPlayer();
         m_ScoreManager.StopTimer();
         m_ScoreManager.SaveHighScore();
         Invoke(nameof(ExitToStartScreen), 3f);
