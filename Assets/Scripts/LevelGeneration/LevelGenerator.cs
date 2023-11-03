@@ -1,59 +1,45 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+
+public enum Level
+{
+    Level1 = 0,
+}
+
+
 
 public class LevelGenerator : MonoBehaviour
 {
-    public Sprite outsideWallCorner;
-    public Sprite outsideWallStraight;
-    public Sprite insideWallCorner;
-    public Sprite insideWallStraight;
-    public Sprite pellet;
-    public GameObject powerPellet;
-    public Sprite tJunction;
-
-    public GameObject tilePrefab;
-
-    public GameObject powerPelletParent;
-    public GameObject grid;
-
-    private readonly int[,] levelMap =
+    private static List<int[,]> _levels { get; } = new();
+    static LevelGenerator()
     {
-        { 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 4 },
-        { 2, 6, 4, 0, 0, 4, 5, 4, 0, 0, 0, 4, 5, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 3 },
-        { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 },
-        { 2, 5, 3, 4, 4, 3, 5, 3, 3, 5, 3, 4, 4, 4 },
-        { 2, 5, 3, 4, 4, 3, 5, 4, 4, 5, 3, 4, 4, 3 },
-        { 2, 5, 5, 5, 5, 5, 5, 4, 4, 5, 5, 5, 5, 4 },
-        { 1, 2, 2, 2, 2, 1, 5, 4, 3, 4, 4, 3, 0, 4 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 3, 4, 4, 3, 0, 3 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 0, 0, 0, 0 },
-        { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 3, 4, 4, 0 },
-        { 2, 2, 2, 2, 2, 1, 5, 3, 3, 0, 4, 0, 0, 0 },
-        { 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 4, 0, 0, 0 }
-    };
-
-
-    private void Start()
-    {
-        // clear the level
-        powerPelletParent.SetActive(false);
-        grid.SetActive(false);
-
-        // set up camera size and position
-        var camera = Camera.main;
-        if (camera == null) throw new NullReferenceException("Camera.main is null");
-        camera.orthographicSize = Math.Max(levelMap.GetLength(0), levelMap.GetLength(1));
-        camera.transform.position = new Vector3(levelMap.GetLength(1), levelMap.GetLength(0), -10);
-
-
-        GenerateLevel(PrepareLevelMap());
+        int[,] level1 =
+        {
+            { 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 7 },
+            { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4 },
+            { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 4 },
+            { 2, 6, 4, 0, 0, 4, 5, 4, 0, 0, 0, 4, 5, 4 },
+            { 2, 5, 3, 4, 4, 3, 5, 3, 4, 4, 4, 3, 5, 3 },
+            { 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 },
+            { 2, 5, 3, 4, 4, 3, 5, 3, 3, 5, 3, 4, 4, 4 },
+            { 2, 5, 3, 4, 4, 3, 5, 4, 4, 5, 3, 4, 4, 3 },
+            { 2, 5, 5, 5, 5, 5, 5, 4, 4, 5, 5, 5, 5, 4 },
+            { 1, 2, 2, 2, 2, 1, 5, 4, 3, 4, 4, 3, 0, 4 },
+            { 0, 0, 0, 0, 0, 2, 5, 4, 3, 4, 4, 3, 0, 3 },
+            { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0, 2, 5, 4, 4, 0, 3, 4, 4, 8 },
+            { 2, 2, 2, 2, 2, 1, 5, 3, 3, 0, 4, 0, 0, 0 },
+            { 8, 8, 8, 8, 8, 8, 5, 0, 0, 0, 4, 0, 0, 0 }
+        };
+        
+        _levels.Add(level1);
     }
-
-    private int[,] PrepareLevelMap()
+   
+    
+    public static int[,] PrepareLevelMap(Level level)
     {
+        var levelMap = _levels[(int) level];
         // Mirror the levelMap array into 4 quadrants not copying the bottom row
         var newLevelMap = new int[levelMap.GetLength(0) * 2 - 1, levelMap.GetLength(1) * 2];
 
@@ -80,108 +66,32 @@ public class LevelGenerator : MonoBehaviour
 
         return newLevelMap;
     }
-
-    private void GenerateLevel(int[,] levelArray)
+    
+       public static void CreatePellet(GameObject prefab, Vector3 position, Transform parent)
     {
-        var rows = levelArray.GetLength(0);
-        var cols = levelArray.GetLength(1);
-
-        for (var i = 0; i < rows; i++)
-        for (var j = 0; j < cols; j++)
-        {
-            var value = levelArray[i, j];
-            var position = new Vector3(j, i, 0);
-
-            switch (value)
-            {
-                case 0:
-                    break;
-                case 1:
-                    CreateOutsideWallCorner(position, levelArray);
-                    break;
-                case 2:
-                    CreateOutsideWallStraight(position, levelArray);
-                    break;
-                case 3:
-                    CreateInsideWallCorner(position, levelArray);
-                    break;
-                case 4:
-                    CreateInsideWallStraight(position, levelArray);
-                    break;
-                case 5:
-                    CreatePellet(position);
-                    break;
-                case 6:
-                    CreatePowerPellet(position);
-                    break;
-                case 7:
-                    CreateTJunction(position, levelArray);
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
-    }
-
-    private void CreatePellet(Vector3 position)
-    {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
+        var tile = Instantiate(prefab, position + parent.position, Quaternion.identity, parent);
         tile.name = $"[{position.x}, {position.y}] Pellet";
-        tile.GetComponent<SpriteRenderer>().sprite = pellet;
     }
 
-    private void CreatePowerPellet(Vector3 position)
+    public static void CreatePowerPellet(GameObject prefab,Vector3 position, Transform parent)
     {
-        var tile = Instantiate(powerPellet, position + transform.position - new Vector3(0, 0.5f, 0),
-            Quaternion.identity, transform);
+        var tile = Instantiate(prefab, position +  parent.position - new Vector3(0, 0.5f, 0),
+            Quaternion.identity,  parent);
         tile.name = $"[{position.x}, {position.y}] Power Pellet";
     }
 
-
-    private void CreateOutsideWallCorner(Vector3 position, int[,] levelArray)
+    public static void CreateWall(GameObject prefab, Sprite sprite, Vector3 position, int[,] levelArray, Transform parent)
     {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
-        tile.name = $"[{position.x}, {position.y}] Outside Wall Corner";
-        tile.GetComponent<SpriteRenderer>().sprite = outsideWallCorner;
+        var tile = Instantiate(prefab, position +  parent.position, Quaternion.identity,  parent);
+        tile.name = $"[{position.x}, {position.y}] {sprite.name}";
+        tile.GetComponent<SpriteRenderer>().sprite = sprite;
         tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
     }
 
-    private void CreateOutsideWallStraight(Vector3 position, int[,] levelArray)
-    {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
-        tile.name = $"[{position.x}, {position.y}] Outside Wall Straight";
-        tile.GetComponent<SpriteRenderer>().sprite = outsideWallStraight;
-        tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
-    }
-
-    private void CreateInsideWallCorner(Vector3 position, int[,] levelArray)
-    {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
-        tile.name = $"[{position.x}, {position.y}] Inside Wall Corner";
-        tile.GetComponent<SpriteRenderer>().sprite = insideWallCorner;
-        tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
-    }
-
-    private void CreateInsideWallStraight(Vector3 position, int[,] levelArray)
-    {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
-        tile.name = $"[{position.x}, {position.y}] Inside Wall Straight";
-        tile.GetComponent<SpriteRenderer>().sprite = insideWallStraight;
-        tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
-    }
-
-    private void CreateTJunction(Vector3 position, int[,] levelArray)
-    {
-        var tile = Instantiate(tilePrefab, position + transform.position, Quaternion.identity, transform);
-        tile.name = $"[{position.x}, {position.y}] T Junction";
-        tile.GetComponent<SpriteRenderer>().sprite = tJunction;
-        tile.transform.Rotate(new Vector3(0, 0, CalculateTileRotation(position, levelArray)));
-    }
-
-    private int CalculateTileRotation(Vector3 position, int[,] levelArray)
+    public static int CalculateTileRotation(Vector3 position, int[,] levelArray)
     {
         var piece = levelArray[(int)position.y, (int)position.x];
-        var match = 0;
+        int match;
 
         switch (piece)
         {
@@ -204,7 +114,7 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
-    private int MatchStraightNeighbours(Vector3 position, int[,] levelArray, int corner)
+    public static int MatchStraightNeighbours(Vector3 position, int[,] levelArray, int corner)
     {
         var col = (int)position.x;
         var row = (int)position.y;
@@ -231,7 +141,7 @@ public class LevelGenerator : MonoBehaviour
         return 90;
     }
 
-    private int MatchCornerNeighbours(Vector3 position, int[,] levelArray, int straight)
+    public static int MatchCornerNeighbours(Vector3 position, int[,] levelArray, int straight)
     {
         var col = (int)position.x;
         var row = (int)position.y;
@@ -340,7 +250,7 @@ public class LevelGenerator : MonoBehaviour
         return 0;
     }
 
-    private int MatchTJunctionNeighbours(Vector3 position, int[,] levelArray)
+    public static int MatchTJunctionNeighbours(Vector3 position, int[,] levelArray)
     {
         var col = (int)position.x;
         var row = (int)position.y;
@@ -364,12 +274,12 @@ public class LevelGenerator : MonoBehaviour
         return rotation;
     }
 
-    private static bool Is(int target, int a, int b, int c)
+    public static bool Is(int target, int a, int b, int c)
     {
         return target == a || target == b || target == c;
     }
-
-    private static int GetValueAtPosition(int row, int col, int rowOffset, int colOffset, int[,] array)
+    
+    public static int GetValueAtPosition(int row, int col, int rowOffset, int colOffset, int[,] array)
     {
         var newRow = row + rowOffset;
         var newCol = col + colOffset;
