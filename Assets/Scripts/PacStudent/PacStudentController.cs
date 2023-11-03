@@ -227,8 +227,8 @@ public class PacStudentController : MonoBehaviour
         }
         else
         {
-            Die();
             if (m_LifeManager.LoseLife() <= 0) m_LevelManager.GameOver();
+            Die();
         }
     }
 
@@ -256,11 +256,11 @@ public class PacStudentController : MonoBehaviour
         // move to original position after 2 seconds if not game over
         if (m_LifeManager.lifeCount > 0)
         {
-            Invoke(nameof(ResetPosition), 2f);
+            Invoke(nameof(Respawn), 2f);
         }
     }
 
-    private void ResetPosition()
+    private void Respawn()
     {
         m_Tween = new Tween(transform.position, new Vector3(2.56f, 28.5f, -3f), Time.time, 0.00001f);
         m_Animator.SetBool("dead", false);
