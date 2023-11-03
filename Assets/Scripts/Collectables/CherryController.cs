@@ -37,8 +37,8 @@ public class CherryController : MonoBehaviour
         int x;
         int y;
 
-        var xMax = m_LevelManager.LEVEL_MAP.GetLength(1) + 1;
-        var yMax = m_LevelManager.LEVEL_MAP.GetLength(0) + 1;
+        var xMax = m_LevelManager.LevelMap.GetLength(1) + 1;
+        var yMax = m_LevelManager.LevelMap.GetLength(0) + 1;
 
         if (xOrY)
         {

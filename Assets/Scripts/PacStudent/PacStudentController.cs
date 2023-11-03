@@ -1,4 +1,5 @@
 using UnityEngine;
+using Util;
 
 public class PacStudentController : MonoBehaviour
 {
@@ -90,9 +91,9 @@ public class PacStudentController : MonoBehaviour
             transform.position = m_Tween.endPos;
 
             // If the last input is not walkable, try the current input, otherwise stay still
-            currentInput = m_LevelManager.IsTileWalkable(GetTargetPosition(m_Position, GetDirectionVector2(lastInput)))
+            currentInput = m_LevelManager.IsTileWalkable(MovementUtil.GetTargetPosition(m_Position, MovementUtil.GetDirectionVector2(lastInput)))
                 ? lastInput
-                : m_LevelManager.IsTileWalkable(GetTargetPosition(m_Position, GetDirectionVector2(currentInput)))
+                : m_LevelManager.IsTileWalkable(MovementUtil.GetTargetPosition(m_Position, MovementUtil.GetDirectionVector2(currentInput)))
                     ? currentInput
                     : Direction.NONE;
 
@@ -105,7 +106,7 @@ public class PacStudentController : MonoBehaviour
             else if (m_IsMoving)
             {
                 m_IsMoving = false;
-                var failedDirection = GetDirectionVector2(lastInput);
+                var failedDirection = MovementUtil.GetDirectionVector2(lastInput);
                 Instantiate(
                     wallHitParticlePrefab,
                     transform.position + new Vector3(failedDirection.x, failedDirection.y, -4) / 2,
@@ -152,7 +153,7 @@ public class PacStudentController : MonoBehaviour
             var rightTeleporter = other.GetComponent<RightTeleporterController>();
             var otherTeleporterPosition = rightTeleporter.leftTeleporter.transform.position;
             otherTeleporterPosition.x += 1;
-            m_Position = new Vector2(-1, m_LevelManager.LEVEL_MAP.GetLength(1) / 2f + .5f);
+            m_Position = new Vector2(-1, m_LevelManager.LevelMap.GetLength(1) / 2f + .5f);
             m_Tween = new Tween(transform.position, otherTeleporterPosition, Time.time, 0.00001f);
         }
         else if (other.CompareTag("LeftTeleporter"))
@@ -160,13 +161,14 @@ public class PacStudentController : MonoBehaviour
             var leftTeleporter = other.GetComponent<LeftTeleporterController>();
             var otherTeleporterPosition = leftTeleporter.rightTeleporter.transform.position;
             otherTeleporterPosition.x -= 1;
-            m_Position = new Vector2(m_LevelManager.LEVEL_MAP.GetLength(0) - 1,
-                m_LevelManager.LEVEL_MAP.GetLength(1) / 2f + .5f);
+            m_Position = new Vector2(m_LevelManager.LevelMap.GetLength(0) - 1,
+                m_LevelManager.LevelMap.GetLength(1) / 2f + .5f);
             m_Tween = new Tween(transform.position, otherTeleporterPosition, Time.time, 0.00001f);
         }
     }
 
-
+    // Movement
+    
     private void MoveTo(Direction direction)
     {
         var transformLocal = transform; // For performance reasons
@@ -179,21 +181,10 @@ public class PacStudentController : MonoBehaviour
         m_Animator.SetBool(WalkingParam, true);
 
         // new direction vector
-        var movementVector = GetDirectionVector2(direction);
+        var movementVector = MovementUtil.GetDirectionVector2(direction);
 
         // Update position with target position
-        m_Position = GetTargetPosition(m_Position, movementVector);
-
-        // Play walking sound
-        m_WalkingAudioSource.Stop();
-
-        if (m_LevelManager.GetTileOnPosition(m_Position) == TileContent.EMPTY)
-            m_WalkingAudioSource.clip = walkingOnEmptySound;
-        else if (m_LevelManager.GetTileOnPosition(m_Position) == TileContent.PELLET)
-            m_WalkingAudioSource.clip = walkingOnPelletSound;
-
-        m_WalkingAudioSource.loop = true;
-        m_WalkingAudioSource.Play();
+        m_Position = MovementUtil.GetTargetPosition(m_Position, movementVector);
 
         // new end position - convert to Vector3 to for compatibility with transform.position
         var endPos = transform.position + (Vector3)movementVector;
@@ -201,29 +192,19 @@ public class PacStudentController : MonoBehaviour
         // new duration
         var duration = movementVector.magnitude / speed;
 
+        // new tween
         m_Tween = new Tween(startPos, endPos, Time.time, duration);
-    }
+        
+        // Play walking sound
+        m_WalkingAudioSource.Stop();
 
-    private Vector2 GetDirectionVector2(Direction direction)
-    {
-        switch (direction)
-        {
-            case Direction.UP:
-                return Vector2.up;
-            case Direction.RIGHT:
-                return Vector2.right;
-            case Direction.DOWN:
-                return Vector2.down;
-            case Direction.LEFT:
-                return Vector2.left;
-            default:
-                return Vector2.zero;
-        }
-    }
+        if (m_LevelManager.GetTileOnPosition(m_Position) == TileContent.Empty)
+            m_WalkingAudioSource.clip = walkingOnEmptySound;
+        else if (m_LevelManager.GetTileOnPosition(m_Position) == TileContent.Pellet)
+            m_WalkingAudioSource.clip = walkingOnPelletSound;
 
-    private Vector2 GetTargetPosition(Vector2 currentPosition, Vector2 change)
-    {
-        return new Vector2(currentPosition.x + change.x, currentPosition.y - change.y);
+        m_WalkingAudioSource.loop = true;
+        m_WalkingAudioSource.Play();
     }
 
     private void HandleGhostCollision(Collider2D other)
@@ -279,5 +260,10 @@ public class PacStudentController : MonoBehaviour
         lastInput = Direction.NONE; // overriding to prevent player from moving after death
         currentInput = Direction.NONE;
         m_Animator.SetBool(WalkingParam, false);
+    }
+    
+    public Vector2 GetPosition()
+    {
+        return m_Position;
     }
 }

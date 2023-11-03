@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6110350823230846826}
   - component: {fileID: 3470879910927129962}
   - component: {fileID: 4646024899552541722}
-  - component: {fileID: 5642461843661979292}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Ghost
@@ -33,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6110350823230846826
 Animator:
@@ -142,16 +141,3 @@ CapsuleCollider2D:
   m_Offset: {x: 0.004269962, y: 1.0346292}
   m_Size: {x: 1.6802659, y: 0.91840565}
   m_Direction: 1
---- !u!114 &5642461843661979292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294263629249708297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02ce8185e1974820841c3d0e0885254b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDead: 0

@@ -6,11 +6,12 @@ using UnityEngine.Serialization;
 
 public enum TileContent
 {
-    EMPTY,
-    WALL,
-    PELLET,
-    POWER_PELLET,
-    OUTSIDE_MAP
+    Empty,
+    Wall,
+    Pellet,
+    PowerPellet,
+    Barrier,
+    OutsideMap
 }
 
 public class Level1Manager : MonoBehaviour
@@ -32,7 +33,7 @@ public class Level1Manager : MonoBehaviour
 
     public GameObject teleporterLeft;
     public GameObject teleporterRight;
-    public int[,] LEVEL_MAP = LevelGenerator.PrepareLevelMap(Level.Level1);
+    public int[,] LevelMap = LevelGenerator.PrepareLevelMap(Level.Level1);
     
     public PacStudentController playerController;
     
@@ -72,16 +73,16 @@ public class Level1Manager : MonoBehaviour
         var mainCamera = Camera.main;
         if (mainCamera == null) throw new NullReferenceException("Camera.main is null");
         mainCamera.orthographicSize =
-            Math.Max(LEVEL_MAP.GetLength(0) / 2f + 1f, LEVEL_MAP.GetLength(1) / 2f + 1f);
-        mainCamera.transform.position = new Vector3(LEVEL_MAP.GetLength(1) / 2f + 6.5f,
-            LEVEL_MAP.GetLength(0) / 2f + 1f, -10);
+            Math.Max(LevelMap.GetLength(0) / 2f + 1f, LevelMap.GetLength(1) / 2f + 1f);
+        mainCamera.transform.position = new Vector3(LevelMap.GetLength(1) / 2f + 6.5f,
+            LevelMap.GetLength(0) / 2f + 1f, -10);
 
         // Generate level
-        GenerateLevel(LEVEL_MAP, m_LTransform);
+        GenerateLevel(LevelMap, m_LTransform);
 
         // Prepare teleporters
-        var rows = LEVEL_MAP.GetLength(0);
-        var cols = LEVEL_MAP.GetLength(1);
+        var rows = LevelMap.GetLength(0);
+        var cols = LevelMap.GetLength(1);
 
         var leftTeleporterPosition = new Vector3(-1.94f, rows / 2f - .5f, -3);
         var rightTeleporterPosition = new Vector3(cols + 1.04f, rows / 2f - .5f, -3);
@@ -107,17 +108,18 @@ public class Level1Manager : MonoBehaviour
         var row = (int)position.y;
         var col = (int)position.x;
 
-        if (row < 0 || row >= LEVEL_MAP.GetLength(0) || col < 0 || col >= LEVEL_MAP.GetLength(1))
-            return TileContent.OUTSIDE_MAP;
+        if (row < 0 || row >= LevelMap.GetLength(0) || col < 0 || col >= LevelMap.GetLength(1))
+            return TileContent.OutsideMap;
 
-        var value = LEVEL_MAP[row, col];
+        var value = LevelMap[row, col];
 
         return value switch
         {
-            0 => TileContent.EMPTY,
-            5 => TileContent.PELLET,
-            6 => TileContent.POWER_PELLET,
-            _ => TileContent.WALL
+            0 => TileContent.Empty,
+            5 => TileContent.Pellet,
+            6 => TileContent.PowerPellet,
+            8 => TileContent.Barrier,
+            _ => TileContent.Wall
         };
     }
 
@@ -125,10 +127,22 @@ public class Level1Manager : MonoBehaviour
     {
         return GetTileOnPosition(position) switch
         {
-            TileContent.EMPTY => true,
-            TileContent.PELLET => true,
-            TileContent.POWER_PELLET => true,
-            TileContent.OUTSIDE_MAP => true,
+            TileContent.Empty => true,
+            TileContent.Pellet => true,
+            TileContent.PowerPellet => true,
+            TileContent.OutsideMap => true,
+            TileContent.Barrier => true,
+            _ => false
+        };
+    }
+    
+    public bool IsTileWalkableForGhosts(Vector2 position)
+    {
+        return GetTileOnPosition(position) switch
+        {
+            TileContent.Empty => true,
+            TileContent.Pellet => true,
+            TileContent.PowerPellet => true,
             _ => false
         };
     }
@@ -146,8 +160,6 @@ public class Level1Manager : MonoBehaviour
 
             switch (value)
             {
-                case 0:
-                    break;
                 case 1:
                     LevelGenerator.CreateWall(tilePrefab, outsideWallCorner, position, levelArray, parent);
                     break;
@@ -170,8 +182,6 @@ public class Level1Manager : MonoBehaviour
                 case 7:
                     LevelGenerator.CreateWall(tilePrefab, tJunction, position, levelArray, parent);
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException();
             }
         }
     }
@@ -184,8 +194,8 @@ public class Level1Manager : MonoBehaviour
     public Vector2 GetCentreOfMap()
     {
         // x is always even, y is always odd
-        var x = (LEVEL_MAP.GetLength(1) - 1) / 2f;
-        var y = (LEVEL_MAP.GetLength(0) - 1) / 2f - 1f;
+        var x = (LevelMap.GetLength(1) - 1) / 2f;
+        var y = (LevelMap.GetLength(0) - 1) / 2f - 1f;
 
         return new Vector2(x, y);
     }
@@ -199,7 +209,7 @@ public class Level1Manager : MonoBehaviour
 
     public void PelletEaten(Vector2 position)
     {
-        LEVEL_MAP[(int)position.y, (int)position.x] = 0;
+        LevelMap[(int)position.y, (int)position.x] = 0;
         m_ScoreManager.AddScore(10);
         m_UneatenPellets--;
         if (m_UneatenPellets == 0) GameOver();
@@ -207,7 +217,7 @@ public class Level1Manager : MonoBehaviour
 
     public void PowerPelletEaten(Vector2 position)
     {
-        LEVEL_MAP[(int)position.y, (int)position.x] = 0;
+        LevelMap[(int)position.y, (int)position.x] = 0;
         m_GhostManager.SetState(GhostState.Scared);
     }
 
