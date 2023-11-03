@@ -188,6 +188,7 @@ public class Level1Manager : MonoBehaviour
     public void PowerPelletEaten(Vector2 position)
     {
         LEVEL_MAP[(int)position.y, (int)position.x] = 0;
+        m_GhostManager.SetState(GhostState.Scared);
     }
 
     public void CherryEaten()
