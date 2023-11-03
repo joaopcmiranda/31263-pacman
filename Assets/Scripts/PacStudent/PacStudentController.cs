@@ -10,9 +10,9 @@ public class PacStudentController : MonoBehaviour
     public AudioClip walkingOnPelletSound;
     public AudioClip hitWallSound;
 
-    // public GameObject dustParticleSystem;
     public ParticleSystem dustParticleSystem;
     public ParticleSystem abductionParticleSystem;
+    public GameObject wallHitParticlePrefab;
 
     public GameObject manager;
 
@@ -28,9 +28,9 @@ public class PacStudentController : MonoBehaviour
     private InputManager m_InputManager;
 
     private bool m_IsMoving;
-    private bool m_locked = false;
     private Level1Manager m_LevelManager;
     private LifeManager m_LifeManager;
+    private bool m_locked;
 
     // I decided to use a different position than the world position because
     // the world position has some quirks that make it difficult to use like
@@ -99,6 +99,12 @@ public class PacStudentController : MonoBehaviour
             else if (m_IsMoving)
             {
                 m_IsMoving = false;
+                var failedDirection = GetDirectionVector2(lastInput);
+                Instantiate(
+                    wallHitParticlePrefab,
+                    transform.position + new Vector3(failedDirection.x, failedDirection.y, -4) / 2,
+                    Quaternion.identity
+                );
                 m_WalkingAudioSource.Stop();
                 m_WalkingAudioSource.loop = false;
                 m_WalkingAudioSource.clip = hitWallSound;
@@ -239,16 +245,13 @@ public class PacStudentController : MonoBehaviour
         // Animate death
         m_Animator.SetTrigger("die");
         m_Animator.SetBool("dead", true);
-        
+
         // Particles
         dustParticleSystem.Stop();
         abductionParticleSystem.Play();
-        
+
         // move to original position after 2 seconds if not game over
-        if (m_LifeManager.lifeCount > 0)
-        {
-            Invoke(nameof(Respawn), 2f);
-        }
+        if (m_LifeManager.lifeCount > 0) Invoke(nameof(Respawn), 2f);
     }
 
     private void Respawn()
@@ -259,7 +262,7 @@ public class PacStudentController : MonoBehaviour
         m_InputManager.enabled = true;
         m_locked = false;
     }
-    
+
     public void StopPlayer()
     {
         m_WalkingAudioSource.Stop();

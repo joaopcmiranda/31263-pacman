@@ -11657,6 +11657,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 697772705}
+    - target: {fileID: 1203629530, guid: df12729f2192f544cb92ae1e463a09fa, type: 3}
+      propertyPath: wallHitParticlePrefab
+      value: 
+      objectReference: {fileID: 1806911807764111819, guid: 1c9e298e11c34ea4c863a65486dea729, type: 3}
     - target: {fileID: 78790417125009344, guid: df12729f2192f544cb92ae1e463a09fa, type: 3}
       propertyPath: m_Name
       value: Player
