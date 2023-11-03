@@ -52,5 +52,6 @@ public class GhostTimerManager : MonoBehaviour
         timerObject.SetActive(false);
         m_Timer = 10;
         m_StartTime = 0;
+        m_IsTimerRunning = false;
     }
 }
