@@ -24,6 +24,8 @@ public class GhostManager : MonoBehaviour
         m_BackgroundMusicManager = GetComponent<BackgroundMusicManager>();
         m_GhostTimerManager = GetComponent<GhostTimerManager>();
     }
+    
+    public void Begin(){}
 
     public void StopAllGhosts()
     {
