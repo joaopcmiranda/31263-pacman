@@ -234,18 +234,9 @@ public class PacStudentController : MonoBehaviour
 
     private void Die()
     {
-        m_WalkingAudioSource.Stop();
-        
-        // lock movement
-        m_Tween = new Tween(transform.position, transform.position, Time.time, 0.00001f);
-        m_InputManager.enabled = false;
-        m_IsMoving = false;
-        m_locked = true;
-        lastInput = Direction.NONE;
-        currentInput = Direction.NONE;
+        StopPlayer();
 
         // Animate death
-        m_Animator.SetBool(WalkingParam, false);
         m_Animator.SetTrigger("die");
         m_Animator.SetBool("dead", true);
         
@@ -267,5 +258,17 @@ public class PacStudentController : MonoBehaviour
         m_Position = new Vector2(1, 1);
         m_InputManager.enabled = true;
         m_locked = false;
+    }
+    
+    public void StopPlayer()
+    {
+        m_WalkingAudioSource.Stop();
+        m_Tween = new Tween(transform.position, transform.position, Time.time, 0.00001f);
+        m_InputManager.enabled = false;
+        m_IsMoving = false;
+        m_locked = true;
+        lastInput = Direction.NONE; // overriding to prevent player from moving after death
+        currentInput = Direction.NONE;
+        m_Animator.SetBool(WalkingParam, false);
     }
 }

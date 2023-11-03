@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Scripting;
 
 public enum TileContent
 {
@@ -31,11 +32,15 @@ public class Level1Manager : MonoBehaviour
     public GameObject teleporterLeft;
     public GameObject teleporterRight;
     public int[,] LEVEL_MAP = LevelGenerator.PrepareLevelMap(Level.Level1);
+    private GhostManager m_GhostManager;
+    private LifeManager m_LifeManager;
+    public PacStudentController m_PlayerController;
 
 
     private Transform m_LTransform;
     private ScoreManager m_ScoreManager;
-    private GhostManager m_GhostManager;
+
+    private int m_UneatenPellets;
 
     private void Start()
     {
@@ -51,10 +56,13 @@ public class Level1Manager : MonoBehaviour
         mainCamera.transform.position = new Vector3(LEVEL_MAP.GetLength(1) / 2f + 6.5f,
             LEVEL_MAP.GetLength(0) / 2f + 1f, -10);
 
+        m_PlayerController = GameObject.FindWithTag("Player").GetComponent<PacStudentController>();
+        
         m_LTransform = levelObject.transform;
         m_ScoreManager = gameObject.GetComponent<ScoreManager>();
         m_GhostManager = gameObject.GetComponent<GhostManager>();
-        
+        m_LifeManager = gameObject.GetComponent<LifeManager>();
+
         m_ScoreManager.BeginTimer();
 
         GenerateLevel(LEVEL_MAP, m_LTransform);
@@ -131,6 +139,7 @@ public class Level1Manager : MonoBehaviour
                     break;
                 case 5:
                     LevelGenerator.CreatePellet(pellet, position, parent);
+                    m_UneatenPellets++;
                     break;
                 case 6:
                     LevelGenerator.CreatePowerPellet(powerPellet, position, parent);
@@ -169,6 +178,11 @@ public class Level1Manager : MonoBehaviour
     {
         LEVEL_MAP[(int)position.y, (int)position.x] = 0;
         m_ScoreManager.AddScore(10);
+        m_UneatenPellets--;
+        if (m_UneatenPellets == 0)
+        {
+            GameOver();
+        }
     }
 
     public void PowerPelletEaten(Vector2 position)
@@ -180,17 +194,19 @@ public class Level1Manager : MonoBehaviour
     {
         m_ScoreManager.AddScore(100);
     }
-    
+
     public void GhostKilled()
     {
         m_ScoreManager.AddScore(300);
     }
-    
+
     public void GameOver()
     {
+        m_LifeManager.GameOver();
         m_GhostManager.StopAllGhosts();
+        m_PlayerController.StopPlayer();
         m_ScoreManager.StopTimer();
         m_ScoreManager.SaveHighScore();
-        Invoke(nameof(ExitToStartScreen), 3f);   
+        Invoke(nameof(ExitToStartScreen), 3f);
     }
 }

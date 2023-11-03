@@ -29,4 +29,13 @@ public class LifeManager : MonoBehaviour
 
         return lifeCount;
     }
+    
+    public void GameOver()
+    {
+        lifeCount = 0;
+        life1.enabled = false;
+        life2.enabled = false;
+        life3.enabled = false;
+        gameOverText.enabled = true;
+    }
 }
