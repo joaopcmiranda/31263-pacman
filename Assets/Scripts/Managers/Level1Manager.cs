@@ -176,4 +176,14 @@ public class Level1Manager : MonoBehaviour
     {
         m_ScoreManager.AddScore(100);
     }
+    
+    public void GhostKilled()
+    {
+        m_ScoreManager.AddScore(300);
+    }
+    
+    public void GameOver()
+    {
+        SceneManager.LoadScene(2);
+    }
 }

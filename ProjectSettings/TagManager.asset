@@ -9,6 +9,7 @@ TagManager:
   - Pellet
   - PowerPellet
   - Cherry
+  - Ghost
   layers:
   - Default
   - TransparentFX
